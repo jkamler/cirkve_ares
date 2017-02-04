@@ -1,6 +1,6 @@
 <?php
-	include "app_class/dataClass.php";
-	$myDataClass = new dataClass;
+//	include "app_class/dataClass.php";
+//	$myDataClass = new dataClass;
 /*
 $ICs = file('ic_cirkve');
 
@@ -44,5 +44,13 @@ foreach ($ICs as $myIC) {
 	}	
 }
 */
-	$myDataClass->readCirkevniDBARES();
+//	$myDataClass->readCirkevniDBARES();
+
+include "app_class/RUIANClass.php";
+
+$myRUIANClass = new RUIANClass;
+//$myRUIANClass->importRUIAN();
+//$myRUIANClass->createRUIANTable();
+$myRUIANClass->importRUIAN();
+
 ?>
