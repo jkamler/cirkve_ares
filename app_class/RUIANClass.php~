@@ -60,7 +60,6 @@ class RUIANClass {
 		
 	
 	function importRUIAN() {
-		$sql = "INSERT INTO RUIAN_data VALUES (";
 		try {
 			require_once "dataClass.php";
 			$RUIANdir = getcwd() . '/RUIAN_data/';
@@ -71,24 +70,32 @@ class RUIANClass {
 			}
 			foreach ($RUIANFiles as $fileName) {
 				$fileContent = file($RUIANdir . $fileName);
-				//cut first line - first line is headre of table and do not contain data
+				//cut first line - first line is header of table and do not contain data
 				$fileContent = array_slice($fileContent, 1);
 				foreach ($fileContent as $fileLine) {
+					$sql = "INSERT INTO `RUIAN_data` (`Kod_ADM`, `Kod_obce`, `Nazev_obce`, `Nazev_MOMC`, `Nazev_MOP`, 
+							 `Kod_casti_obce`, `Nazev_casti_obce`, `Nazev_ulice`, `Typ_SO`, `Cislo_domovni`, `Cislo_orientacni`, 
+							 `Znak_cisla_orientacniho`, `PSC`, `Souradnice_Y`, `Souradnice_X`, `Plati_Od`) VALUES (";
+								
 					$fileLine = iconv('windows-1250', 'UTF-8', $fileLine);				
-					echo $fileLine . "<br>";
 					$arr_sql = explode(';', $fileLine);
-//					var_dump($arr_sql);
+					echo "count " . count($arr_sql);
 					for($i = 0; $i < count($arr_sql) - 1; $i++)  {
-						if ($i > 12 && $i < 15 ) {
+						if ($i > 11 && $i < 15 ) { //items without "'" --data type numeric  
 							$sql .= $arr_sql[$i] . ", ";
+							echo "I: " . $i;
 							continue;
 						}
 						$sql .= "'" . $arr_sql[$i] . "', ";
+						echo "SQL " . $sql . "<BR>";
+						echo "I: " . $i;
+						
 					} 
-					echo "<br>SQL " . $sql;
+					$sql .= "'" . $arr_sql[count($arr_sql)-1] . "')"; //last item
 					if (!mysqli_query($conn, $sql)) {
 						throw new ExRUIANClassImportRUIANDBQuery;
 					} 
+					
 				}		
 				exit;
 			}
