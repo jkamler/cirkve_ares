@@ -79,25 +79,22 @@ class RUIANClass {
 								
 					$fileLine = iconv('windows-1250', 'UTF-8', $fileLine);				
 					$arr_sql = explode(';', $fileLine);
-					echo "count " . count($arr_sql);
 					for($i = 0; $i < count($arr_sql) - 1; $i++)  {
-						if ($i > 11 && $i < 15 ) { //items without "'" --data type numeric  
+						if ($i > 11 && $i < 15 ) { //items without "'" --data type numeric
+							if ($arr_sql[$i] ==  '') {
+								$sql .= "-999, ";	
+							}  
 							$sql .= $arr_sql[$i] . ", ";
-							echo "I: " . $i;
 							continue;
 						}
 						$sql .= "'" . $arr_sql[$i] . "', ";
-						echo "SQL " . $sql . "<BR>";
-						echo "I: " . $i;
-						
 					} 
-					$sql .= "'" . $arr_sql[count($arr_sql)-1] . "')"; //last item
+					$sql .= "'" . trim($arr_sql[count($arr_sql)-1]) . "')"; //last item
 					if (!mysqli_query($conn, $sql)) {
 						throw new ExRUIANClassImportRUIANDBQuery;
 					} 
 					
 				}		
-				exit;
 			}
 			mysqli_close($conn);
 			return 1;
