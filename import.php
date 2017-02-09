@@ -1,7 +1,8 @@
 <?php
-//	include "app_class/dataClass.php";
-//	$myDataClass = new dataClass;
+	include "app_class/dataClass.php";
+	$myDataClass = new dataClass;
 /*
+
 $ICs = file('ic_cirkve');
 
 foreach ($ICs as $myIC) {
@@ -28,29 +29,46 @@ foreach ($ICs as $myIC) {
 
 //$myDataClass->readCirkevniDBKurzy();
 
-/*
-$ICs = file('ic_cirkve_AA');
+$i = 1;
+
+$ICs = file('seznam_IC/ic_cirkve_A');
 
 foreach ($ICs as $myIC) {
 //	sleep(1);
 	$parsedData = $myDataClass->parseDataARES(trim($myIC));
 	if (!$parsedData) {
-		echo "chyba parseData";
+		
+		echo "<br>chyba parseData " . $myIC;
 	}
 	
 	$resultInsert = $myDataClass->insertDataARES($parsedData);
 	if (!$resultInsert) { // chyba
-		echo "chyba insertData";
+		echo "<br>chyba insertData " . $myIC;
 	}	
+	echo "<br>I: " . $i . " ";
+	$i++;
 }
-*/
-//	$myDataClass->readCirkevniDBARES();
 
+//	$myDataClass->readCirkevniDBARES();
+/*
 include "app_class/RUIANClass.php";
 
 $myRUIANClass = new RUIANClass;
-//$myRUIANClass->importRUIAN();
 //$myRUIANClass->createRUIANTable();
 $myRUIANClass->importRUIAN();
+*/
 
+//vytvoreni tabulky pro data z ARES
+//$myDataClass->createARESTable();
+/*	$myIC = 48489034;
+	$parsedData = $myDataClass->parseDataARES(trim($myIC));
+	if (!$parsedData) {
+		echo "chyba parseData " . $myIC;
+	}
+	
+	$resultInsert = $myDataClass->insertDataARES($parsedData);
+	if (!$resultInsert) { // chyba
+		echo "chyba insertData " . $myIC;
+	}	
+*/
 ?>

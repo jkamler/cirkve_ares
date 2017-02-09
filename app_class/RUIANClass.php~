@@ -68,11 +68,13 @@ class RUIANClass {
 			if (!$conn) {
 				throw new ExRUIANClassImportRUIANDBConnection;
 			}
-			foreach ($RUIANFiles as $fileName) {
-				$fileContent = file($RUIANdir . $fileName);
-				//cut first line - first line is header of table and do not contain data
-				$fileContent = array_slice($fileContent, 1);
-				foreach ($fileContent as $fileLine) {
+
+			mysqli_set_charset($conn, 'utf8');
+			
+			foreach ($RUIANFiles as $fileName) { //walk through files
+				$fileContent = file($RUIANdir . $fileName); //read content of file
+				$fileContent = array_slice($fileContent, 1); //cut first line - first line is header of table and do not contain data
+				foreach ($fileContent as $fileLine) { //walk through file lines 
 					$sql = "INSERT INTO `RUIAN_data` (`Kod_ADM`, `Kod_obce`, `Nazev_obce`, `Nazev_MOMC`, `Nazev_MOP`, 
 							 `Kod_casti_obce`, `Nazev_casti_obce`, `Nazev_ulice`, `Typ_SO`, `Cislo_domovni`, `Cislo_orientacni`, 
 							 `Znak_cisla_orientacniho`, `PSC`, `Souradnice_Y`, `Souradnice_X`, `Plati_Od`) VALUES (";
@@ -80,14 +82,15 @@ class RUIANClass {
 					$fileLine = iconv('windows-1250', 'UTF-8', $fileLine);				
 					$arr_sql = explode(';', $fileLine);
 					for($i = 0; $i < count($arr_sql) - 1; $i++)  {
-						if ($i > 11 && $i < 15 ) { //items without "'" --data type numeric
-							if ($arr_sql[$i] ==  '') {
-								$sql .= "-999, ";	
+						if ($i > 11 && $i < 15 ) { //items with data type numeric  
+							if ($arr_sql[$i] ==  '') { //items without "'" --data type numeric 
+								$sql .= "-999, ";
+								continue;
 							}  
 							$sql .= $arr_sql[$i] . ", ";
 							continue;
 						}
-						$sql .= "'" . $arr_sql[$i] . "', ";
+						$sql .= "'" . $arr_sql[$i] . "', "; //items with data type string
 					} 
 					$sql .= "'" . trim($arr_sql[count($arr_sql)-1]) . "')"; //last item
 					if (!mysqli_query($conn, $sql)) {
@@ -106,6 +109,7 @@ class RUIANClass {
 		catch (ExRUIANClassImportRUIANDBQuery $e) {
 			mysqli_close($conn);
 			echo "Chyba: nepovedlo se provest dotaz: " . $sql . "<br>" . mysqli_error($conn) . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			echo "<BR>Soubor: " . $fileName . " radek:<br>" . $fileLine; 
 			return 0;			
 		}
 		catch(Exception $e) {

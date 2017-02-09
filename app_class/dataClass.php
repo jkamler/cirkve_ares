@@ -50,7 +50,7 @@ class dataClass {
 	const PASSWORD = "jara777";
 	const DBNAMEKURZY = "cirkve";
 	const DBNAMEARES = "cirkveARES";
-	
+//	const DBNAMEARES = "test";	
 	
 	/************************************************************ 
 				DATA from KURZY.CZ 
@@ -131,6 +131,9 @@ class dataClass {
 			if (!$conn) {
 				throw new ExDataClassInsertDataDBConnection;
 			}
+
+			mysqli_set_charset($conn, 'utf8');
+			
 			$sql = "INSERT INTO cirkev(nazev, ic, forma, adresa) VALUES ('" . $data["nazev"] . "', " . $data["ico"] . ", ' " . $data["forma"] . " ', '" . $data["adresa"] . "')";
 			if (!mysqli_query($conn, $sql)) {
 				throw new ExDataClassInsertDataDBInsert;
@@ -180,6 +183,61 @@ class dataClass {
 /**************************************************************** 
 					DATA from ARES 
 *****************************************************************/
+
+	function createARESTable() {
+		$sql = "CREATE TABLE `cirkve` (
+	  `ICO` varchar(8) COLLATE utf8_czech_ci NOT NULL,
+	  `Stav_subjektu_RCNS` text COLLATE utf8_czech_ci,
+	  `Nazev_CPO` text COLLATE utf8_czech_ci,
+	  `Typ_CNS` text COLLATE utf8_czech_ci,
+	  `Zkr_statu` text COLLATE utf8_czech_ci,
+	  `Nazev_PF` text COLLATE utf8_czech_ci,
+	  `ID_adresy` decimal(10,0) DEFAULT NULL,
+	  `Nazev_obce` text COLLATE utf8_czech_ci,
+	  `Nazev_ulice` text COLLATE utf8_czech_ci,
+	  `Cislo_do_adresy` text COLLATE utf8_czech_ci,
+	  `PSC` int(11) DEFAULT NULL,
+	  `Zrizovatel` text COLLATE utf8_czech_ci,
+	  `Zvlastni_prava` text COLLATE utf8_czech_ci,
+	  `Datum_vzniku` text COLLATE utf8_czech_ci NOT NULL
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;";
+		
+		try{
+			$conn = mysqli_connect(self::SERVERNAME, self::USERNAME, self::PASSWORD, self::DBNAMEARES);
+			if (!$conn) {
+				throw new ExDataClassInsertDataDBConnection;
+			}
+			
+			if (!mysqli_query($conn, $sql)) {
+				throw new ExDataClassInsertDataDBInsert;
+			} 
+			mysqli_close($conn);
+			return 1; 
+		}			
+		catch(ExDataClassInsertDataDBConnection $e) {
+			echo "Chyba: nepovedlo se pripojit k DB: " . mysqli_connect_error() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			return 0;
+		}
+		catch(ExDataClassInsertDataDBInsert $e) {
+			mysqli_close($conn);
+			echo "Chyba: nepovedlo se provest dotaz: " . $sql . "<br>" . mysqli_error($conn) . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			return 0;				
+		}
+		catch(Exception $e) {
+			echo "Chyba: " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			return 0;
+		}
+		catch(Error $e) {
+			echo "Chyba: " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			return 0;
+		}
+		
+
+		
+		
+	}
+
+
 
 	/*
 	ARES
@@ -240,6 +298,9 @@ class dataClass {
 			if (!$conn) {
 				throw new ExDataClassInsertDataDBConnection;
 			}
+
+			mysqli_set_charset($conn, 'utf8');
+			
 			$sql = "INSERT INTO cirkve(ICO, Stav_subjektu_RCNS, Nazev_CPO, Typ_CNS, Zkr_statu, Nazev_PF, ID_adresy, Nazev_obce, Nazev_ulice, Cislo_do_adresy, PSC, Zrizovatel, Zvlastni_prava, Datum_vzniku) 
 			VALUES ('" . $data["ICO"] . "', '" . $data["Stav_subjektu_RCNS"] . "', '" . $data["Nazev_CPO"] . "', '" . $data["Typ_CNS"] . "', '" . $data["Zkr_statu"] . "', '" . $data["Nazev_PF"] . "', "  
 			. $data["ID_adresy"] . ", '" . $data["Nazev_obce"] . "', '" . $data["Nazev_ulice"] . "', '" . $data["Cislo_do_adresy"] . "', " . $data["PSC"] . ", '" . $data["Zrizovatel"] . "', '" 
