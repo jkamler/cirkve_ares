@@ -32,7 +32,8 @@ var layers = [
   new ol.layer.Vector({
     title: 'Earthquakes',
     source: new ol.source.Vector({
-      url: 'test.json',
+//      url: 'test.json',
+      url: 'http://localhost/cirkve_ares/app/getJSON.php',
       format: new ol.format.GeoJSON()
     }),
     style: new ol.style.Style({
@@ -62,6 +63,6 @@ map.on('singleclick', function(e) {
   if (feature) { // if feature returned, show info
     $("#info_wrapper").show();
     var infoElement = document.getElementById('info');
-    infoElement.innerHTML = feature.get('title');
+    infoElement.innerHTML = feature.get('Nazev_CPO');
   }
 });

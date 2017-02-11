@@ -41,3 +41,11 @@ html, body, .map {
   border: 2px solid grey;
   margin: 2px;
 }
+
+#hide_info_wrapper:hover {
+  background-color: grey;
+}
+
+#info_wrapper:hover {
+  opacity: 1;
+}

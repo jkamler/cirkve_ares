@@ -1,0 +1,2 @@
+ 
+Exception - nepovedlo se vlozit IC od DB 
