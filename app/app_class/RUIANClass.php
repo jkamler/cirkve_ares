@@ -4,13 +4,15 @@ class ExRUIANClassCreateRUIANTableDBQuery extends Exception {}
 class ExRUIANClassCreateRUIANTableDBConnection extends Exception {}
 class ExRUIANClassImportRUIANDBConnection extends Exception {}
 class ExRUIANClassImportRUIANDBQuery extends Exception {}
-
+set_time_limit(0);
 class RUIANClass {
 
 	/*
-	Reads first file in RUIAN_data folder and creates from table head (first row) SQL query for creating table
+	Reads first file in RUIAN_data folder and creates from table head (first row)
+	SQL query for creating table
 
-	@output: boolean, 1 - success | 0 - fail
+	@param: string $ruianFolder, folder which contain some RUIAN data
+	@return: boolean, 1 - success | 0 - fail
 	*/
 
 	function createRUIANTable ($ruianFolder) {
@@ -60,14 +62,17 @@ class RUIANClass {
 
 	}
 
+/*
+	Imports data from CSV files containing RUIAN data
 
-
+	@param: string $ruianFolder, folder which contain some RUIAN data
+	@return: boolean, 0 - false | 1 - OK
+*/
 	function importRUIAN($ruianFolder) {
 		try {
 			require_once "configClass.php";
 //			$RUIANdir = getcwd() . '/RUIAN_data/';
 			$RUIANdir = '../'. $ruianFolder .'/';
-
 //			$RUIANdir = '../RUIAN_data/';
 			$RUIANFiles = array_slice(scandir($RUIANdir), 2);
 			$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
@@ -104,7 +109,7 @@ class RUIANClass {
 						$delimiter = "/";
 					}
 					//last item from query + i am adding this: Cislo_domovni/Cislo_orientacni = Cislo_do_adresy
-					$sql .= "'" . trim($arr_sql[count($arr_sql)-1]) . "', '" . $arr_sql[9] . $delimiter . $arr_sql[10] . "')";
+					$sql .= "'" . trim($arr_sql[count($arr_sql)-1]) . "', '" . $arr_sql[9] . $delimiter . $arr_sql[10] . $arr_sql[11] . "')";
 
 					if (!mysqli_query($conn, $sql)) {
 						throw new ExRUIANClassImportRUIANDBQuery;

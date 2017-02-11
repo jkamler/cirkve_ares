@@ -2,6 +2,7 @@
 include "app_class/geoJSONClass.php";
 
 $myJSON = new geoJSONClass;
+/*
 $data = '
 {
   "type": "FeatureCollection",
@@ -11,5 +12,12 @@ $data = '
   ]
 }
 ';
-echo $myJSON->writeGeoJSON($data);
+*/
+$data = $myJSON->getData("test", "1");
+//var_dump($data);
+
+$result = $myJSON->writeGeoJSON($data);
+echo $result;
+//var_dump($result);
+
  ?>

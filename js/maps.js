@@ -33,7 +33,7 @@ var layers = [
     title: 'Earthquakes',
     source: new ol.source.Vector({
 //      url: 'test.json',
-      url: 'http://localhost/cirkve_ares/app/getJSON.php',
+      url: 'http://localhost/cirkve_ares/app/getjson.php',
       format: new ol.format.GeoJSON()
     }),
     style: new ol.style.Style({

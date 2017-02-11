@@ -82,7 +82,7 @@ class dataClass {
 	KURZY
 	Inserting data to DBMS
 	@param array $data - associative array with items
-	@return boolean 1 - OK, 0 - error
+	@return boolean 1 - OK | 0 - error
 	*/
 
 	function insertDataKurzy($data){
@@ -250,7 +250,7 @@ class dataClass {
 	Inserting data to DB
 
 	@param array $data - associative array
-	@return boolean 1 - OK, 0 - error
+	@return boolean, 1 - OK | 0 - error
 	*/
 
 	function insertDataARES($data){
@@ -333,7 +333,11 @@ class dataClass {
 	function connectCirkveWithRUIAN () {
 		require_once "configClass.php";
 		$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
-
+		if (!$conn) {
+			echo "Nepovedlo se pripojit k DB";
+			return 0;
+		}
+/*
 		$sql = "ALTER TABLE `RUIAN_data` ADD INDEX(`PSC`)";
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se vytvorit klic na sloupci PSC v tabulce RUIAN_data";
@@ -341,26 +345,18 @@ class dataClass {
 			mysqli_close($conn);
 			exit;
 		}
+*/
 
-
-		$sql= "CREATE TABLE cirkve_coord
-		AS (SELECT
-		cirkve.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_x
-		FROM
-		cirkve, RUIAN_data
-		WHERE
-		cirkve.Nazev_obce = RUIAN_data.Nazev_obce
-		AND
-		cirkve.Nazev_ulice = RUIAN_data.Nazev_ulice
-		AND
-		cirkve.Cislo_do_adresy = RUIAN_data.Cislo_domovni);";
+		$sql = 'CREATE TABLE test AS SELECT cirkve.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X FROM cirkve LEFT JOIN RUIAN_data ON cirkve.Nazev_obce = RUIAN_data.Nazev_obce AND cirkve.Nazev_ulice = RUIAN_data.Nazev_ulice AND cirkve.Cislo_do_adresy LIKE RUIAN_data.Cislo_do_adresy';
 
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se spojeni cirkevni a RUIAN tabulky";
-			echo "<BR>" . $sql;
+			echo "<BR>" . $sql . "<br>";
 			mysqli_close($conn);
-			exit;
+			return 0;
 		}
+		echo "ok";
+		return 1;
 	}
 
 /******************************** END ARES ***********************************************/
