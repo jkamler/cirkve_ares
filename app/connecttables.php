@@ -1,5 +1,6 @@
 <?php
 include "app_class/dataClass.php";
 $myDataClass = new dataClass;
-var_dump($myDataClass->connectCirkveWithRUIAN());
+$myDataClass->createTableCirkveAktivni("cirkve_aktivni");
+$myDataClass->connectCirkveWithRUIAN("cirkve_aktivni", "cirkve_aktivni_spatial");
 ?>

@@ -10,6 +10,7 @@ class ExDataClassGetDataReadFile extends Exception {}
 class ExDataClassInsertDataDBConnection extends Exception {}
 class ExDataClassInsertDataDBInsert extends Exception {}
 class ExDataClassLoadXML extends Exception {}
+class	ExDataClassInsertDataDBCreateTableWithActive extends Exception {}
 
 class dataClass {
 	/************************************************************
@@ -147,21 +148,23 @@ class dataClass {
 *****************************************************************/
 
 	function createARESTable() {
+		/*column "Zrizovatel_text" does not exist, it will be updated*/
 		$sql = "CREATE TABLE `cirkve` (
 	  `ICO` varchar(8) COLLATE utf8_czech_ci NOT NULL,
-	  `Stav_subjektu_RCNS` text COLLATE utf8_czech_ci,
-	  `Nazev_CPO` text COLLATE utf8_czech_ci,
-	  `Typ_CNS` text COLLATE utf8_czech_ci,
-	  `Zkr_statu` text COLLATE utf8_czech_ci,
-	  `Nazev_PF` text COLLATE utf8_czech_ci,
+	  `Stav_subjektu_RCNS` varchar(200) COLLATE utf8_czech_ci,
+	  `Nazev_CPO` varchar(200) COLLATE utf8_czech_ci,
+	  `Typ_CNS` varchar(200) COLLATE utf8_czech_ci,
+	  `Zkr_statu` varchar(200) COLLATE utf8_czech_ci,
+	  `Nazev_PF` varchar(200) COLLATE utf8_czech_ci,
 	  `ID_adresy` decimal(10,0) DEFAULT NULL,
-	  `Nazev_obce` text COLLATE utf8_czech_ci,
-	  `Nazev_ulice` text COLLATE utf8_czech_ci,
-	  `Cislo_do_adresy` text COLLATE utf8_czech_ci,
+	  `Nazev_obce` varchar(200) COLLATE utf8_czech_ci,
+	  `Nazev_ulice` varchar(200) COLLATE utf8_czech_ci,
+	  `Cislo_do_adresy` varchar(200) COLLATE utf8_czech_ci,
 	  `PSC` int(11) DEFAULT NULL,
-	  `Zrizovatel` text COLLATE utf8_czech_ci,
-	  `Zvlastni_prava` text COLLATE utf8_czech_ci,
-	  `Datum_vzniku` text COLLATE utf8_czech_ci NOT NULL
+	  `Zrizovatel` varchar(200) COLLATE utf8_czech_ci,
+	  `Zrizovatel_text` varchar(200) COLLATE utf8_czech_ci,
+	  `Zvlastni_prava` varchar(1000) COLLATE utf8_czech_ci,
+	  `Datum_vzniku` varchar(50) COLLATE utf8_czech_ci NOT NULL
 		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;";
 
 		try{
@@ -330,24 +333,51 @@ class dataClass {
 		mysqli_close($conn);
 	}
 
-	function connectCirkveWithRUIAN () {
+
+
+/*
+Creates indexes on RUIAN table, new table as connection ARES a RUIAN tables,
+updates result table - sets name of Zrivovatel and copy rights of Zrizovatel to
+every subject
+
+@param: string $tableNameCirkve, name of table imported from ARES or created by createTableCirkveAktivni()
+@param: string $tableNameCirkveSpatial, name of new table containing coordinates
+@return boolean, 1 - OK | 0 - error
+*/
+
+	function connectCirkveWithRUIAN ($tableNameCirkve, $tableNameCirkveSpatial) {
 		require_once "configClass.php";
 		$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
 		if (!$conn) {
 			echo "Nepovedlo se pripojit k DB";
 			return 0;
 		}
-/*
-		$sql = "ALTER TABLE `RUIAN_data` ADD INDEX(`PSC`)";
+
+
+		$sql = "CREATE INDEX index_obec_ulice_cp_psc ON RUIAN_data (Nazev_obce, Nazev_ulice, Cislo_do_adresy, PSC)";
 		if (!mysqli_query($conn, $sql)) {
-			echo "nepovedlo se vytvorit klic na sloupci PSC v tabulce RUIAN_data";
+			echo "nepovedlo se vytvorit klic index_obec_ulice_cp_psc v tabulce RUIAN_data";
 			echo "<BR>" . $sql;
 			mysqli_close($conn);
 			exit;
 		}
-*/
 
-		$sql = 'CREATE TABLE test AS SELECT cirkve.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X FROM cirkve LEFT JOIN RUIAN_data ON cirkve.Nazev_obce = RUIAN_data.Nazev_obce AND cirkve.Nazev_ulice = RUIAN_data.Nazev_ulice AND cirkve.Cislo_do_adresy LIKE RUIAN_data.Cislo_do_adresy';
+		$sql = "CREATE INDEX index_obec_ulice_cp ON RUIAN_data (Nazev_obce, Nazev_ulice, Cislo_do_adresy)";
+		if (!mysqli_query($conn, $sql)) {
+			echo "nepovedlo se vytvorit klic index_obec_ulice_cp v tabulce RUIAN_data";
+			echo "<BR>" . $sql;
+			mysqli_close($conn);
+			exit;
+		}
+
+		$sql = 'CREATE TABLE ' . $tableNameCirkveSpatial . ' AS
+		SELECT ' . $tableNameCirkve . '.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X
+		FROM ' . $tableNameCirkve . '
+		LEFT JOIN RUIAN_data
+		ON ' . $tableNameCirkve . '.Nazev_obce = RUIAN_data.Nazev_obce
+		AND ' . $tableNameCirkve . '.Nazev_ulice = RUIAN_data.Nazev_ulice
+		AND ' . $tableNameCirkve . '.Cislo_do_adresy LIKE RUIAN_data.Cislo_do_adresy
+		AND ' . $tableNameCirkve . '.PSC = RUIAN_data.PSC;';
 
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se spojeni cirkevni a RUIAN tabulky";
@@ -355,9 +385,68 @@ class dataClass {
 			mysqli_close($conn);
 			return 0;
 		}
-		echo "ok";
+		echo "ok - CREATE TABLE " . $tableNameCirkveSpatial . "<BR>";
+
+		$sql = "UPDATE " . $tableNameCirkve . " AS t1
+		INNER JOIN ( SELECT ICO, Nazev_CPO, Zvlastni_prava FROM cirkve_aktivni) AS t2
+		SET t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava
+		WHERE t2.ICO = t1.Zrizovatel;";
+
+		if (!mysqli_query($conn, $sql)) {
+			echo "nepovedl se update na cirkevni tabulce";
+			echo "<BR>" . $sql . "<br>";
+			mysqli_close($conn);
+			return 0;
+		}
+		echo "ok - UPDATE TABLE " . $tableNameCirkveSpatial . "<BR>";
+
+
+
 		return 1;
 	}
+
+
+	/*
+	Creates new table as select only active objects from ARES table
+	@param: string $createTableCirkveAktivni, name of table imported from ARES or created by createTableCirkveAktivni()
+	@return boolean, 1 - OK | 0 - error
+	*/
+
+	function createTableCirkveAktivni($createTableCirkveAktivni){
+		try {
+			require_once "configClass.php";
+			$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
+			if (!$conn) {
+				throw new ExDataClassInsertDataDBConnection;
+			}
+
+			mysqli_set_charset($conn, 'utf8');
+
+			$sql = 'CREATE TABLE ' . $createTableCirkveAktivni . ' AS (SELECT * FROM cirkve WHERE Stav_subjektu_RCNS="Aktivní");';
+			if (!mysqli_query($conn, $sql)) {
+				throw new ExDataClassInsertDataDBCreateTableWithActive;
+			}
+			mysqli_close($conn);
+			return 1;
+		}
+		catch(ExDataClassInsertDataDBCreateTableWithActive $e) {
+			echo "Nepovedlo se vytvorit tabulky s aktivnimi cirkvemi " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+		}
+		catch(ExDataClassInsertDataDBConnection $e) {
+			echo "Chyba: nepovedlo se pripojit k DB: " . mysqli_connect_error() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			return 0;
+		}
+		catch(Exception $e) {
+			echo "Chyba: " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			return 0;
+		}
+		catch(Error $e) {
+			echo "Chyba: " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
+			return 0;
+		}
+
+	}
+
 
 /******************************** END ARES ***********************************************/
 

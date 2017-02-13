@@ -4,7 +4,7 @@ $myDataClass = new dataClass;
 
 $i = 1;
 
-$ICs = file('../seznam_IC/ic_cirkve_A');
+$ICs = file('../seznam_IC/ic_cirkve_B');
 
 foreach ($ICs as $myIC) {
 //	sleep(1);

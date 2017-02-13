@@ -13,7 +13,7 @@ $data = '
 }
 ';
 */
-$data = $myJSON->getData("test", "1");
+$data = $myJSON->getData("cirkve_aktivni_spatial", "1");
 //var_dump($data);
 
 $result = $myJSON->writeGeoJSON($data);

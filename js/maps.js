@@ -21,6 +21,8 @@ var mousePositionControl = new ol.control.MousePosition({
   undefinedHTML: '&nbsp;'
 });
 
+var text = new ol.style.Text ({text: 'text'});
+
 var layers = [
   new ol.layer.Tile({
     source: new ol.source.TileWMS({
@@ -30,9 +32,8 @@ var layers = [
     })
   }),
   new ol.layer.Vector({
-    title: 'Earthquakes',
+    title: 'Body',
     source: new ol.source.Vector({
-//      url: 'test.json',
       url: 'http://localhost/cirkve_ares/app/getjson.php',
       format: new ol.format.GeoJSON()
     }),
@@ -40,7 +41,8 @@ var layers = [
       image: new ol.style.Circle({
         radius: 5,
         fill: new ol.style.Fill({color: 'red'})
-      })
+      }),
+      text: text
     })
   })
 ];
@@ -63,6 +65,6 @@ map.on('singleclick', function(e) {
   if (feature) { // if feature returned, show info
     $("#info_wrapper").show();
     var infoElement = document.getElementById('info');
-    infoElement.innerHTML = feature.get('Nazev_CPO');
+    infoElement.innerHTML = feature.get('Nazev_CPO') + '<br>' + feature.get('Nazev_ulice') + ' ' + feature.get('Cislo_do_adresy') + '<br>' + feature.get('Nazev_obce');
   }
 });

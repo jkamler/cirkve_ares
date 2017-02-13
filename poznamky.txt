@@ -16,3 +16,15 @@ Adresa z ARESu - cirkve s priznakem "b"
 00460541 	Aktivní 	Křesťanské sbory 	Církev 	CZE 	Církevní organizace 	55507 	Brno 	Šámalova 	3915/15a 	61500 Konat obřady, při nichž jsou uzavírány církevní s... 	1991-09-01
 69649421 	Aktivní 	Křesťanský sbor Brno 	Církevní právnická osoba 	CZE 		55095 	Brno 	Šámalova 	3915/15a 	61500 	00460541 		1994-01-01
 ... a dalsi
+
+nepripojne
+cirkve_spatial
+ ICO 	  Stav_subjektu_RCNS 	Nazev_CPO 	       Typ_CNS 	                 Zkr_statu 	Nazev_PF 	ID_adresy 	Nazev_obce 	Nazev_ulice 	Cislo_do_adresy 	PSC 	Zrizovatel 	Zvlastni_prava 	Datum_vzniku 	Souradnice_Y Vzestupně 1 	Souradnice_X
+00445142 	Aktivní 	       Biskupství brněnské 	Církevní právnická osoba 	CZE 		56554 	                  Brno 	        Petrov 	      269/8 	       60143 	73632848 		              1994-07-01 	                NULL	         NULL
+
+RUIAN_data
+Kod_ADM 	Kod_obce 	Nazev_obce 	Nazev_MOMC 	Nazev_MOP 	Kod_casti_obce 	Nazev_casti_obce 	Nazev_ulice Sestupně 1 	Typ_SO 	Cislo_domovni 	Cislo_orientacni 	Znak_cisla_orientacniho 	PSC 	Souradnice_Y 	Souradnice_X 	Plati_Od 	         Cislo_do_adresy
+22002227 	554782 	  Praha 	   Praha 5 	   Praha 5 	   400289 	      Hlubočepy 	       Žvahovská 	               č.p. 	401 	           7 		                                      15200 	744991.00 	1047564.00 	2013-12-10T00:00:00 	401/7
+
+update cirkve_aktivni as t1 inner join ( select ICO, Nazev_CPO, Zvlastni_prava from cirkve_aktivni) as t2 set t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava where t2.ICO = Zrizovatel
+update cirkve_aktivni as t1 inner join ( select ICO, Nazev_CPO, Zvlastni_prava from cirkve_aktivni) as t2 set t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava where t2.ICO = t1.Zrizovatel

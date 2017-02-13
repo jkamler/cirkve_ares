@@ -9,8 +9,8 @@ class configClass {
 	const USERNAME = "root";
 	const PASSWORD = "jara777";
 //	const DBNAMEKURZY = "cirkve";
-//	const DBNAMEARES = "cirkveARES";
-	const DBNAMEARES = "cirkve";
+	const DBNAMEARES = "cirkveARES";
+//	const DBNAMEARES = "cirkve";
 }
 
 ?>

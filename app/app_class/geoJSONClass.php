@@ -27,8 +27,10 @@ class geoJSONClass {
                   'Nazev_CPO' => $row['Nazev_CPO'],
                   'Nazev_obce' => $row['Nazev_obce'],
                   'Nazev_ulice' => $row['Nazev_ulice'],
+                  'Zrizovatel_text' => $row['Zrizovatel_text'],
                   'Cislo_do_adresy' => $row['Cislo_do_adresy'],
                   'PSC' => $row['PSC'],
+                  'Zvlastni_prava' => $row['Zvlastni_prava'],                  
                   'Datum_vzniku' => $row['Datum_vzniku']
                   )
               );

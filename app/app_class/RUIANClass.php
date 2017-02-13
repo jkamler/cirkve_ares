@@ -30,7 +30,7 @@ class RUIANClass {
 			$tableRows = str_replace('Souradnice_Y text', 'Souradnice_Y decimal(9,2)', $tableRows);
 			$tableRows = str_replace('Souradnice_X text', 'Souradnice_X decimal(9,2)', $tableRows);
 			$tableRows = str_replace('Plati_Od', 'Plati_Od varchar(20)', $tableRows);
-			$tableRows .= ", Cislo_do_adresy varchar(10)";
+			$tableRows .= ", Cislo_do_adresy varchar(20)";
 			$sql = "CREATE TABLE RUIAN_data (". $tableRows .")";
 			$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
 			if (!$conn) {
@@ -103,10 +103,16 @@ class RUIANClass {
 						}
 						$sql .= "'" . $arr_sql[$i] . "', "; //items with data type string
 					}
+					//if there is not cislo orientacni, delimiter is "", else /
 					if ($arr_sql[10] == "") {
 						$delimiter = "";
 					} else {
 						$delimiter = "/";
+					}
+					//if my cislo domovni is type cislo evidencni, I have to append this note to my number,
+					//because I do not want connect this line with data from ARES napr. č.ev.125/3
+					if ($arr_sql[8] == "č.ev.") {
+						$arr_sql[9] = "č.ev." . $arr_sql[9];
 					}
 					//last item from query + i am adding this: Cislo_domovni/Cislo_orientacni = Cislo_do_adresy
 					$sql .= "'" . trim($arr_sql[count($arr_sql)-1]) . "', '" . $arr_sql[9] . $delimiter . $arr_sql[10] . $arr_sql[11] . "')";

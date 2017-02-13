@@ -1,2 +1,6 @@
  
 Exception - nepovedlo se vlozit IC od DB 
+Exception - nepovedlo se vlozit IC od DB 
+00445312
+Exception - nepovedlo se vlozit IC od DB 
+00445304
