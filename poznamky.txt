@@ -28,3 +28,11 @@ Kod_ADM 	Kod_obce 	Nazev_obce 	Nazev_MOMC 	Nazev_MOP 	Kod_casti_obce 	Nazev_cast
 
 update cirkve_aktivni as t1 inner join ( select ICO, Nazev_CPO, Zvlastni_prava from cirkve_aktivni) as t2 set t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava where t2.ICO = Zrizovatel
 update cirkve_aktivni as t1 inner join ( select ICO, Nazev_CPO, Zvlastni_prava from cirkve_aktivni) as t2 set t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava where t2.ICO = t1.Zrizovatel
+
+Problem
+73633763 	Aktivní 	Sekulární institut Krista Velekněze 	Církevní právnická osoba 	CZE 		52222 	Bílá Voda 		1 	79069 	65468953 	NULL		2005-12-27
+
+5908671 	525227 	Bílá Voda 			4022 	Kamenička 		č.p. 	1 			79069 	561139.84 	1025385.84 	2013-12-04T00:00:00 	1
+5908841 	525227 	Bílá Voda 			414611 	Městys Bílá Voda 		č.p. 	1 			79069 	561289.28 	1025198.48 	2013-12-04T00:00:00 	1
+5909325 	525227 	Bílá Voda 			414620 	Ves Bílá Voda 		č.p. 	1 			79069 	563099.72 	1025173.58 	2013-12-04T00:00:00 	1
+25889818 	525227 	Bílá Voda 			414620 	Ves Bílá Voda 		č.ev. 	1 			79069 	565014.10 	1028695.04 	2013-12-04T00:00:00 	č.ev.1

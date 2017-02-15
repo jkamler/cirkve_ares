@@ -158,6 +158,7 @@ class dataClass {
 	  `Nazev_PF` varchar(200) COLLATE utf8_czech_ci,
 	  `ID_adresy` decimal(10,0) DEFAULT NULL,
 	  `Nazev_obce` varchar(200) COLLATE utf8_czech_ci,
+		`Nazev_casti_obce` varchar(200) COLLATE utf8_czech_ci,
 	  `Nazev_ulice` varchar(200) COLLATE utf8_czech_ci,
 	  `Cislo_do_adresy` varchar(200) COLLATE utf8_czech_ci,
 	  `PSC` int(11) DEFAULT NULL,
@@ -209,6 +210,7 @@ class dataClass {
 
 	function parseDataARES($myIC) {
 		$res_arr = array();
+		//data from Registru církví a náboženských společností
 		//we are interested in this XML nodes
 		$XMLnodes = array("ICO", "Stav_subjektu_RCNS", "Nazev_CPO", "Typ_CNS", "Zkr_statu", "Nazev_PF", "ID_adresy", "Nazev_obce", "Nazev_ulice", "Cislo_do_adresy", "PSC", "Zrizovatel", "Zvlastni_prava", "Datum_vzniku");
 
@@ -226,6 +228,26 @@ class dataClass {
 				 //adding node name and node value to associative array
 				 $res_arr[$nodeName] = $value;
 			}
+
+			//data from statistického registru RES
+			//we are interested in this node ... in previous register is not Nazev_casti_obce
+			// - without this info I am unable connect cirkevni table with data from RUIAN
+			$XMLnodes = array("Nazev_casti_obce");
+
+			$str = "http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=" . $myIC . "&ver=1.0.0";
+
+	   	$domOb = new DOMDocument();
+			$domOb->preserveWhiteSpace = false;
+			if (!$domOb->load($str)) {
+				throw new ExDataClassLoadXML;
+			}
+			//looping through array
+			foreach ($XMLnodes as $nodeName) {
+				 $value = $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
+				 //adding node name and node value to associative array
+				 $res_arr[$nodeName] = $value;
+			}
+
 			return $res_arr;
 		}
 		catch (ExDataClassLoadXML $e) {
@@ -266,9 +288,9 @@ class dataClass {
 
 			mysqli_set_charset($conn, 'utf8');
 
-			$sql = "INSERT INTO cirkve(ICO, Stav_subjektu_RCNS, Nazev_CPO, Typ_CNS, Zkr_statu, Nazev_PF, ID_adresy, Nazev_obce, Nazev_ulice, Cislo_do_adresy, PSC, Zrizovatel, Zvlastni_prava, Datum_vzniku)
+			$sql = "INSERT INTO cirkve(ICO, Stav_subjektu_RCNS, Nazev_CPO, Typ_CNS, Zkr_statu, Nazev_PF, ID_adresy, Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, PSC, Zrizovatel, Zvlastni_prava, Datum_vzniku)
 			VALUES ('" . $data["ICO"] . "', '" . $data["Stav_subjektu_RCNS"] . "', '" . $data["Nazev_CPO"] . "', '" . $data["Typ_CNS"] . "', '" . $data["Zkr_statu"] . "', '" . $data["Nazev_PF"] . "', "
-			. $data["ID_adresy"] . ", '" . $data["Nazev_obce"] . "', '" . $data["Nazev_ulice"] . "', '" . $data["Cislo_do_adresy"] . "', " . $data["PSC"] . ", '" . $data["Zrizovatel"] . "', '"
+			. $data["ID_adresy"] . ", '" . $data["Nazev_obce"] . "' , '" . $data["Nazev_casti_obce"] . "', '" . $data["Nazev_ulice"] . "', '" . $data["Cislo_do_adresy"] . "', " . $data["PSC"] . ", '" . $data["Zrizovatel"] . "', '"
 			. $data["Zvlastni_prava"] . "', '" . $data["Datum_vzniku"] . "')";
 			if (!mysqli_query($conn, $sql)) {
 				throw new ExDataClassInsertDataDBInsert;
@@ -353,7 +375,7 @@ every subject
 			return 0;
 		}
 
-
+/*
 		$sql = "CREATE INDEX index_obec_ulice_cp_psc ON RUIAN_data (Nazev_obce, Nazev_ulice, Cislo_do_adresy, PSC)";
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se vytvorit klic index_obec_ulice_cp_psc v tabulce RUIAN_data";
@@ -369,7 +391,7 @@ every subject
 			mysqli_close($conn);
 			exit;
 		}
-
+*/
 		$sql = 'CREATE TABLE ' . $tableNameCirkveSpatial . ' AS
 		SELECT ' . $tableNameCirkve . '.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X
 		FROM ' . $tableNameCirkve . '
@@ -386,9 +408,10 @@ every subject
 			return 0;
 		}
 		echo "ok - CREATE TABLE " . $tableNameCirkveSpatial . "<BR>";
+		echo $sql . "<br>";
 
-		$sql = "UPDATE " . $tableNameCirkve . " AS t1
-		INNER JOIN ( SELECT ICO, Nazev_CPO, Zvlastni_prava FROM cirkve_aktivni) AS t2
+		$sql = "UPDATE " . $tableNameCirkveSpatial . " AS t1
+		INNER JOIN ( SELECT ICO, Nazev_CPO, Zvlastni_prava FROM " . $tableNameCirkveSpatial . ") AS t2
 		SET t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava
 		WHERE t2.ICO = t1.Zrizovatel;";
 
@@ -399,7 +422,7 @@ every subject
 			return 0;
 		}
 		echo "ok - UPDATE TABLE " . $tableNameCirkveSpatial . "<BR>";
-
+		echo $sql . "<br>";
 
 
 		return 1;
