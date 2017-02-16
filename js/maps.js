@@ -25,10 +25,10 @@ var mousePositionControl = new ol.control.MousePosition({
 var text = new ol.style.Text ({text: 'text'});
 
 //$(document).ready(function() {
-  var urlJSON = $("#display").keyup(function() {
-    var myurl = 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val();
-    return myurl;
-  });
+//  var urlJSON = $("#display").keyup(function() {
+//    var myurl = 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val();
+//    return myurl;
+//  });
 //});
 
 var layers = [
@@ -78,4 +78,16 @@ map.on('singleclick', function(e) {
     var infoElement = document.getElementById('info');
     infoElement.innerHTML = feature.get('Nazev_CPO') + '<br>' + feature.get('Nazev_ulice') + ' ' + feature.get('Cislo_do_adresy') + '<br>' + feature.get('PSC') + '<br>' + feature.get('Zrizovatel_text') + '<br>' + feature.get('Zvlastni_prava');
   }
+});
+
+$("#display").keyup(function() {
+//  var myUrl = 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val();
+  var s = new ol.source.Vector({
+//    url: myUrl,
+    url: 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val(),
+    format: new ol.format.GeoJSON()
+  });
+
+  l = map.getLayers().getArray()[1];
+  l.setSource(s);
 });
