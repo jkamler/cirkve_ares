@@ -30,7 +30,8 @@ class geoJSONClass {
                   'Zrizovatel_text' => $row['Zrizovatel_text'],
                   'Cislo_do_adresy' => $row['Cislo_do_adresy'],
                   'PSC' => $row['PSC'],
-                  'Zvlastni_prava' => $row['Zvlastni_prava'],                  
+                  'Zrizovatel_text' => $row['Zrizovatel_text'],
+                  'Zvlastni_prava' => $row['Zvlastni_prava'],
                   'Datum_vzniku' => $row['Datum_vzniku']
                   )
               );
@@ -69,6 +70,7 @@ Selects data from table containing attributes and x,y
 			}
 			mysqli_set_charset($conn, 'utf8');
   		$sql = "SELECT * FROM $tableName WHERE " . $cond . ";";
+//      echo $sql;
       $result = mysqli_query($conn, $sql);
       if (!$result) {
 				throw new ExGeoJSONClassGetDataDBInsert;

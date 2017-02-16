@@ -148,7 +148,9 @@ class dataClass {
 *****************************************************************/
 
 	function createARESTable() {
-		/*column "Zrizovatel_text" does not exist, it will be updated*/
+		/*column "Zrizovatel_text" does not exist, it will be updated
+			PSC_RES - at RES is different PSC then in CNS
+		*/
 		$sql = "CREATE TABLE `cirkve` (
 	  `ICO` varchar(8) COLLATE utf8_czech_ci NOT NULL,
 	  `Stav_subjektu_RCNS` varchar(200) COLLATE utf8_czech_ci,
@@ -162,6 +164,7 @@ class dataClass {
 	  `Nazev_ulice` varchar(200) COLLATE utf8_czech_ci,
 	  `Cislo_do_adresy` varchar(200) COLLATE utf8_czech_ci,
 	  `PSC` int(11) DEFAULT NULL,
+	  `PSC_RES` int(11) DEFAULT NULL,
 	  `Zrizovatel` varchar(200) COLLATE utf8_czech_ci,
 	  `Zrizovatel_text` varchar(200) COLLATE utf8_czech_ci,
 	  `Zvlastni_prava` varchar(1000) COLLATE utf8_czech_ci,
@@ -231,8 +234,9 @@ class dataClass {
 
 			//data from statistického registru RES
 			//we are interested in this node ... in previous register is not Nazev_casti_obce
-			// - without this info I am unable connect cirkevni table with data from RUIAN
-			$XMLnodes = array("Nazev_casti_obce");
+			// - without this info I am unable connect cirkevni table with data from RUIAN.
+			//In RES is different PSC
+			$XMLnodes = array("Nazev_casti_obce", "PSC");
 
 			$str = "http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=" . $myIC . "&ver=1.0.0";
 
@@ -241,9 +245,13 @@ class dataClass {
 			if (!$domOb->load($str)) {
 				throw new ExDataClassLoadXML;
 			}
-			//looping through array
+			//looping through array ... with only one item ... so far
 			foreach ($XMLnodes as $nodeName) {
 				 $value = $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
+				 if ($nodeName == "PSC") {
+				 	 $res_arr["PSC_RES"] = $value;
+					 continue;
+				 }
 				 //adding node name and node value to associative array
 				 $res_arr[$nodeName] = $value;
 			}
@@ -288,10 +296,10 @@ class dataClass {
 
 			mysqli_set_charset($conn, 'utf8');
 
-			$sql = "INSERT INTO cirkve(ICO, Stav_subjektu_RCNS, Nazev_CPO, Typ_CNS, Zkr_statu, Nazev_PF, ID_adresy, Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, PSC, Zrizovatel, Zvlastni_prava, Datum_vzniku)
+			$sql = "INSERT INTO cirkve(ICO, Stav_subjektu_RCNS, Nazev_CPO, Typ_CNS, Zkr_statu, Nazev_PF, ID_adresy, Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, PSC, PSC_RES, Zrizovatel, Zvlastni_prava, Datum_vzniku)
 			VALUES ('" . $data["ICO"] . "', '" . $data["Stav_subjektu_RCNS"] . "', '" . $data["Nazev_CPO"] . "', '" . $data["Typ_CNS"] . "', '" . $data["Zkr_statu"] . "', '" . $data["Nazev_PF"] . "', "
-			. $data["ID_adresy"] . ", '" . $data["Nazev_obce"] . "' , '" . $data["Nazev_casti_obce"] . "', '" . $data["Nazev_ulice"] . "', '" . $data["Cislo_do_adresy"] . "', " . $data["PSC"] . ", '" . $data["Zrizovatel"] . "', '"
-			. $data["Zvlastni_prava"] . "', '" . $data["Datum_vzniku"] . "')";
+			. $data["ID_adresy"] . ", '" . $data["Nazev_obce"] . "' , '" . $data["Nazev_casti_obce"] . "', '" . $data["Nazev_ulice"] . "', '" . $data["Cislo_do_adresy"] . "', " . $data["PSC"] . ", "
+			. $data["PSC_RES"] . ", '" . $data["Zrizovatel"] . "', '" . $data["Zvlastni_prava"] . "', '" . $data["Datum_vzniku"] . "')";
 			if (!mysqli_query($conn, $sql)) {
 				throw new ExDataClassInsertDataDBInsert;
 			}
@@ -343,6 +351,7 @@ class dataClass {
       			<th>" . $row["Nazev_CPO"]. "</th>
       			<th>" . $row["Stav_subjektu_RCNS"]. "</th>
       			<th>" . $row["Nazev_obce"]. "</th>
+      			<th>" . $row["Nazev_casti_obce"]. "</th>
       			<th>" . $row["Zrizovatel"]. "</th>
       			<th>" . $row["Datum_vzniku"] . "</th>
       			<th>" . $row["Zvlastni_prava"] . "</th>
@@ -375,8 +384,7 @@ every subject
 			return 0;
 		}
 
-/*
-		$sql = "CREATE INDEX index_obec_ulice_cp_psc ON RUIAN_data (Nazev_obce, Nazev_ulice, Cislo_do_adresy, PSC)";
+		$sql = "CREATE INDEX index_obec_cast_obce_ulice_cp_psc ON RUIAN_data (Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, PSC)";
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se vytvorit klic index_obec_ulice_cp_psc v tabulce RUIAN_data";
 			echo "<BR>" . $sql;
@@ -384,22 +392,23 @@ every subject
 			exit;
 		}
 
-		$sql = "CREATE INDEX index_obec_ulice_cp ON RUIAN_data (Nazev_obce, Nazev_ulice, Cislo_do_adresy)";
+		$sql = "CREATE INDEX index_obec_cast_obce_ulice_cp ON RUIAN_data (Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy)";
 		if (!mysqli_query($conn, $sql)) {
-			echo "nepovedlo se vytvorit klic index_obec_ulice_cp v tabulce RUIAN_data";
+			echo "nepovedlo se vytvorit klic index_obec_cast_obce_ulice_cp v tabulce RUIAN_data";
 			echo "<BR>" . $sql;
 			mysqli_close($conn);
 			exit;
 		}
-*/
+
 		$sql = 'CREATE TABLE ' . $tableNameCirkveSpatial . ' AS
 		SELECT ' . $tableNameCirkve . '.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X
 		FROM ' . $tableNameCirkve . '
 		LEFT JOIN RUIAN_data
 		ON ' . $tableNameCirkve . '.Nazev_obce = RUIAN_data.Nazev_obce
+		AND ' . $tableNameCirkve . '.Nazev_casti_obce = RUIAN_data.Nazev_casti_obce
 		AND ' . $tableNameCirkve . '.Nazev_ulice = RUIAN_data.Nazev_ulice
 		AND ' . $tableNameCirkve . '.Cislo_do_adresy LIKE RUIAN_data.Cislo_do_adresy
-		AND ' . $tableNameCirkve . '.PSC = RUIAN_data.PSC;';
+		AND ' . $tableNameCirkve . '.PSC_RES = RUIAN_data.PSC;';
 
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se spojeni cirkevni a RUIAN tabulky";
@@ -410,6 +419,7 @@ every subject
 		echo "ok - CREATE TABLE " . $tableNameCirkveSpatial . "<BR>";
 		echo $sql . "<br>";
 
+// update of zvlastni prava and name of founder. This info is logged only for founder
 		$sql = "UPDATE " . $tableNameCirkveSpatial . " AS t1
 		INNER JOIN ( SELECT ICO, Nazev_CPO, Zvlastni_prava FROM " . $tableNameCirkveSpatial . ") AS t2
 		SET t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava

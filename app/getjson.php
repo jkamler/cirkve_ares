@@ -2,6 +2,8 @@
 include "app_class/geoJSONClass.php";
 
 $myJSON = new geoJSONClass;
+
+$cond = $_GET["query"];
 /*
 $data = '
 {
@@ -13,7 +15,9 @@ $data = '
 }
 ';
 */
-$data = $myJSON->getData("cirkve_aktivni_spatial", "1");
+$query = 'Nazev_CPO LIKE ' . '"%' . $cond . '%"';
+//echo $query;
+$data = $myJSON->getData("cirkve_aktivni_spatial", $query);
 //var_dump($data);
 
 $result = $myJSON->writeGeoJSON($data);

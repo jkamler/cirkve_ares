@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script type="text/javascript">
+
+  $(document).ready(function() {
+    $("#display").keyup(function() {
+//      alert("app/getjson.php?query=" + $("#display").val());
+      $.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: "app/getjson.php" +"?query="+ $("#display").val(),
+        dataType: "html",   //expect html to be returned
+        success: function(response){
+            $("#responsecontainer").html(response);
+        }
+      });
+    });
+  });
+
+</script>
+
+<body>
+  <input type="text" id="display" value="Display All Data" />
+  <div id="responsecontainer" style="border:1px solid black">test</div>
+</body>
+</html>

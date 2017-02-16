@@ -9,6 +9,7 @@ var projection = new ol.proj.Projection({
   code: 'EPSG:5514',
   units: 'm'
 });
+
 ol.proj.addProjection(projection);
 
 var mousePositionControl = new ol.control.MousePosition({
@@ -23,6 +24,13 @@ var mousePositionControl = new ol.control.MousePosition({
 
 var text = new ol.style.Text ({text: 'text'});
 
+//$(document).ready(function() {
+  var urlJSON = $("#display").keyup(function() {
+    var myurl = 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val();
+    return myurl;
+  });
+//});
+
 var layers = [
   new ol.layer.Tile({
     source: new ol.source.TileWMS({
@@ -34,8 +42,10 @@ var layers = [
   new ol.layer.Vector({
     title: 'Body',
     source: new ol.source.Vector({
-      url: 'http://localhost/cirkve_ares/app/getjson.php',
+//      url: urlJSON,
+      url: 'http://localhost/cirkve_ares/app/getjson.php?query=olomouc',
       format: new ol.format.GeoJSON()
+//    }),
     }),
     style: new ol.style.Style({
       image: new ol.style.Circle({
@@ -47,6 +57,7 @@ var layers = [
   })
 ];
 
+
 var map = new ol.Map({
 controls: ol.control.defaults().extend([mousePositionControl]),
   layers: layers,
@@ -54,7 +65,7 @@ controls: ol.control.defaults().extend([mousePositionControl]),
   view: new ol.View({
     center: [0,0],
     zoom: 4,
-projection: projection
+    projection: projection
   })
 });
 
@@ -65,6 +76,6 @@ map.on('singleclick', function(e) {
   if (feature) { // if feature returned, show info
     $("#info_wrapper").show();
     var infoElement = document.getElementById('info');
-    infoElement.innerHTML = feature.get('Nazev_CPO') + '<br>' + feature.get('Nazev_ulice') + ' ' + feature.get('Cislo_do_adresy') + '<br>' + feature.get('Nazev_obce');
+    infoElement.innerHTML = feature.get('Nazev_CPO') + '<br>' + feature.get('Nazev_ulice') + ' ' + feature.get('Cislo_do_adresy') + '<br>' + feature.get('PSC') + '<br>' + feature.get('Zrizovatel_text') + '<br>' + feature.get('Zvlastni_prava');
   }
 });

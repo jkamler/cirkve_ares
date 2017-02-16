@@ -1,22 +1,3 @@
-Adresa z ARESu - cirkve s priznakem "b"
-73635804 	Aktivní 	Církev víry, sbor Ostrava 	Církevní právnická osoba 	CZE 		35035 	Havířov 	Dlouhá třída 	1171/99b 	73601 	73635715 		2012-07-02
-73634174 	Aktivní 	Buddhismus Diamantové cesty linie Karma Kagjü 	Církev 	CZE 	Církevní organizace 	49727 	Praha 	Na Maninách 	1288/17a 	17000 			2007-06-08
-64327680 	Aktivní 	Římskokatolická farnost u kostela Nejsvětější Troj... 	Církevní právnická osoba 	CZE 		43140 	Brno 	Metodějova 	13/2a 	61200 	00445142 		1994-07-01
-60163291 	Aktivní 	Náboženská společnost Svědkové Jehovovi 	Církev 	CZE 	Církevní organizace 	55517 	Praha 	Armády 	1306/2b 	15800 	Vyučovat náboženství na státních školách Pověřit... 	1993-09-01
-73634981 	Aktivní 	Církev Nová naděje sbor Jeseník 	Církevní právnická osoba 	CZE 		54436 	Jeseník 	Tovární 	1332/1a 	79001 	73634891 		2009-10-01
-62160931 	Aktivní 	Náboženská obec Církve československé husitské v B... 	Církevní právnická osoba 	CZE 		56604 	Brno 	Svatopluka Čecha 	1405/35a 	61200 	62160974 		1994-01-0101
-48430625 	Aktivní 	Římskokatolická farnost Kopřivnice 	Církevní právnická osoba 	CZE 		50750 	Kopřivnice 	Štramberská 	168/20A 	74221 	65468953 		1994-07-01
-67029884 	Aktivní 	Farnost Evangelické církve metodistické v Mikulově 	Církevní právnická osoba 	CZE 		50116 	Mikulov 	Purkyňova 	1700/2a 	69201 	00445240 		1994-01-01
-26522659 	Aktivní 	Klášter kapucínů Praha - Nové Město 	Církevní právnická osoba 	CZE 		56587 	Praha 	Na poříčí 	2111/1a 	11000 	00406465 		2002-05-16
-73635430 	Aktivní 	Farní charita Plzeň - Západ 	Církevní právnická osoba 	CZE 		49932 	Plzeň 	Francouzská třída 	2484/40a 	32600 	45334439 		2011-02-03
-45334692 	Aktivní 	Městská charita Plzeň 	Církevní právnická osoba 	CZE 		54496 	Plzeň 	Francouzská třída 	2484/40a 	32600 	45334439 		1996-10-30
-70417831 	Aktivní 	Místní komunita Salesiánů Dona Boska v Brně - Líšn... 	Církevní právnická osoba 	CZE 		48426 	Brno 	Horníkova 	2533/34a 	62800 	00406929 		1999-12-02
-18235077 	Aktivní 	Římskokatolická farnost Mariánské Lázně 	Církevní právnická osoba 	CZE 		55900 	Mariánské Lázně 	Nehrova 	26/3a 	35301 	45334439 		1994-07-01
-73634069 	Aktivní 	Římskokatolická farnost Ostrava - Pustkovec 	Církevní právnická osoba 	CZE 		48280 	Ostrava 	Pustkovecká 	350/32b 	70800 	65468953 		2007-01-01
-00460541 	Aktivní 	Křesťanské sbory 	Církev 	CZE 	Církevní organizace 	55507 	Brno 	Šámalova 	3915/15a 	61500 Konat obřady, při nichž jsou uzavírány církevní s... 	1991-09-01
-69649421 	Aktivní 	Křesťanský sbor Brno 	Církevní právnická osoba 	CZE 		55095 	Brno 	Šámalova 	3915/15a 	61500 	00460541 		1994-01-01
-... a dalsi
-
 nepripojne
 cirkve_spatial
  ICO 	  Stav_subjektu_RCNS 	Nazev_CPO 	       Typ_CNS 	                 Zkr_statu 	Nazev_PF 	ID_adresy 	Nazev_obce 	Nazev_ulice 	Cislo_do_adresy 	PSC 	Zrizovatel 	Zvlastni_prava 	Datum_vzniku 	Souradnice_Y Vzestupně 1 	Souradnice_X
@@ -26,10 +7,9 @@ RUIAN_data
 Kod_ADM 	Kod_obce 	Nazev_obce 	Nazev_MOMC 	Nazev_MOP 	Kod_casti_obce 	Nazev_casti_obce 	Nazev_ulice Sestupně 1 	Typ_SO 	Cislo_domovni 	Cislo_orientacni 	Znak_cisla_orientacniho 	PSC 	Souradnice_Y 	Souradnice_X 	Plati_Od 	         Cislo_do_adresy
 22002227 	554782 	  Praha 	   Praha 5 	   Praha 5 	   400289 	      Hlubočepy 	       Žvahovská 	               č.p. 	401 	           7 		                                      15200 	744991.00 	1047564.00 	2013-12-10T00:00:00 	401/7
 
-update cirkve_aktivni as t1 inner join ( select ICO, Nazev_CPO, Zvlastni_prava from cirkve_aktivni) as t2 set t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava where t2.ICO = Zrizovatel
-update cirkve_aktivni as t1 inner join ( select ICO, Nazev_CPO, Zvlastni_prava from cirkve_aktivni) as t2 set t1.Zrizovatel_text = t2.Nazev_CPO, t1.Zvlastni_prava = t2.Zvlastni_prava where t2.ICO = t1.Zrizovatel
 
-Problem
+
+Problem - nemam z aresu nazev casti obce, musim to vzit z RES
 73633763 	Aktivní 	Sekulární institut Krista Velekněze 	Církevní právnická osoba 	CZE 		52222 	Bílá Voda 		1 	79069 	65468953 	NULL		2005-12-27
 
 5908671 	525227 	Bílá Voda 			4022 	Kamenička 		č.p. 	1 			79069 	561139.84 	1025385.84 	2013-12-04T00:00:00 	1

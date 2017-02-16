@@ -1,16 +1,3493 @@
- 
+
 Exception - nepovedlo se vlozit IC od DB 
+49440560
+Exception - nepovedlo se vlozit IC od DB 
+46457755
+Exception - nepovedlo se vlozit IC od DB 
+49561685
+Exception - nepovedlo se vlozit IC od DB 
+67443869
+Exception - nepovedlo se vlozit IC od DB 
+64243443
+Exception - nepovedlo se vlozit IC od DB 
+49543016
+Exception - nepovedlo se vlozit IC od DB 
+61729931
+Exception - nepovedlo se vlozit IC od DB 
+60104686
+Exception - nepovedlo se vlozit IC od DB 
+49440748
+Exception - nepovedlo se vlozit IC od DB 
+47733918
+Exception - nepovedlo se vlozit IC od DB 
+47795760
+Exception - nepovedlo se vlozit IC od DB 
+60104317
+Exception - nepovedlo se vlozit IC od DB 
+46956484
+Exception - nepovedlo se vlozit IC od DB 
+68405464
+Exception - nepovedlo se vlozit IC od DB 
+62769146
+Exception - nepovedlo se vlozit IC od DB 
+62237870
+Exception - nepovedlo se vlozit IC od DB 
+65025628
+Exception - nepovedlo se vlozit IC od DB 
+66344204
+Exception - nepovedlo se vlozit IC od DB 
+63557631
+Exception - nepovedlo se vlozit IC od DB 
+61345482
+Exception - nepovedlo se vlozit IC od DB 
+67675948
+Exception - nepovedlo se vlozit IC od DB 
+64813827
+Exception - nepovedlo se vlozit IC od DB 
+48927643
+Exception - nepovedlo se vlozit IC od DB 
+68407475
+Exception - nepovedlo se vlozit IC od DB 
+70817910
+Exception - nepovedlo se vlozit IC od DB 
+48427721
+Exception - nepovedlo se vlozit IC od DB 
+64018121
+Exception - nepovedlo se vlozit IC od DB 
+63804859
+Exception - nepovedlo se vlozit IC od DB 
+63893941
+Exception - nepovedlo se vlozit IC od DB 
+47721537
+Exception - nepovedlo se vlozit IC od DB 
+66288096
+Exception - nepovedlo se vlozit IC od DB 
+43378889
+Exception - nepovedlo se vlozit IC od DB 
+44470223
+Exception - nepovedlo se vlozit IC od DB 
+48842541
+Exception - nepovedlo se vlozit IC od DB 
+47810467
+Exception - nepovedlo se vlozit IC od DB 
+66185343
+Exception - nepovedlo se vlozit IC od DB 
+64201716
+Exception - nepovedlo se vlozit IC od DB 
+64125661
+Exception - nepovedlo se vlozit IC od DB 
+65804627
+Exception - nepovedlo se vlozit IC od DB 
+44557116
+Exception - nepovedlo se vlozit IC od DB 
+60253932
+Exception - nepovedlo se vlozit IC od DB 
+47813636
+Exception - nepovedlo se vlozit IC od DB 
+47810505
+Exception - nepovedlo se vlozit IC od DB 
+48739511
+Exception - nepovedlo se vlozit IC od DB 
+48427934
+Exception - nepovedlo se vlozit IC od DB 
+67341888
+Exception - nepovedlo se vlozit IC od DB 
+65760131
+Exception - nepovedlo se vlozit IC od DB 
+60680067
+Exception - nepovedlo se vlozit IC od DB 
+62075225
+Exception - nepovedlo se vlozit IC od DB 
+66598907
+Exception - nepovedlo se vlozit IC od DB 
+68380470
+Exception - nepovedlo se vlozit IC od DB 
+62727397
+Exception - nepovedlo se vlozit IC od DB 
+66342465
+Exception - nepovedlo se vlozit IC od DB 
+48471721
+Exception - nepovedlo se vlozit IC od DB 
+63782855
+Exception - nepovedlo se vlozit IC od DB 
+48427730
+Exception - nepovedlo se vlozit IC od DB 
+64269515
+Exception - nepovedlo se vlozit IC od DB 
+48427641
+Exception - nepovedlo se vlozit IC od DB 
+60154331
+Exception - nepovedlo se vlozit IC od DB 
+48664570
+Exception - nepovedlo se vlozit IC od DB 
+49520172
+Exception - nepovedlo se vlozit IC od DB 
+61896349
+Exception - nepovedlo se vlozit IC od DB 
+49440632
+Exception - nepovedlo se vlozit IC od DB 
+47489855
+Exception - nepovedlo se vlozit IC od DB 
+48772054
+Exception - nepovedlo se vlozit IC od DB 
+26520559
+Exception - nepovedlo se vlozit IC od DB 
+64707512
+Exception - nepovedlo se vlozit IC od DB 
+69174296
+Exception - nepovedlo se vlozit IC od DB 
+26521768
+Exception - nepovedlo se vlozit IC od DB 
+48430641
+Exception - nepovedlo se vlozit IC od DB 
+46749519
+Exception - nepovedlo se vlozit IC od DB 
+65041623
+Exception - nepovedlo se vlozit IC od DB 
+48739651
+Exception - nepovedlo se vlozit IC od DB 
+65019113
+Exception - nepovedlo se vlozit IC od DB 
+44164122
+Exception - nepovedlo se vlozit IC od DB 
+64125751
+Exception - nepovedlo se vlozit IC od DB 
+69114404
+Exception - nepovedlo se vlozit IC od DB 
+60336200
+Exception - nepovedlo se vlozit IC od DB 
+67024718
+Exception - nepovedlo se vlozit IC od DB 
+62769294
+Exception - nepovedlo se vlozit IC od DB 
+47810530
+Exception - nepovedlo se vlozit IC od DB 
+65025521
+Exception - nepovedlo se vlozit IC od DB 
+65264428
+Exception - nepovedlo se vlozit IC od DB 
+65265807
+Exception - nepovedlo se vlozit IC od DB 
+63257882
+Exception - nepovedlo se vlozit IC od DB 
+65025539
+Exception - nepovedlo se vlozit IC od DB 
+47920980
+Exception - nepovedlo se vlozit IC od DB 
+48739731
+Exception - nepovedlo se vlozit IC od DB 
+64018091
+Exception - nepovedlo se vlozit IC od DB 
+49561766
+Exception - nepovedlo se vlozit IC od DB 
+64814360
+Exception - nepovedlo se vlozit IC od DB 
+49747576
+Exception - nepovedlo se vlozit IC od DB 
+63438747
+Exception - nepovedlo se vlozit IC od DB 
+61345440
+Exception - nepovedlo se vlozit IC od DB 
+15060551
+Exception - nepovedlo se vlozit IC od DB 
+48770817
+Exception - nepovedlo se vlozit IC od DB 
+63913232
+Exception - nepovedlo se vlozit IC od DB 
+64018148
+Exception - nepovedlo se vlozit IC od DB 
+65339550
+Exception - nepovedlo se vlozit IC od DB 
+18608787
+Exception - nepovedlo se vlozit IC od DB 
+49440616
+Exception - nepovedlo se vlozit IC od DB 
+60096527
+Exception - nepovedlo se vlozit IC od DB 
+65025610
+Exception - nepovedlo se vlozit IC od DB 
+65715110
+Exception - nepovedlo se vlozit IC od DB 
+68999798
+Exception - nepovedlo se vlozit IC od DB 
+47814501
+Exception - nepovedlo se vlozit IC od DB 
+46749233
+Exception - nepovedlo se vlozit IC od DB 
+49296086
+Exception - nepovedlo se vlozit IC od DB 
+47930454
+Exception - nepovedlo se vlozit IC od DB 
+46307851
+Exception - nepovedlo se vlozit IC od DB 
+62181416
+Exception - nepovedlo se vlozit IC od DB 
+63913526
+Exception - nepovedlo se vlozit IC od DB 
+64268292
+Exception - nepovedlo se vlozit IC od DB 
+67027512
+Exception - nepovedlo se vlozit IC od DB 
+47084341
+Exception - nepovedlo se vlozit IC od DB 
+64039501
+Exception - nepovedlo se vlozit IC od DB 
+48808008
+Exception - nepovedlo se vlozit IC od DB 
+64203204
+Exception - nepovedlo se vlozit IC od DB 
+60154527
+Exception - nepovedlo se vlozit IC od DB 
+46256610
+Exception - nepovedlo se vlozit IC od DB 
+47863048
+Exception - nepovedlo se vlozit IC od DB 
+70826005
+Exception - nepovedlo se vlozit IC od DB 
+61924563
+Exception - nepovedlo se vlozit IC od DB 
+48842702
+Exception - nepovedlo se vlozit IC od DB 
+47998555
+Exception - nepovedlo se vlozit IC od DB 
+64125785
+Exception - nepovedlo se vlozit IC od DB 
+48842460
+Exception - nepovedlo se vlozit IC od DB 
+42887275
+Exception - nepovedlo se vlozit IC od DB 
+63292882
+Exception - nepovedlo se vlozit IC od DB 
+61664618
+Exception - nepovedlo se vlozit IC od DB 
+48896837
+Exception - nepovedlo se vlozit IC od DB 
+69092788
+Exception - nepovedlo se vlozit IC od DB 
+26521776
+Exception - nepovedlo se vlozit IC od DB 
+69085358
+Exception - nepovedlo se vlozit IC od DB 
+62543164
+Exception - nepovedlo se vlozit IC od DB 
+62237837
+Exception - nepovedlo se vlozit IC od DB 
+69099880
+Exception - nepovedlo se vlozit IC od DB 
+62543121
+Exception - nepovedlo se vlozit IC od DB 
+61664561
+Exception - nepovedlo se vlozit IC od DB 
+61239241
+Exception - nepovedlo se vlozit IC od DB 
+47899093
+Exception - nepovedlo se vlozit IC od DB 
+66005361
+Exception - nepovedlo se vlozit IC od DB 
+70862737
+Exception - nepovedlo se vlozit IC od DB 
+49440900
+Exception - nepovedlo se vlozit IC od DB 
+61664511
+Exception - nepovedlo se vlozit IC od DB 
+49461796
+Exception - nepovedlo se vlozit IC od DB 
+47489944
+Exception - nepovedlo se vlozit IC od DB 
+66598885
+Exception - nepovedlo se vlozit IC od DB 
+47922621
+Exception - nepovedlo se vlozit IC od DB 
+68996705
+Exception - nepovedlo se vlozit IC od DB 
+45657122
+Exception - nepovedlo se vlozit IC od DB 
+60801981
+Exception - nepovedlo se vlozit IC od DB 
+46746251
+Exception - nepovedlo se vlozit IC od DB 
+44937750
+Exception - nepovedlo se vlozit IC od DB 
+60102900
+Exception - nepovedlo se vlozit IC od DB 
+62444280
+Exception - nepovedlo se vlozit IC od DB 
+64520561
+Exception - nepovedlo se vlozit IC od DB 
+68435762
+Exception - nepovedlo se vlozit IC od DB 
+65893468
+Exception - nepovedlo se vlozit IC od DB 
+65893484
+Exception - nepovedlo se vlozit IC od DB 
+70825971
+Exception - nepovedlo se vlozit IC od DB 
+49440993
+Exception - nepovedlo se vlozit IC od DB 
+68784791
+Exception - nepovedlo se vlozit IC od DB 
+65942051
+Exception - nepovedlo se vlozit IC od DB 
+62858521
+Exception - nepovedlo se vlozit IC od DB 
+61664600
+Exception - nepovedlo se vlozit IC od DB 
+64125718
+Exception - nepovedlo se vlozit IC od DB 
+47810408
+Exception - nepovedlo se vlozit IC od DB 
+66365074
+Exception - nepovedlo se vlozit IC od DB 
+67007333
+Exception - nepovedlo se vlozit IC od DB 
+64018083
+Exception - nepovedlo se vlozit IC od DB 
+67440070
+Exception - nepovedlo se vlozit IC od DB 
+62451146
+Exception - nepovedlo se vlozit IC od DB 
+61985732
+Exception - nepovedlo se vlozit IC od DB 
+68405481
+Exception - nepovedlo se vlozit IC od DB 
+46311394
+Exception - nepovedlo se vlozit IC od DB 
+49295951
+Exception - nepovedlo se vlozit IC od DB 
+47003588
+Exception - nepovedlo se vlozit IC od DB 
+68999119
+Exception - nepovedlo se vlozit IC od DB 
+26522543
+Exception - nepovedlo se vlozit IC od DB 
+49746332
+Exception - nepovedlo se vlozit IC od DB 
+64809838
+Exception - nepovedlo se vlozit IC od DB 
+61345253
+Exception - nepovedlo se vlozit IC od DB 
+47009748
+Exception - nepovedlo se vlozit IC od DB 
+48739341
+Exception - nepovedlo se vlozit IC od DB 
+63124998
+Exception - nepovedlo se vlozit IC od DB 
+60662689
+Exception - nepovedlo se vlozit IC od DB 
+61234222
+Exception - nepovedlo se vlozit IC od DB 
+48807877
+Exception - nepovedlo se vlozit IC od DB 
+68381476
+Exception - nepovedlo se vlozit IC od DB 
+45599378
+Exception - nepovedlo se vlozit IC od DB 
+48838411
+Exception - nepovedlo se vlozit IC od DB 
+48838462
+Exception - nepovedlo se vlozit IC od DB 
+65041526
+Exception - nepovedlo se vlozit IC od DB 
+70418110
+Exception - nepovedlo se vlozit IC od DB 
+61345261
+Exception - nepovedlo se vlozit IC od DB 
+61345270
+Exception - nepovedlo se vlozit IC od DB 
+65336364
+Exception - nepovedlo se vlozit IC od DB 
+26522551
+Exception - nepovedlo se vlozit IC od DB 
+49747401
+Exception - nepovedlo se vlozit IC od DB 
+66185114
+Exception - nepovedlo se vlozit IC od DB 
+49517295
+Exception - nepovedlo se vlozit IC od DB 
+64243451
+Exception - nepovedlo se vlozit IC od DB 
+49295926
+Exception - nepovedlo se vlozit IC od DB 
+49460901
+Exception - nepovedlo se vlozit IC od DB 
+26522560
+Exception - nepovedlo se vlozit IC od DB 
+65803761
+Exception - nepovedlo se vlozit IC od DB 
+44478887
+Exception - nepovedlo se vlozit IC od DB 
+67341951
+Exception - nepovedlo se vlozit IC od DB 
+64224686
+Exception - nepovedlo se vlozit IC od DB 
+45845077
+Exception - nepovedlo se vlozit IC od DB 
+47922664
+Exception - nepovedlo se vlozit IC od DB 
+65028309
+Exception - nepovedlo se vlozit IC od DB 
+63913879
+Exception - nepovedlo se vlozit IC od DB 
+64018270
+Exception - nepovedlo se vlozit IC od DB 
+49521161
+Exception - nepovedlo se vlozit IC od DB 
+63841070
+Exception - nepovedlo se vlozit IC od DB 
+67177590
+Exception - nepovedlo se vlozit IC od DB 
+48428213
+Exception - nepovedlo se vlozit IC od DB 
+63788306
+Exception - nepovedlo se vlozit IC od DB 
+65041518
+Exception - nepovedlo se vlozit IC od DB 
+64201759
+Exception - nepovedlo se vlozit IC od DB 
+70889287
+Exception - nepovedlo se vlozit IC od DB 
+65050711
+Exception - nepovedlo se vlozit IC od DB 
+46998390
+Exception - nepovedlo se vlozit IC od DB 
+62769855
+Exception - nepovedlo se vlozit IC od DB 
+65941608
+Exception - nepovedlo se vlozit IC od DB 
+64520625
+Exception - nepovedlo se vlozit IC od DB 
+64095584
+Exception - nepovedlo se vlozit IC od DB 
+49295845
+Exception - nepovedlo se vlozit IC od DB 
+46998365
+Exception - nepovedlo se vlozit IC od DB 
+66984327
+Exception - nepovedlo se vlozit IC od DB 
+62726978
+Exception - nepovedlo se vlozit IC od DB 
+65019172
+Exception - nepovedlo se vlozit IC od DB 
+49317911
+Exception - nepovedlo se vlozit IC od DB 
+62237772
+Exception - nepovedlo se vlozit IC od DB 
+65744144
+Exception - nepovedlo se vlozit IC od DB 
+48664723
+Exception - nepovedlo se vlozit IC od DB 
+48739669
+Exception - nepovedlo se vlozit IC od DB 
+65266226
+Exception - nepovedlo se vlozit IC od DB 
+65025547
+Exception - nepovedlo se vlozit IC od DB 
+62352636
+Exception - nepovedlo se vlozit IC od DB 
+62635999
+Exception - nepovedlo se vlozit IC od DB 
+47018551
+Exception - nepovedlo se vlozit IC od DB 
+48380792
+Exception - nepovedlo se vlozit IC od DB 
+18190383
+Exception - nepovedlo se vlozit IC od DB 
+49460897
+Exception - nepovedlo se vlozit IC od DB 
+46402021
+Exception - nepovedlo se vlozit IC od DB 
+66389071
+Exception - nepovedlo se vlozit IC od DB 
+61926787
+Exception - nepovedlo se vlozit IC od DB 
+49460188
+Exception - nepovedlo se vlozit IC od DB 
+46402110
+Exception - nepovedlo se vlozit IC od DB 
+69085391
+Exception - nepovedlo se vlozit IC od DB 
+61743593
+Exception - nepovedlo se vlozit IC od DB 
+26522594
+Exception - nepovedlo se vlozit IC od DB 
+48898805
+Exception - nepovedlo se vlozit IC od DB 
+48898813
+Exception - nepovedlo se vlozit IC od DB 
+48899275
+Exception - nepovedlo se vlozit IC od DB 
+65339045
+Exception - nepovedlo se vlozit IC od DB 
+26522578
+Exception - nepovedlo se vlozit IC od DB 
+70132208
+Exception - nepovedlo se vlozit IC od DB 
+48739472
+Exception - nepovedlo se vlozit IC od DB 
+64243371
+Exception - nepovedlo se vlozit IC od DB 
+43765441
+Exception - nepovedlo se vlozit IC od DB 
+67148085
+Exception - nepovedlo se vlozit IC od DB 
+62797638
+Exception - nepovedlo se vlozit IC od DB 
+48927678
+Exception - nepovedlo se vlozit IC od DB 
+60885696
+Exception - nepovedlo se vlozit IC od DB 
+62726854
+Exception - nepovedlo se vlozit IC od DB 
+46998306
+Exception - nepovedlo se vlozit IC od DB 
+49747398
+Exception - nepovedlo se vlozit IC od DB 
+68999135
+Exception - nepovedlo se vlozit IC od DB 
+62994786
+Exception - nepovedlo se vlozit IC od DB 
+62251376
+Exception - nepovedlo se vlozit IC od DB 
+47918934
+Exception - nepovedlo se vlozit IC od DB 
+48471739
+Exception - nepovedlo se vlozit IC od DB 
+26522586
+Exception - nepovedlo se vlozit IC od DB 
+63787539
+Exception - nepovedlo se vlozit IC od DB 
+65264070
+Exception - nepovedlo se vlozit IC od DB 
+64269345
+Exception - nepovedlo se vlozit IC od DB 
+61743500
+Exception - nepovedlo se vlozit IC od DB 
+43762581
+Exception - nepovedlo se vlozit IC od DB 
+65571771
+Exception - nepovedlo se vlozit IC od DB 
+66344247
+Exception - nepovedlo se vlozit IC od DB 
+44478836
+Exception - nepovedlo se vlozit IC od DB 
+61345431
+Exception - nepovedlo se vlozit IC od DB 
+47224738
+Exception - nepovedlo se vlozit IC od DB 
+69085382
+Exception - nepovedlo se vlozit IC od DB 
+26520648
+Exception - nepovedlo se vlozit IC od DB 
+48430633
+Exception - nepovedlo se vlozit IC od DB 
+46998462
+Exception - nepovedlo se vlozit IC od DB 
+48842613
+Exception - nepovedlo se vlozit IC od DB 
+62450948
+Exception - nepovedlo se vlozit IC od DB 
+70819769
+Exception - nepovedlo se vlozit IC od DB 
+47922672
+Exception - nepovedlo se vlozit IC od DB 
+44557132
+Exception - nepovedlo se vlozit IC od DB 
+46425730
+Exception - nepovedlo se vlozit IC od DB 
+62797824
+Exception - nepovedlo se vlozit IC od DB 
+65041861
+Exception - nepovedlo se vlozit IC od DB 
+66363284
+Exception - nepovedlo se vlozit IC od DB 
+46745556
+Exception - nepovedlo se vlozit IC od DB 
+49314611
+Exception - nepovedlo se vlozit IC od DB 
+65264703
+Exception - nepovedlo se vlozit IC od DB 
+63125005
+Exception - nepovedlo se vlozit IC od DB 
+49746146
+Exception - nepovedlo se vlozit IC od DB 
+68783795
+Exception - nepovedlo se vlozit IC od DB 
+63787989
+Exception - nepovedlo se vlozit IC od DB 
+65051009
+Exception - nepovedlo se vlozit IC od DB 
+69981728
+Exception - nepovedlo se vlozit IC od DB 
+60154381
+Exception - nepovedlo se vlozit IC od DB 
+65041721
+Exception - nepovedlo se vlozit IC od DB 
+62769481
+Exception - nepovedlo se vlozit IC od DB 
+62991566
+Exception - nepovedlo se vlozit IC od DB 
+67798870
+Exception - nepovedlo se vlozit IC od DB 
+48430293
+Exception - nepovedlo se vlozit IC od DB 
+46391509
+Exception - nepovedlo se vlozit IC od DB 
+46998128
+Exception - nepovedlo se vlozit IC od DB 
+65025784
+Exception - nepovedlo se vlozit IC od DB 
+49295870
+Exception - nepovedlo se vlozit IC od DB 
+64201775
+Exception - nepovedlo se vlozit IC od DB 
+48771015
+Exception - nepovedlo se vlozit IC od DB 
+66005353
+Exception - nepovedlo se vlozit IC od DB 
+46402403
+Exception - nepovedlo se vlozit IC od DB 
+44018762
+Exception - nepovedlo se vlozit IC od DB 
+44125917
+Exception - nepovedlo se vlozit IC od DB 
+46998187
+Exception - nepovedlo se vlozit IC od DB 
+61896217
+Exception - nepovedlo se vlozit IC od DB 
+44477422
+Exception - nepovedlo se vlozit IC od DB 
+47699248
+Exception - nepovedlo se vlozit IC od DB 
+65268504
+Exception - nepovedlo se vlozit IC od DB 
+65761031
+Exception - nepovedlo se vlozit IC od DB 
+46406743
+Exception - nepovedlo se vlozit IC od DB 
+48739642
+Exception - nepovedlo se vlozit IC od DB 
+44557124
+Exception - nepovedlo se vlozit IC od DB 
+49561693
+Exception - nepovedlo se vlozit IC od DB 
+15054756
+Exception - nepovedlo se vlozit IC od DB 
+65050975
+Exception - nepovedlo se vlozit IC od DB 
+66341892
+Exception - nepovedlo se vlozit IC od DB 
+66288088
+Exception - nepovedlo se vlozit IC od DB 
+65764064
+Exception - nepovedlo se vlozit IC od DB 
+48428086
+Exception - nepovedlo se vlozit IC od DB 
+26520567
+Exception - nepovedlo se vlozit IC od DB 
+65028236
+Exception - nepovedlo se vlozit IC od DB 
+73634395
+Exception - nepovedlo se vlozit IC od DB 
+26521059
+Exception - nepovedlo se vlozit IC od DB 
+73633771
+Exception - nepovedlo se vlozit IC od DB 
+15890767
+Exception - nepovedlo se vlozit IC od DB 
+73634166
+Exception - nepovedlo se vlozit IC od DB 
+00408026
+Exception - nepovedlo se vlozit IC od DB 
+00406929
+Exception - nepovedlo se vlozit IC od DB 
+03922499
+Exception - nepovedlo se vlozit IC od DB 
+03941582
+Exception - nepovedlo se vlozit IC od DB 
+70866627
+Exception - nepovedlo se vlozit IC od DB 
+70896089
+Exception - nepovedlo se vlozit IC od DB 
+67340296
+Exception - nepovedlo se vlozit IC od DB 
+73635723
+Exception - nepovedlo se vlozit IC od DB 
+03009211
+Exception - nepovedlo se vlozit IC od DB 
+66364060
+Exception - nepovedlo se vlozit IC od DB 
+73633127
+Exception - nepovedlo se vlozit IC od DB 
+00487597
+Exception - nepovedlo se vlozit IC od DB 
+73634140
+Exception - nepovedlo se vlozit IC od DB 
+73634158
+Exception - nepovedlo se vlozit IC od DB 
+70943206
+Exception - nepovedlo se vlozit IC od DB 
+26520834
+Exception - nepovedlo se vlozit IC od DB 
+66365228
+Exception - nepovedlo se vlozit IC od DB 
+70852634
+Exception - nepovedlo se vlozit IC od DB 
+70886881
+Exception - nepovedlo se vlozit IC od DB 
+73631680
+Exception - nepovedlo se vlozit IC od DB 
+63554381
+Exception - nepovedlo se vlozit IC od DB 
+05091675
+Exception - nepovedlo se vlozit IC od DB 
+26521695
+Exception - nepovedlo se vlozit IC od DB 
+45659541
+Exception - nepovedlo se vlozit IC od DB 
+73635707
+Exception - nepovedlo se vlozit IC od DB 
+66111064
+Exception - nepovedlo se vlozit IC od DB 
+68455607
+Exception - nepovedlo se vlozit IC od DB 
+66112176
+Exception - nepovedlo se vlozit IC od DB 
+68148003
+Exception - nepovedlo se vlozit IC od DB 
+68917015
+Exception - nepovedlo se vlozit IC od DB 
+60160837
+Exception - nepovedlo se vlozit IC od DB 
+73635499
+Exception - nepovedlo se vlozit IC od DB 
+03008444
+Exception - nepovedlo se vlozit IC od DB 
+73635481
+Exception - nepovedlo se vlozit IC od DB 
+67981020
+Exception - nepovedlo se vlozit IC od DB 
+61380121
+Exception - nepovedlo se vlozit IC od DB 
+48136034
+Exception - nepovedlo se vlozit IC od DB 
+73633534
+Exception - nepovedlo se vlozit IC od DB 
+70894019
+Exception - nepovedlo se vlozit IC od DB 
+73633801
+Exception - nepovedlo se vlozit IC od DB 
+49742078
+Exception - nepovedlo se vlozit IC od DB 
+26521709
+Exception - nepovedlo se vlozit IC od DB 
+65496892
+Exception - nepovedlo se vlozit IC od DB 
+63557428
+Exception - nepovedlo se vlozit IC od DB 
+70852065
+Exception - nepovedlo se vlozit IC od DB 
+26520770
+Exception - nepovedlo se vlozit IC od DB 
+66111528
+Exception - nepovedlo se vlozit IC od DB 
+63696967
+Exception - nepovedlo se vlozit IC od DB 
+64123766
+Exception - nepovedlo se vlozit IC od DB 
+68244479
+Exception - nepovedlo se vlozit IC od DB 
+65823460
+Exception - nepovedlo se vlozit IC od DB 
+05055431
+Exception - nepovedlo se vlozit IC od DB 
+73632392
+Exception - nepovedlo se vlozit IC od DB 
+73635472
+Exception - nepovedlo se vlozit IC od DB 
+26522012
+Exception - nepovedlo se vlozit IC od DB 
+70950466
+Exception - nepovedlo se vlozit IC od DB 
+70284920
+Exception - nepovedlo se vlozit IC od DB 
+73632406
+Exception - nepovedlo se vlozit IC od DB 
+70949743
+Exception - nepovedlo se vlozit IC od DB 
+70944792
+Exception - nepovedlo se vlozit IC od DB 
+70417997
+Exception - nepovedlo se vlozit IC od DB 
+70929998
+Exception - nepovedlo se vlozit IC od DB 
+70944806
+Exception - nepovedlo se vlozit IC od DB 
+66145538
+Exception - nepovedlo se vlozit IC od DB 
+64122867
+Exception - nepovedlo se vlozit IC od DB 
+64422496
+Exception - nepovedlo se vlozit IC od DB 
+70936773
+Exception - nepovedlo se vlozit IC od DB 
+63778637
+Exception - nepovedlo se vlozit IC od DB 
+26522608
+Exception - nepovedlo se vlozit IC od DB 
+70812306
+Exception - nepovedlo se vlozit IC od DB 
+26522683
+Exception - nepovedlo se vlozit IC od DB 
+65890817
+Exception - nepovedlo se vlozit IC od DB 
+73632481
+Exception - nepovedlo se vlozit IC od DB 
+26522641
+Exception - nepovedlo se vlozit IC od DB 
+68983662
+Exception - nepovedlo se vlozit IC od DB 
+26521377
+Exception - nepovedlo se vlozit IC od DB 
+26521806
+Exception - nepovedlo se vlozit IC od DB 
+70234787
+Exception - nepovedlo se vlozit IC od DB 
+26521474
+Exception - nepovedlo se vlozit IC od DB 
+73632422
+Exception - nepovedlo se vlozit IC od DB 
+73632431
+Exception - nepovedlo se vlozit IC od DB 
+65493877
+Exception - nepovedlo se vlozit IC od DB 
+65494288
+Exception - nepovedlo se vlozit IC od DB 
+73632961
+Exception - nepovedlo se vlozit IC od DB 
+73632449
+Exception - nepovedlo se vlozit IC od DB 
+69206058
+Exception - nepovedlo se vlozit IC od DB 
+26521521
+Exception - nepovedlo se vlozit IC od DB 
+64479218
+Exception - nepovedlo se vlozit IC od DB 
+64422534
+Exception - nepovedlo se vlozit IC od DB 
+26522675
+Exception - nepovedlo se vlozit IC od DB 
+73632457
+Exception - nepovedlo se vlozit IC od DB 
+70939489
+Exception - nepovedlo se vlozit IC od DB 
+64668690
+Exception - nepovedlo se vlozit IC od DB 
+64806987
+Exception - nepovedlo se vlozit IC od DB 
+73634719
+Exception - nepovedlo se vlozit IC od DB 
+70935050
+Exception - nepovedlo se vlozit IC od DB 
+26521466
+Exception - nepovedlo se vlozit IC od DB 
+73632261
+Exception - nepovedlo se vlozit IC od DB 
+70925194
+Exception - nepovedlo se vlozit IC od DB 
+64668673
+Exception - nepovedlo se vlozit IC od DB 
+69156565
+Exception - nepovedlo se vlozit IC od DB 
+64122875
+Exception - nepovedlo se vlozit IC od DB 
+62731068
+Exception - nepovedlo se vlozit IC od DB 
+70939276
+Exception - nepovedlo se vlozit IC od DB 
+73635456
+Exception - nepovedlo se vlozit IC od DB 
+63443295
+Exception - nepovedlo se vlozit IC od DB 
+26522624
+Exception - nepovedlo se vlozit IC od DB 
+63555565
+Exception - nepovedlo se vlozit IC od DB 
+68321155
+Exception - nepovedlo se vlozit IC od DB 
+65891163
+Exception - nepovedlo se vlozit IC od DB 
+73632490
+Exception - nepovedlo se vlozit IC od DB 
+26521431
+Exception - nepovedlo se vlozit IC od DB 
+73632503
+Exception - nepovedlo se vlozit IC od DB 
+64122484
+Exception - nepovedlo se vlozit IC od DB 
+70942170
+Exception - nepovedlo se vlozit IC od DB 
+63731282
+Exception - nepovedlo se vlozit IC od DB 
+64422488
+Exception - nepovedlo se vlozit IC od DB 
+63455315
+Exception - nepovedlo se vlozit IC od DB 
+48136034
+Exception - nepovedlo se vlozit IC od DB 
+73632716
+Exception - nepovedlo se vlozit IC od DB 
+64039552
+Exception - nepovedlo se vlozit IC od DB 
+02253836
+Exception - nepovedlo se vlozit IC od DB 
+73632511
+Exception - nepovedlo se vlozit IC od DB 
+70951110
+Exception - nepovedlo se vlozit IC od DB 
+26521440
+Exception - nepovedlo se vlozit IC od DB 
+73634492
+Exception - nepovedlo se vlozit IC od DB 
+62451979
+Exception - nepovedlo se vlozit IC od DB 
+70039950
+Exception - nepovedlo se vlozit IC od DB 
+70283281
+Exception - nepovedlo se vlozit IC od DB 
+73632520
+Exception - nepovedlo se vlozit IC od DB 
+73632538
+Exception - nepovedlo se vlozit IC od DB 
+73634328
+Exception - nepovedlo se vlozit IC od DB 
+73632546
+Exception - nepovedlo se vlozit IC od DB 
+70942161
+Exception - nepovedlo se vlozit IC od DB 
+70909083
+Exception - nepovedlo se vlozit IC od DB 
+68941641
+Exception - nepovedlo se vlozit IC od DB 
+73632554
+Exception - nepovedlo se vlozit IC od DB 
+73632562
+Exception - nepovedlo se vlozit IC od DB 
+70950237
+Exception - nepovedlo se vlozit IC od DB 
+70860718
+Exception - nepovedlo se vlozit IC od DB 
+66933412
+Exception - nepovedlo se vlozit IC od DB 
+66933404
+Exception - nepovedlo se vlozit IC od DB 
+73632589
+Exception - nepovedlo se vlozit IC od DB 
+26522934
+Exception - nepovedlo se vlozit IC od DB 
+70809941
+Exception - nepovedlo se vlozit IC od DB 
+73632724
+Exception - nepovedlo se vlozit IC od DB 
+64733718
+Exception - nepovedlo se vlozit IC od DB 
+26521423
+Exception - nepovedlo se vlozit IC od DB 
+26521784
+Exception - nepovedlo se vlozit IC od DB 
+26522713
+Exception - nepovedlo se vlozit IC od DB 
+73635464
+Exception - nepovedlo se vlozit IC od DB 
+73633798
+Exception - nepovedlo se vlozit IC od DB 
+26521091
+Exception - nepovedlo se vlozit IC od DB 
+64936821
+Exception - nepovedlo se vlozit IC od DB 
+67360718
+Exception - nepovedlo se vlozit IC od DB 
+68402619
+Exception - nepovedlo se vlozit IC od DB 
+70152489
+Exception - nepovedlo se vlozit IC od DB 
+67338887
+Exception - nepovedlo se vlozit IC od DB 
+73631086
+Exception - nepovedlo se vlozit IC od DB 
+68726040
+Exception - nepovedlo se vlozit IC od DB 
+26522021
+Exception - nepovedlo se vlozit IC od DB 
+73632601
+Exception - nepovedlo se vlozit IC od DB 
+63155494
+Exception - nepovedlo se vlozit IC od DB 
+73632619
+Exception - nepovedlo se vlozit IC od DB 
+70566402
+Exception - nepovedlo se vlozit IC od DB 
+65528646
+Exception - nepovedlo se vlozit IC od DB 
+70909091
+Exception - nepovedlo se vlozit IC od DB 
+73635103
+Exception - nepovedlo se vlozit IC od DB 
+26522691
+Exception - nepovedlo se vlozit IC od DB 
+73634336
+Exception - nepovedlo se vlozit IC od DB 
+70946701
+Exception - nepovedlo se vlozit IC od DB 
+73631078
+Exception - nepovedlo se vlozit IC od DB 
+73632643
+Exception - nepovedlo se vlozit IC od DB 
+26522616
+Exception - nepovedlo se vlozit IC od DB 
+73632651
+Exception - nepovedlo se vlozit IC od DB 
+63443287
+Exception - nepovedlo se vlozit IC od DB 
+70949301
+Exception - nepovedlo se vlozit IC od DB 
+65341121
+Exception - nepovedlo se vlozit IC od DB 
+70283273
+Exception - nepovedlo se vlozit IC od DB 
+64122786
+Exception - nepovedlo se vlozit IC od DB 
+64122492
+Exception - nepovedlo se vlozit IC od DB 
+64122778
+Exception - nepovedlo se vlozit IC od DB 
+64202747
+Exception - nepovedlo se vlozit IC od DB 
+73632660
+Exception - nepovedlo se vlozit IC od DB 
+62832701
+Exception - nepovedlo se vlozit IC od DB 
+62832719
+Exception - nepovedlo se vlozit IC od DB 
+64203441
+Exception - nepovedlo se vlozit IC od DB 
+73632678
+Exception - nepovedlo se vlozit IC od DB 
+73633054
+Exception - nepovedlo se vlozit IC od DB 
+73632686
+Exception - nepovedlo se vlozit IC od DB 
+26521482
+Exception - nepovedlo se vlozit IC od DB 
+73631060
+Exception - nepovedlo se vlozit IC od DB 
+63455307
+Exception - nepovedlo se vlozit IC od DB 
+26521458
+Exception - nepovedlo se vlozit IC od DB 
+69609993
+Exception - nepovedlo se vlozit IC od DB 
+70906831
+Exception - nepovedlo se vlozit IC od DB 
+64202879
+Exception - nepovedlo se vlozit IC od DB 
+65888499
+Exception - nepovedlo se vlozit IC od DB 
+26522951
+Exception - nepovedlo se vlozit IC od DB 
+26521792
+Exception - nepovedlo se vlozit IC od DB 
+73634654
+Exception - nepovedlo se vlozit IC od DB 
+70039968
+Exception - nepovedlo se vlozit IC od DB 
+64668681
+Exception - nepovedlo se vlozit IC od DB 
+65758455
+Exception - nepovedlo se vlozit IC od DB 
+70814384
+Exception - nepovedlo se vlozit IC od DB 
+73632708
+Exception - nepovedlo se vlozit IC od DB 
+45657289
+Exception - nepovedlo se vlozit IC od DB 
+73633216
+Exception - nepovedlo se vlozit IC od DB 
+26520052
+Exception - nepovedlo se vlozit IC od DB 
+65760735
+Exception - nepovedlo se vlozit IC od DB 
+26521148
+Exception - nepovedlo se vlozit IC od DB 
+26520061
+Exception - nepovedlo se vlozit IC od DB 
+60884029
+Exception - nepovedlo se vlozit IC od DB 
+73634735
+Exception - nepovedlo se vlozit IC od DB 
+73634816
+Exception - nepovedlo se vlozit IC od DB 
+26520079
+Exception - nepovedlo se vlozit IC od DB 
+73633291
+Exception - nepovedlo se vlozit IC od DB 
+26520087
+Exception - nepovedlo se vlozit IC od DB 
+62536168
+Exception - nepovedlo se vlozit IC od DB 
+73632830
+Exception - nepovedlo se vlozit IC od DB 
+26520010
+Exception - nepovedlo se vlozit IC od DB 
+26520095
+Exception - nepovedlo se vlozit IC od DB 
+26520109
+Exception - nepovedlo se vlozit IC od DB 
+73634301
+Exception - nepovedlo se vlozit IC od DB 
+26520125
+Exception - nepovedlo se vlozit IC od DB 
+26520117
+Exception - nepovedlo se vlozit IC od DB 
+26520133
+Exception - nepovedlo se vlozit IC od DB 
+70305234
+Exception - nepovedlo se vlozit IC od DB 
+73635553
+Exception - nepovedlo se vlozit IC od DB 
+26520141
+Exception - nepovedlo se vlozit IC od DB 
+26520150
+Exception - nepovedlo se vlozit IC od DB 
+70883751
+Exception - nepovedlo se vlozit IC od DB 
+26520176
+Exception - nepovedlo se vlozit IC od DB 
+26520168
+Exception - nepovedlo se vlozit IC od DB 
+65928903
+Exception - nepovedlo se vlozit IC od DB 
+26520184
+Exception - nepovedlo se vlozit IC od DB 
+62075683
+Exception - nepovedlo se vlozit IC od DB 
+70582769
+Exception - nepovedlo se vlozit IC od DB 
+65687523
+Exception - nepovedlo se vlozit IC od DB 
+68299311
+Exception - nepovedlo se vlozit IC od DB 
+73635529
+Exception - nepovedlo se vlozit IC od DB 
+26520192
+Exception - nepovedlo se vlozit IC od DB 
+26520206
+Exception - nepovedlo se vlozit IC od DB 
+73633704
+Exception - nepovedlo se vlozit IC od DB 
+73631337
+Exception - nepovedlo se vlozit IC od DB 
+26520214
+Exception - nepovedlo se vlozit IC od DB 
+26520222
+Exception - nepovedlo se vlozit IC od DB 
+60783516
+Exception - nepovedlo se vlozit IC od DB 
+73634701
+Exception - nepovedlo se vlozit IC od DB 
+73635049
+Exception - nepovedlo se vlozit IC od DB 
+26520231
+Exception - nepovedlo se vlozit IC od DB 
+26520249
+Exception - nepovedlo se vlozit IC od DB 
+73635367
+Exception - nepovedlo se vlozit IC od DB 
+26520257
+Exception - nepovedlo se vlozit IC od DB 
+73634077
+Exception - nepovedlo se vlozit IC od DB 
+26522721
+Exception - nepovedlo se vlozit IC od DB 
+73635073
+Exception - nepovedlo se vlozit IC od DB 
+61381853
+Exception - nepovedlo se vlozit IC od DB 
+73633666
+Exception - nepovedlo se vlozit IC od DB 
+61380989
+Exception - nepovedlo se vlozit IC od DB 
+26520265
+Exception - nepovedlo se vlozit IC od DB 
+26520273
+Exception - nepovedlo se vlozit IC od DB 
+73633267
+Exception - nepovedlo se vlozit IC od DB 
+61382191
+Exception - nepovedlo se vlozit IC od DB 
+63110636
+Exception - nepovedlo se vlozit IC od DB 
+26520281
+Exception - nepovedlo se vlozit IC od DB 
+26520290
+Exception - nepovedlo se vlozit IC od DB 
+26520303
+Exception - nepovedlo se vlozit IC od DB 
+26520311
+Exception - nepovedlo se vlozit IC od DB 
+73635031
+Exception - nepovedlo se vlozit IC od DB 
+05690145
+Exception - nepovedlo se vlozit IC od DB 
+26520320
+Exception - nepovedlo se vlozit IC od DB 
+26520338
+Exception - nepovedlo se vlozit IC od DB 
+26521717
+Exception - nepovedlo se vlozit IC od DB 
+26520354
+Exception - nepovedlo se vlozit IC od DB 
+26520362
+Exception - nepovedlo se vlozit IC od DB 
+26520346
+Exception - nepovedlo se vlozit IC od DB 
+26520419
+Exception - nepovedlo se vlozit IC od DB 
+73633623
+Exception - nepovedlo se vlozit IC od DB 
+73634221
+Exception - nepovedlo se vlozit IC od DB 
+26520371
+Exception - nepovedlo se vlozit IC od DB 
+26520389
+Exception - nepovedlo se vlozit IC od DB 
+73634506
+Exception - nepovedlo se vlozit IC od DB 
+73634204
+Exception - nepovedlo se vlozit IC od DB 
+73631787
+Exception - nepovedlo se vlozit IC od DB 
+69764107
+Exception - nepovedlo se vlozit IC od DB 
+46750517
+Exception - nepovedlo se vlozit IC od DB 
+26520974
+Exception - nepovedlo se vlozit IC od DB 
+46745815
+Exception - nepovedlo se vlozit IC od DB 
+47695145
+Exception - nepovedlo se vlozit IC od DB 
+73633569
+Exception - nepovedlo se vlozit IC od DB 
+46745645
+Exception - nepovedlo se vlozit IC od DB 
+47930098
+Exception - nepovedlo se vlozit IC od DB 
+26520982
+Exception - nepovedlo se vlozit IC od DB 
+73634352
+Exception - nepovedlo se vlozit IC od DB 
+73634760
+Exception - nepovedlo se vlozit IC od DB 
+73635421
+Exception - nepovedlo se vlozit IC od DB 
+73635561
+Exception - nepovedlo se vlozit IC od DB 
+48678074
+Exception - nepovedlo se vlozit IC od DB 
+47477610
+Exception - nepovedlo se vlozit IC od DB 
+65082346
+Exception - nepovedlo se vlozit IC od DB 
+73635669
+Exception - nepovedlo se vlozit IC od DB 
+73635570
+Exception - nepovedlo se vlozit IC od DB 
+73633542
+Exception - nepovedlo se vlozit IC od DB 
+73632970
+Exception - nepovedlo se vlozit IC od DB 
+46459456
+Exception - nepovedlo se vlozit IC od DB 
+73635642
+Exception - nepovedlo se vlozit IC od DB 
+45598029
+Exception - nepovedlo se vlozit IC od DB 
+73633551
+Exception - nepovedlo se vlozit IC od DB 
+48678066
+Exception - nepovedlo se vlozit IC od DB 
+44472749
+Exception - nepovedlo se vlozit IC od DB 
+46745807
+Exception - nepovedlo se vlozit IC od DB 
+73631132
+Exception - nepovedlo se vlozit IC od DB 
+73632333
+Exception - nepovedlo se vlozit IC od DB 
+73631426
+Exception - nepovedlo se vlozit IC od DB 
+73631141
+Exception - nepovedlo se vlozit IC od DB 
+73631515
+Exception - nepovedlo se vlozit IC od DB 
+73631159
+Exception - nepovedlo se vlozit IC od DB 
+73631167
+Exception - nepovedlo se vlozit IC od DB 
+73631604
+Exception - nepovedlo se vlozit IC od DB 
+73631175
+Exception - nepovedlo se vlozit IC od DB 
+73631710
+Exception - nepovedlo se vlozit IC od DB 
+48136034
+Exception - nepovedlo se vlozit IC od DB 
+73631701
+Exception - nepovedlo se vlozit IC od DB 
+73631434
+Exception - nepovedlo se vlozit IC od DB 
+73631531
+Exception - nepovedlo se vlozit IC od DB 
+73631370
+Exception - nepovedlo se vlozit IC od DB 
+73631442
+Exception - nepovedlo se vlozit IC od DB 
+73631183
+Exception - nepovedlo se vlozit IC od DB 
+73632414
+Exception - nepovedlo se vlozit IC od DB 
+73633976
+Exception - nepovedlo se vlozit IC od DB 
+73631191
+Exception - nepovedlo se vlozit IC od DB 
+73631540
+Exception - nepovedlo se vlozit IC od DB 
+73631205
+Exception - nepovedlo se vlozit IC od DB 
+73631558
+Exception - nepovedlo se vlozit IC od DB 
+73631043
+Exception - nepovedlo se vlozit IC od DB 
+73632821
+Exception - nepovedlo se vlozit IC od DB 
+73631221
+Exception - nepovedlo se vlozit IC od DB 
+73632350
+Exception - nepovedlo se vlozit IC od DB 
+73631230
+Exception - nepovedlo se vlozit IC od DB 
+73631248
+Exception - nepovedlo se vlozit IC od DB 
+73632627
+Exception - nepovedlo se vlozit IC od DB 
+48513296
+Exception - nepovedlo se vlozit IC od DB 
+73632279
+Exception - nepovedlo se vlozit IC od DB 
+68334591
+Exception - nepovedlo se vlozit IC od DB 
+00406902
+Exception - nepovedlo se vlozit IC od DB 
+49465023
+Exception - nepovedlo se vlozit IC od DB 
+00676560
+Exception - nepovedlo se vlozit IC od DB 
+46773878
+Exception - nepovedlo se vlozit IC od DB 
+73633763
+Exception - nepovedlo se vlozit IC od DB 
+00406899
+Exception - nepovedlo se vlozit IC od DB 
+73635171
+Exception - nepovedlo se vlozit IC od DB 
+00441082
 Exception - nepovedlo se vlozit IC od DB 
 00445312
 Exception - nepovedlo se vlozit IC od DB 
+65468562
+Exception - nepovedlo se vlozit IC od DB 
+73632597
+Exception - nepovedlo se vlozit IC od DB 
+73634590
+Exception - nepovedlo se vlozit IC od DB 
+45247641
+Exception - nepovedlo se vlozit IC od DB 
+66739373
+Exception - nepovedlo se vlozit IC od DB 
+03659925
+Exception - nepovedlo se vlozit IC od DB 
+26520001
+Exception - nepovedlo se vlozit IC od DB 
+69898405
+Exception - nepovedlo se vlozit IC od DB 
+73633593
+Exception - nepovedlo se vlozit IC od DB 
+00406139
+Exception - nepovedlo se vlozit IC od DB 
+73633062
+Exception - nepovedlo se vlozit IC od DB 
+26521113
+Exception - nepovedlo se vlozit IC od DB 
+73631779
+Exception - nepovedlo se vlozit IC od DB 
 00445304
 Exception - nepovedlo se vlozit IC od DB 
+73634514
+Exception - nepovedlo se vlozit IC od DB 
+73633780
+Exception - nepovedlo se vlozit IC od DB 
+70876339
+Exception - nepovedlo se vlozit IC od DB 
+73635138
+Exception - nepovedlo se vlozit IC od DB 
+69780145
+Exception - nepovedlo se vlozit IC od DB 
+46259830
+Exception - nepovedlo se vlozit IC od DB 
+73633151
+Exception - nepovedlo se vlozit IC od DB 
+40524566
+Exception - nepovedlo se vlozit IC od DB 
+73633348
+Exception - nepovedlo se vlozit IC od DB 
+73631329
+Exception - nepovedlo se vlozit IC od DB 
+73634743
+Exception - nepovedlo se vlozit IC od DB 
+44936109
+Exception - nepovedlo se vlozit IC od DB 
+00569623
+Exception - nepovedlo se vlozit IC od DB 
+68780001
+Exception - nepovedlo se vlozit IC od DB 
+70511322
+Exception - nepovedlo se vlozit IC od DB 
+67675379
+Exception - nepovedlo se vlozit IC od DB 
+67360491
+Exception - nepovedlo se vlozit IC od DB 
+67983359
+Exception - nepovedlo se vlozit IC od DB 
+69456267
+Exception - nepovedlo se vlozit IC od DB 
+68898959
+Exception - nepovedlo se vlozit IC od DB 
+67007627
+Exception - nepovedlo se vlozit IC od DB 
+67027989
+Exception - nepovedlo se vlozit IC od DB 
+68081863
+Exception - nepovedlo se vlozit IC od DB 
+26521725
+Exception - nepovedlo se vlozit IC od DB 
+68208219
+Exception - nepovedlo se vlozit IC od DB 
+68333137
+Exception - nepovedlo se vlozit IC od DB 
+67028314
+Exception - nepovedlo se vlozit IC od DB 
+65248503
+Exception - nepovedlo se vlozit IC od DB 
+67365337
+Exception - nepovedlo se vlozit IC od DB 
+68246455
+Exception - nepovedlo se vlozit IC od DB 
+64045897
+Exception - nepovedlo se vlozit IC od DB 
+65983131
+Exception - nepovedlo se vlozit IC od DB 
+68544740
+Exception - nepovedlo se vlozit IC od DB 
+67341128
+Exception - nepovedlo se vlozit IC od DB 
+64840646
+Exception - nepovedlo se vlozit IC od DB 
+26520656
+Exception - nepovedlo se vlozit IC od DB 
+66111552
+Exception - nepovedlo se vlozit IC od DB 
+68435614
+Exception - nepovedlo se vlozit IC od DB 
+69347042
+Exception - nepovedlo se vlozit IC od DB 
+68781849
+Exception - nepovedlo se vlozit IC od DB 
+66110602
+Exception - nepovedlo se vlozit IC od DB 
+62015061
+Exception - nepovedlo se vlozit IC od DB 
+68343876
+Exception - nepovedlo se vlozit IC od DB 
+68158041
+Exception - nepovedlo se vlozit IC od DB 
+70582955
+Exception - nepovedlo se vlozit IC od DB 
+68149280
+Exception - nepovedlo se vlozit IC od DB 
+67341306
+Exception - nepovedlo se vlozit IC od DB 
+68213409
+Exception - nepovedlo se vlozit IC od DB 
+66144183
+Exception - nepovedlo se vlozit IC od DB 
+73632384
+Exception - nepovedlo se vlozit IC od DB 
+68783221
+Exception - nepovedlo se vlozit IC od DB 
+64811433
+Exception - nepovedlo se vlozit IC od DB 
+70813353
+Exception - nepovedlo se vlozit IC od DB 
+66742986
+Exception - nepovedlo se vlozit IC od DB 
+69650101
+Exception - nepovedlo se vlozit IC od DB 
+63777916
+Exception - nepovedlo se vlozit IC od DB 
+68157908
+Exception - nepovedlo se vlozit IC od DB 
+70157065
+Exception - nepovedlo se vlozit IC od DB 
+68911637
+Exception - nepovedlo se vlozit IC od DB 
+69152985
+Exception - nepovedlo se vlozit IC od DB 
+66598257
+Exception - nepovedlo se vlozit IC od DB 
+68422539
+Exception - nepovedlo se vlozit IC od DB 
+69109656
+Exception - nepovedlo se vlozit IC od DB 
+65079841
+Exception - nepovedlo se vlozit IC od DB 
+66362946
+Exception - nepovedlo se vlozit IC od DB 
+68781997
+Exception - nepovedlo se vlozit IC od DB 
+68149719
+Exception - nepovedlo se vlozit IC od DB 
+68404727
+Exception - nepovedlo se vlozit IC od DB 
+68780176
+Exception - nepovedlo se vlozit IC od DB 
+68998678
+Exception - nepovedlo se vlozit IC od DB 
+67340563
+Exception - nepovedlo se vlozit IC od DB 
+67981232
+Exception - nepovedlo se vlozit IC od DB 
+68784309
+Exception - nepovedlo se vlozit IC od DB 
+68941498
+Exception - nepovedlo se vlozit IC od DB 
+66145414
+Exception - nepovedlo se vlozit IC od DB 
+65341201
+Exception - nepovedlo se vlozit IC od DB 
+68429720
+Exception - nepovedlo se vlozit IC od DB 
+67007457
+Exception - nepovedlo se vlozit IC od DB 
+67011349
+Exception - nepovedlo se vlozit IC od DB 
+66110777
+Exception - nepovedlo se vlozit IC od DB 
+66111811
+Exception - nepovedlo se vlozit IC od DB 
+69292370
+Exception - nepovedlo se vlozit IC od DB 
+68209355
+Exception - nepovedlo se vlozit IC od DB 
+68429932
+Exception - nepovedlo se vlozit IC od DB 
+66365384
+Exception - nepovedlo se vlozit IC od DB 
+69547882
+Exception - nepovedlo se vlozit IC od DB 
+68157720
+Exception - nepovedlo se vlozit IC od DB 
+67980929
+Exception - nepovedlo se vlozit IC od DB 
+73633488
+Exception - nepovedlo se vlozit IC od DB 
+26520036
+Exception - nepovedlo se vlozit IC od DB 
+68689055
+Exception - nepovedlo se vlozit IC od DB 
+69292388
+Exception - nepovedlo se vlozit IC od DB 
+68208227
+Exception - nepovedlo se vlozit IC od DB 
+66364167
+Exception - nepovedlo se vlozit IC od DB 
+67675255
+Exception - nepovedlo se vlozit IC od DB 
+68344023
+Exception - nepovedlo se vlozit IC od DB 
+67443869
+Exception - nepovedlo se vlozit IC od DB 
+49543016
+Exception - nepovedlo se vlozit IC od DB 
+47733918
+Exception - nepovedlo se vlozit IC od DB 
+68405464
+Exception - nepovedlo se vlozit IC od DB 
+63557631
+Exception - nepovedlo se vlozit IC od DB 
+61345482
+Exception - nepovedlo se vlozit IC od DB 
+67675948
+Exception - nepovedlo se vlozit IC od DB 
+64813827
+Exception - nepovedlo se vlozit IC od DB 
+68407475
+Exception - nepovedlo se vlozit IC od DB 
+63804859
+Exception - nepovedlo se vlozit IC od DB 
+47721537
+Exception - nepovedlo se vlozit IC od DB 
+66288096
+Exception - nepovedlo se vlozit IC od DB 
+44470223
+Exception - nepovedlo se vlozit IC od DB 
+64201716
+Exception - nepovedlo se vlozit IC od DB 
+68380470
+Exception - nepovedlo se vlozit IC od DB 
+60154331
+Exception - nepovedlo se vlozit IC od DB 
+48664570
+Exception - nepovedlo se vlozit IC od DB 
+49520172
+Exception - nepovedlo se vlozit IC od DB 
+61896349
+Exception - nepovedlo se vlozit IC od DB 
+26520559
+Exception - nepovedlo se vlozit IC od DB 
+69174296
+Exception - nepovedlo se vlozit IC od DB 
+26521768
+Exception - nepovedlo se vlozit IC od DB 
+64814360
+Exception - nepovedlo se vlozit IC od DB 
+49747576
+Exception - nepovedlo se vlozit IC od DB 
+61345440
+Exception - nepovedlo se vlozit IC od DB 
+18608787
+Exception - nepovedlo se vlozit IC od DB 
+65715110
+Exception - nepovedlo se vlozit IC od DB 
+68999798
+Exception - nepovedlo se vlozit IC od DB 
+64203204
+Exception - nepovedlo se vlozit IC od DB 
+70826005
+Exception - nepovedlo se vlozit IC od DB 
+61924563
+Exception - nepovedlo se vlozit IC od DB 
+61664618
+Exception - nepovedlo se vlozit IC od DB 
+48896837
+Exception - nepovedlo se vlozit IC od DB 
+26521776
+Exception - nepovedlo se vlozit IC od DB 
+66005361
+Exception - nepovedlo se vlozit IC od DB 
+70862737
+Exception - nepovedlo se vlozit IC od DB 
+61664511
+Exception - nepovedlo se vlozit IC od DB 
+68996705
+Exception - nepovedlo se vlozit IC od DB 
+68435762
+Exception - nepovedlo se vlozit IC od DB 
+70825971
+Exception - nepovedlo se vlozit IC od DB 
+61664600
+Exception - nepovedlo se vlozit IC od DB 
+64125718
+Exception - nepovedlo se vlozit IC od DB 
+66365074
+Exception - nepovedlo se vlozit IC od DB 
+67440070
+Exception - nepovedlo se vlozit IC od DB 
+68405481
+Exception - nepovedlo se vlozit IC od DB 
+47003588
+Exception - nepovedlo se vlozit IC od DB 
+68999119
+Exception - nepovedlo se vlozit IC od DB 
+26522543
+Exception - nepovedlo se vlozit IC od DB 
+49746332
+Exception - nepovedlo se vlozit IC od DB 
+61345253
+Exception - nepovedlo se vlozit IC od DB 
+47009748
+Exception - nepovedlo se vlozit IC od DB 
+68381476
+Exception - nepovedlo se vlozit IC od DB 
+61345261
+Exception - nepovedlo se vlozit IC od DB 
+61345270
+Exception - nepovedlo se vlozit IC od DB 
+26522551
+Exception - nepovedlo se vlozit IC od DB 
+49747401
+Exception - nepovedlo se vlozit IC od DB 
+26522560
+Exception - nepovedlo se vlozit IC od DB 
+67341951
+Exception - nepovedlo se vlozit IC od DB 
+64224686
+Exception - nepovedlo se vlozit IC od DB 
+45845077
+Exception - nepovedlo se vlozit IC od DB 
+70889287
+Exception - nepovedlo se vlozit IC od DB 
+66984327
+Exception - nepovedlo se vlozit IC od DB 
+62726978
+Exception - nepovedlo se vlozit IC od DB 
+48664723
+Exception - nepovedlo se vlozit IC od DB 
+26522594
+Exception - nepovedlo se vlozit IC od DB 
+26522578
+Exception - nepovedlo se vlozit IC od DB 
+70132208
+Exception - nepovedlo se vlozit IC od DB 
+43765441
+Exception - nepovedlo se vlozit IC od DB 
+60885696
+Exception - nepovedlo se vlozit IC od DB 
+62726854
+Exception - nepovedlo se vlozit IC od DB 
+49747398
+Exception - nepovedlo se vlozit IC od DB 
+26522586
+Exception - nepovedlo se vlozit IC od DB 
+43762581
+Exception - nepovedlo se vlozit IC od DB 
+65571771
+Exception - nepovedlo se vlozit IC od DB 
+61345431
+Exception - nepovedlo se vlozit IC od DB 
+26520648
+Exception - nepovedlo se vlozit IC od DB 
+46425730
+Exception - nepovedlo se vlozit IC od DB 
+63125005
+Exception - nepovedlo se vlozit IC od DB 
+49746146
+Exception - nepovedlo se vlozit IC od DB 
+69981728
+Exception - nepovedlo se vlozit IC od DB 
+60154381
+Exception - nepovedlo se vlozit IC od DB 
+67798870
+Exception - nepovedlo se vlozit IC od DB 
+64201775
+Exception - nepovedlo se vlozit IC od DB 
+66005353
+Exception - nepovedlo se vlozit IC od DB 
+44477422
+Exception - nepovedlo se vlozit IC od DB 
+66341892
+Exception - nepovedlo se vlozit IC od DB 
+66288088
+Exception - nepovedlo se vlozit IC od DB 
+26520567
+Exception - nepovedlo se vlozit IC od DB 
+26521059
+Exception - nepovedlo se vlozit IC od DB 
+70866627
+Exception - nepovedlo se vlozit IC od DB 
+70896089
+Exception - nepovedlo se vlozit IC od DB 
+67340296
+Exception - nepovedlo se vlozit IC od DB 
+70284920
+Exception - nepovedlo se vlozit IC od DB 
+70944806
+Exception - nepovedlo se vlozit IC od DB 
+64422496
+Exception - nepovedlo se vlozit IC od DB 
+68983662
+Exception - nepovedlo se vlozit IC od DB 
+73632961
+Exception - nepovedlo se vlozit IC od DB 
+64422488
+Exception - nepovedlo se vlozit IC od DB 
+73632546
+Exception - nepovedlo se vlozit IC od DB 
+73632554
+Exception - nepovedlo se vlozit IC od DB 
+26522021
+Exception - nepovedlo se vlozit IC od DB 
+73631060
+Exception - nepovedlo se vlozit IC od DB 
+73634654
+Exception - nepovedlo se vlozit IC od DB 
+73632830
+Exception - nepovedlo se vlozit IC od DB 
+05690145
+Exception - nepovedlo se vlozit IC od DB 
+48678066
+Exception - nepovedlo se vlozit IC od DB 
+73631710
+Exception - nepovedlo se vlozit IC od DB 
+73631701
+Exception - nepovedlo se vlozit IC od DB 
+69898405
+Exception - nepovedlo se vlozit IC od DB 
+70511322
+Exception - nepovedlo se vlozit IC od DB 
+64045897
+Exception - nepovedlo se vlozit IC od DB 
+64840646
+Exception - nepovedlo se vlozit IC od DB 
+69650101
+Exception - nepovedlo se vlozit IC od DB 
+70157065
+Exception - nepovedlo se vlozit IC od DB 
+66362946
+Exception - nepovedlo se vlozit IC od DB 
+68429720
+Exception - nepovedlo se vlozit IC od DB 
+67011349
+Exception - nepovedlo se vlozit IC od DB 
+70103666
+Exception - nepovedlo se vlozit IC od DB 
+70103500
+Exception - nepovedlo se vlozit IC od DB 
+68209363
+Exception - nepovedlo se vlozit IC od DB 
+67441947
+Exception - nepovedlo se vlozit IC od DB 
+67011187
+Exception - nepovedlo se vlozit IC od DB 
+67443559
+Exception - nepovedlo se vlozit IC od DB 
+73634263
+Exception - nepovedlo se vlozit IC od DB 
+61378925
+Exception - nepovedlo se vlozit IC od DB 
+73634107
+Exception - nepovedlo se vlozit IC od DB 
+64243621
+Exception - nepovedlo se vlozit IC od DB 
+61345407
+Exception - nepovedlo se vlozit IC od DB 
+69173648
+Exception - nepovedlo se vlozit IC od DB 
+48343706
+Exception - nepovedlo se vlozit IC od DB 
+49317920
+Exception - nepovedlo se vlozit IC od DB 
+66341906
+Exception - nepovedlo se vlozit IC od DB 
+62444271
+Exception - nepovedlo se vlozit IC od DB 
+67798489
+Exception - nepovedlo se vlozit IC od DB 
+49747584
+Exception - nepovedlo se vlozit IC od DB 
+66984319
+Exception - nepovedlo se vlozit IC od DB 
+49797611
+Exception - nepovedlo se vlozit IC od DB 
+47084456
+Exception - nepovedlo se vlozit IC od DB 
+66362695
+Exception - nepovedlo se vlozit IC od DB 
+45671991
+Exception - nepovedlo se vlozit IC od DB 
+68158181
+Exception - nepovedlo se vlozit IC od DB 
+73633046
+Exception - nepovedlo se vlozit IC od DB 
+44937601
+Exception - nepovedlo se vlozit IC od DB 
+73632953
+Exception - nepovedlo se vlozit IC od DB 
+73632899
+Exception - nepovedlo se vlozit IC od DB 
+26521067
+Exception - nepovedlo se vlozit IC od DB 
+26520681
+Exception - nepovedlo se vlozit IC od DB 
+44740484
+Exception - nepovedlo se vlozit IC od DB 
+73634930
+Exception - nepovedlo se vlozit IC od DB 
+70863211
+Exception - nepovedlo se vlozit IC od DB 
+42936314
+Exception - nepovedlo se vlozit IC od DB 
+44939493
+Exception - nepovedlo se vlozit IC od DB 
+73632767
+Exception - nepovedlo se vlozit IC od DB 
+26521032
+Exception - nepovedlo se vlozit IC od DB 
+46523910
+Exception - nepovedlo se vlozit IC od DB 
 
+Exception - nepovedlo se vlozit IC od DB 
+46797467
+Exception - nepovedlo se vlozit IC od DB 
+15054519
+Exception - nepovedlo se vlozit IC od DB 
+60150556
 Exception - nepovedlo se vlozit IC od DB 
 
 Exception - nepovedlo se vlozit IC od DB 
 
 Exception - nepovedlo se vlozit IC od DB 
-
+68211091
 Exception - nepovedlo se vlozit IC od DB 
 
+Exception - nepovedlo se vlozit IC od DB 
+44740620
+Exception - nepovedlo se vlozit IC od DB 
+
+Exception - nepovedlo se vlozit IC od DB 
+26521229
+Exception - nepovedlo se vlozit IC od DB 
+48648418
+Exception - nepovedlo se vlozit IC od DB 
+26520761
+Exception - nepovedlo se vlozit IC od DB 
+65666224
+Exception - nepovedlo se vlozit IC od DB 
+47655909
+Exception - nepovedlo se vlozit IC od DB 
+46797653
+Exception - nepovedlo se vlozit IC od DB 
+69535329
+Exception - nepovedlo se vlozit IC od DB 
+15054683
+Exception - nepovedlo se vlozit IC od DB 
+69576017
+Exception - nepovedlo se vlozit IC od DB 
+68781091
+Exception - nepovedlo se vlozit IC od DB 
+73634611
+Exception - nepovedlo se vlozit IC od DB 
+69346241
+Exception - nepovedlo se vlozit IC od DB 
+60885424
+Exception - nepovedlo se vlozit IC od DB 
+70889074
+Exception - nepovedlo se vlozit IC od DB 
+00406210
+Exception - nepovedlo se vlozit IC od DB 
+45020477
+Exception - nepovedlo se vlozit IC od DB 
+00531855
+Exception - nepovedlo se vlozit IC od DB 
+73633330
+Exception - nepovedlo se vlozit IC od DB 
+66934907
+Exception - nepovedlo se vlozit IC od DB 
+73634271
+Exception - nepovedlo se vlozit IC od DB 
+26522772
+Exception - nepovedlo se vlozit IC od DB 
+26522781
+Exception - nepovedlo se vlozit IC od DB 
+26522837
+Exception - nepovedlo se vlozit IC od DB 
+26522853
+Exception - nepovedlo se vlozit IC od DB 
+26521865
+Exception - nepovedlo se vlozit IC od DB 
+73632236
+Exception - nepovedlo se vlozit IC od DB 
+26522896
+Exception - nepovedlo se vlozit IC od DB 
+65353056
+Exception - nepovedlo se vlozit IC od DB 
+73633160
+Exception - nepovedlo se vlozit IC od DB 
+70848891
+Exception - nepovedlo se vlozit IC od DB 
+73631388
+Exception - nepovedlo se vlozit IC od DB 
+73631272
+Exception - nepovedlo se vlozit IC od DB 
+73631299
+Exception - nepovedlo se vlozit IC od DB 
+73633640
+Exception - nepovedlo se vlozit IC od DB 
+73631213
+Exception - nepovedlo se vlozit IC od DB 
+73631396
+Exception - nepovedlo se vlozit IC od DB 
+73631418
+Exception - nepovedlo se vlozit IC od DB 
+70536953
+Exception - nepovedlo se vlozit IC od DB 
+73631809
+Exception - nepovedlo se vlozit IC od DB 
+60336773
+Exception - nepovedlo se vlozit IC od DB 
+73631353
+Exception - nepovedlo se vlozit IC od DB 
+49593684
+Exception - nepovedlo se vlozit IC od DB 
+64809404
+Exception - nepovedlo se vlozit IC od DB 
+48804011
+Exception - nepovedlo se vlozit IC od DB 
+70803498
+Exception - nepovedlo se vlozit IC od DB 
+49593781
+Exception - nepovedlo se vlozit IC od DB 
+73631850
+Exception - nepovedlo se vlozit IC od DB 
+61239381
+Exception - nepovedlo se vlozit IC od DB 
+65891422
+Exception - nepovedlo se vlozit IC od DB 
+64227201
+Exception - nepovedlo se vlozit IC od DB 
+46746595
+Exception - nepovedlo se vlozit IC od DB 
+73633984
+Exception - nepovedlo se vlozit IC od DB 
+73632902
+Exception - nepovedlo se vlozit IC od DB 
+62331035
+Exception - nepovedlo se vlozit IC od DB 
+73634280
+Exception - nepovedlo se vlozit IC od DB 
+73633275
+Exception - nepovedlo se vlozit IC od DB 
+48770892
+Exception - nepovedlo se vlozit IC od DB 
+73632929
+Exception - nepovedlo se vlozit IC od DB 
+70808457
+Exception - nepovedlo se vlozit IC od DB 
+70102627
+Exception - nepovedlo se vlozit IC od DB 
+70102635
+Exception - nepovedlo se vlozit IC od DB 
+73631051
+Exception - nepovedlo se vlozit IC od DB 
+68333145
+Exception - nepovedlo se vlozit IC od DB 
+68299419
+Exception - nepovedlo se vlozit IC od DB 
+73631892
+Exception - nepovedlo se vlozit IC od DB 
+68299435
+Exception - nepovedlo se vlozit IC od DB 
+73631914
+Exception - nepovedlo se vlozit IC od DB 
+73631922
+Exception - nepovedlo se vlozit IC od DB 
+73631761
+Exception - nepovedlo se vlozit IC od DB 
+70101507
+Exception - nepovedlo se vlozit IC od DB 
+61383767
+Exception - nepovedlo se vlozit IC od DB 
+44846355
+Exception - nepovedlo se vlozit IC od DB 
+48549851
+Exception - nepovedlo se vlozit IC od DB 
+73633097
+Exception - nepovedlo se vlozit IC od DB 
+60164867
+Exception - nepovedlo se vlozit IC od DB 
+26520508
+Exception - nepovedlo se vlozit IC od DB 
+60456434
+Exception - nepovedlo se vlozit IC od DB 
+61380806
+Exception - nepovedlo se vlozit IC od DB 
+73633011
+Exception - nepovedlo se vlozit IC od DB 
+61345334
+Exception - nepovedlo se vlozit IC od DB 
+69980446
+Exception - nepovedlo se vlozit IC od DB 
+66363420
+Exception - nepovedlo se vlozit IC od DB 
+61664570
+Exception - nepovedlo se vlozit IC od DB 
+62695908
+Exception - nepovedlo se vlozit IC od DB 
+62033492
+Exception - nepovedlo se vlozit IC od DB 
+60885734
+Exception - nepovedlo se vlozit IC od DB 
+26520478
+Exception - nepovedlo se vlozit IC od DB 
+70947414
+Exception - nepovedlo se vlozit IC od DB 
+70626502
+Exception - nepovedlo se vlozit IC od DB 
+68780109
+Exception - nepovedlo se vlozit IC od DB 
+60885700
+Exception - nepovedlo se vlozit IC od DB 
+61660221
+Exception - nepovedlo se vlozit IC od DB 
+68784660
+Exception - nepovedlo se vlozit IC od DB 
+64201767
+Exception - nepovedlo se vlozit IC od DB 
+62994778
+Exception - nepovedlo se vlozit IC od DB 
+26521814
+Exception - nepovedlo se vlozit IC od DB 
+68999071
+Exception - nepovedlo se vlozit IC od DB 
+63515512
+Exception - nepovedlo se vlozit IC od DB 
+62726838
+Exception - nepovedlo se vlozit IC od DB 
+70861609
+Exception - nepovedlo se vlozit IC od DB 
+60154390
+Exception - nepovedlo se vlozit IC od DB 
+60886463
+Exception - nepovedlo se vlozit IC od DB 
+49747487
+Exception - nepovedlo se vlozit IC od DB 
+61345288
+Exception - nepovedlo se vlozit IC od DB 
+68782721
+Exception - nepovedlo se vlozit IC od DB 
+63553104
+Exception - nepovedlo se vlozit IC od DB 
+62695835
+Exception - nepovedlo se vlozit IC od DB 
+70862753
+Exception - nepovedlo se vlozit IC od DB 
+61345296
+Exception - nepovedlo se vlozit IC od DB 
+70861617
+Exception - nepovedlo se vlozit IC od DB 
+63557614
+Exception - nepovedlo se vlozit IC od DB 
+68999097
+Exception - nepovedlo se vlozit IC od DB 
+67798900
+Exception - nepovedlo se vlozit IC od DB 
+61669334
+Exception - nepovedlo se vlozit IC od DB 
+64202909
+Exception - nepovedlo se vlozit IC od DB 
+26521547
+Exception - nepovedlo se vlozit IC od DB 
+62209949
+Exception - nepovedlo se vlozit IC od DB 
+70541639
+Exception - nepovedlo se vlozit IC od DB 
+26521822
+Exception - nepovedlo se vlozit IC od DB 
+61345172
+Exception - nepovedlo se vlozit IC od DB 
+68402171
+Exception - nepovedlo se vlozit IC od DB 
+66362636
+Exception - nepovedlo se vlozit IC od DB 
+69980063
+Exception - nepovedlo se vlozit IC od DB 
+64018601
+Exception - nepovedlo se vlozit IC od DB 
+64844218
+Exception - nepovedlo se vlozit IC od DB 
+61896101
+Exception - nepovedlo se vlozit IC od DB 
+61896225
+Exception - nepovedlo se vlozit IC od DB 
+69981701
+Exception - nepovedlo se vlozit IC od DB 
+49855549
+Exception - nepovedlo se vlozit IC od DB 
+61345377
+Exception - nepovedlo se vlozit IC od DB 
+48329789
+Exception - nepovedlo se vlozit IC od DB 
+68999101
+Exception - nepovedlo se vlozit IC od DB 
+62052691
+Exception - nepovedlo se vlozit IC od DB 
+69456704
+Exception - nepovedlo se vlozit IC od DB 
+46769447
+Exception - nepovedlo se vlozit IC od DB 
+62052705
+Exception - nepovedlo se vlozit IC od DB 
+26521831
+Exception - nepovedlo se vlozit IC od DB 
+49314441
+Exception - nepovedlo se vlozit IC od DB 
+61660175
+Exception - nepovedlo se vlozit IC od DB 
+49314491
+Exception - nepovedlo se vlozit IC od DB 
+63124891
+Exception - nepovedlo se vlozit IC od DB 
+63124840
+Exception - nepovedlo se vlozit IC od DB 
+46406441
+Exception - nepovedlo se vlozit IC od DB 
+26520451
+Exception - nepovedlo se vlozit IC od DB 
+68405472
+Exception - nepovedlo se vlozit IC od DB 
+64226301
+Exception - nepovedlo se vlozit IC od DB 
+26522004
+Exception - nepovedlo se vlozit IC od DB 
+73631124
+Exception - nepovedlo se vlozit IC od DB 
+18608825
+Exception - nepovedlo se vlozit IC od DB 
+26520711
+Exception - nepovedlo se vlozit IC od DB 
+67984517
+Exception - nepovedlo se vlozit IC od DB 
+26522047
+Exception - nepovedlo se vlozit IC od DB 
+64811841
+Exception - nepovedlo se vlozit IC od DB 
+26522055
+Exception - nepovedlo se vlozit IC od DB 
+60154365
+Exception - nepovedlo se vlozit IC od DB 
+60118164
+Exception - nepovedlo se vlozit IC od DB 
+62444247
+Exception - nepovedlo se vlozit IC od DB 
+49182625
+Exception - nepovedlo se vlozit IC od DB 
+62052721
+Exception - nepovedlo se vlozit IC od DB 
+49747479
+Exception - nepovedlo se vlozit IC od DB 
+61660159
+Exception - nepovedlo se vlozit IC od DB 
+60154373
+Exception - nepovedlo se vlozit IC od DB 
+46483047
+Exception - nepovedlo se vlozit IC od DB 
+49747428
+Exception - nepovedlo se vlozit IC od DB 
+26520541
+Exception - nepovedlo se vlozit IC od DB 
+63515539
+Exception - nepovedlo se vlozit IC od DB 
+64202984
+Exception - nepovedlo se vlozit IC od DB 
+68784678
+Exception - nepovedlo se vlozit IC od DB 
+26520621
+Exception - nepovedlo se vlozit IC od DB 
+66362628
+Exception - nepovedlo se vlozit IC od DB 
+49182633
+Exception - nepovedlo se vlozit IC od DB 
+49747525
+Exception - nepovedlo se vlozit IC od DB 
+62444263
+Exception - nepovedlo se vlozit IC od DB 
+62951599
+Exception - nepovedlo se vlozit IC od DB 
+64843904
+Exception - nepovedlo se vlozit IC od DB 
+65684885
+Exception - nepovedlo se vlozit IC od DB 
+47018577
+Exception - nepovedlo se vlozit IC od DB 
+47009128
+Exception - nepovedlo se vlozit IC od DB 
+49182641
+Exception - nepovedlo se vlozit IC od DB 
+67026656
+Exception - nepovedlo se vlozit IC od DB 
+64884708
+Exception - nepovedlo se vlozit IC od DB 
+70541647
+Exception - nepovedlo se vlozit IC od DB 
+26521849
+Exception - nepovedlo se vlozit IC od DB 
+63557592
+Exception - nepovedlo se vlozit IC od DB 
+26521857
+Exception - nepovedlo se vlozit IC od DB 
+63609100
+Exception - nepovedlo se vlozit IC od DB 
+63515521
+Exception - nepovedlo se vlozit IC od DB 
+49182161
+Exception - nepovedlo se vlozit IC od DB 
+60886056
+Exception - nepovedlo se vlozit IC od DB 
+64225771
+Exception - nepovedlo se vlozit IC od DB 
+66492963
+Exception - nepovedlo se vlozit IC od DB 
+47003596
+Exception - nepovedlo se vlozit IC od DB 
+61345342
+Exception - nepovedlo se vlozit IC od DB 
+70815127
+Exception - nepovedlo se vlozit IC od DB 
+49314467
+Exception - nepovedlo se vlozit IC od DB 
+62048384
+Exception - nepovedlo se vlozit IC od DB 
+46402713
+Exception - nepovedlo se vlozit IC od DB 
+48664715
+Exception - nepovedlo se vlozit IC od DB 
+62048392
+Exception - nepovedlo se vlozit IC od DB 
+18608795
+Exception - nepovedlo se vlozit IC od DB 
+49747126
+Exception - nepovedlo se vlozit IC od DB 
+66005345
+Exception - nepovedlo se vlozit IC od DB 
+63125188
+Exception - nepovedlo se vlozit IC od DB 
+47465034
+Exception - nepovedlo se vlozit IC od DB 
+69345490
+Exception - nepovedlo se vlozit IC od DB 
+62048376
+Exception - nepovedlo se vlozit IC od DB 
+49182170
+Exception - nepovedlo se vlozit IC od DB 
+62048473
+Exception - nepovedlo se vlozit IC od DB 
+47721502
+Exception - nepovedlo se vlozit IC od DB 
+64202976
+Exception - nepovedlo se vlozit IC od DB 
+61664774
+Exception - nepovedlo se vlozit IC od DB 
+70862761
+Exception - nepovedlo se vlozit IC od DB 
+48807338
+Exception - nepovedlo se vlozit IC od DB 
+48809454
+Exception - nepovedlo se vlozit IC od DB 
+48664707
+Exception - nepovedlo se vlozit IC od DB 
+66341973
+Exception - nepovedlo se vlozit IC od DB 
+26521873
+Exception - nepovedlo se vlozit IC od DB 
+26520044
+Exception - nepovedlo se vlozit IC od DB 
+68381077
+Exception - nepovedlo se vlozit IC od DB 
+60160276
+Exception - nepovedlo se vlozit IC od DB 
+61345181
+Exception - nepovedlo se vlozit IC od DB 
+61896071
+Exception - nepovedlo se vlozit IC od DB 
+49747371
+Exception - nepovedlo se vlozit IC od DB 
+26521881
+Exception - nepovedlo se vlozit IC od DB 
+60154357
+Exception - nepovedlo se vlozit IC od DB 
+18608779
+Exception - nepovedlo se vlozit IC od DB 
+62444255
+Exception - nepovedlo se vlozit IC od DB 
+26521890
+Exception - nepovedlo se vlozit IC od DB 
+63124904
+Exception - nepovedlo se vlozit IC od DB 
+63124831
+Exception - nepovedlo se vlozit IC od DB 
+48343757
+Exception - nepovedlo se vlozit IC od DB 
+62052713
+Exception - nepovedlo se vlozit IC od DB 
+47489928
+Exception - nepovedlo se vlozit IC od DB 
+69000484
+Exception - nepovedlo se vlozit IC od DB 
+63515563
+Exception - nepovedlo se vlozit IC od DB 
+63531372
+Exception - nepovedlo se vlozit IC od DB 
+48329801
+Exception - nepovedlo se vlozit IC od DB 
+26521903
+Exception - nepovedlo se vlozit IC od DB 
+63124912
+Exception - nepovedlo se vlozit IC od DB 
+26521911
+Exception - nepovedlo se vlozit IC od DB 
+60127473
+Exception - nepovedlo se vlozit IC od DB 
+62726935
+Exception - nepovedlo se vlozit IC od DB 
+69173621
+Exception - nepovedlo se vlozit IC od DB 
+49747495
+Exception - nepovedlo se vlozit IC od DB 
+48381331
+Exception - nepovedlo se vlozit IC od DB 
+67798918
+Exception - nepovedlo se vlozit IC od DB 
+64806243
+Exception - nepovedlo se vlozit IC od DB 
+49317512
+Exception - nepovedlo se vlozit IC od DB 
+64806766
+Exception - nepovedlo se vlozit IC od DB 
+60127236
+Exception - nepovedlo se vlozit IC od DB 
+69343802
+Exception - nepovedlo se vlozit IC od DB 
+26521920
+Exception - nepovedlo se vlozit IC od DB 
+63124921
+Exception - nepovedlo se vlozit IC od DB 
+48326861
+Exception - nepovedlo se vlozit IC od DB 
+62209990
+Exception - nepovedlo se vlozit IC od DB 
+61345199
+Exception - nepovedlo se vlozit IC od DB 
+70902526
+Exception - nepovedlo se vlozit IC od DB 
+68997221
+Exception - nepovedlo se vlozit IC od DB 
+49516914
+Exception - nepovedlo se vlozit IC od DB 
+64809846
+Exception - nepovedlo se vlozit IC od DB 
+62726820
+Exception - nepovedlo se vlozit IC od DB 
+69980454
+Exception - nepovedlo se vlozit IC od DB 
+60154349
+Exception - nepovedlo se vlozit IC od DB 
+49317521
+Exception - nepovedlo se vlozit IC od DB 
+68780125
+Exception - nepovedlo se vlozit IC od DB 
+61882968
+Exception - nepovedlo se vlozit IC od DB 
+26521962
+Exception - nepovedlo se vlozit IC od DB 
+64843858
+Exception - nepovedlo se vlozit IC od DB 
+60127635
+Exception - nepovedlo se vlozit IC od DB 
+60154152
+Exception - nepovedlo se vlozit IC od DB 
+49182188
+Exception - nepovedlo se vlozit IC od DB 
+26520702
+Exception - nepovedlo se vlozit IC od DB 
+26521938
+Exception - nepovedlo se vlozit IC od DB 
+43764070
+Exception - nepovedlo se vlozit IC od DB 
+48343749
+Exception - nepovedlo se vlozit IC od DB 
+61896098
+Exception - nepovedlo se vlozit IC od DB 
+70626456
+Exception - nepovedlo se vlozit IC od DB 
+48148121
+Exception - nepovedlo se vlozit IC od DB 
+26521946
+Exception - nepovedlo se vlozit IC od DB 
+48664014
+Exception - nepovedlo se vlozit IC od DB 
+64813151
+Exception - nepovedlo se vlozit IC od DB 
+26521954
+Exception - nepovedlo se vlozit IC od DB 
+48807354
+Exception - nepovedlo se vlozit IC od DB 
+70541655
+Exception - nepovedlo se vlozit IC od DB 
+66341957
+Exception - nepovedlo se vlozit IC od DB 
+18608809
+Exception - nepovedlo se vlozit IC od DB 
+63557584
+Exception - nepovedlo se vlozit IC od DB 
+61346080
+Exception - nepovedlo se vlozit IC od DB 
+68999143
+Exception - nepovedlo se vlozit IC od DB 
+62351303
+Exception - nepovedlo se vlozit IC od DB 
+70902551
+Exception - nepovedlo se vlozit IC od DB 
+49317059
+Exception - nepovedlo se vlozit IC od DB 
+61664588
+Exception - nepovedlo se vlozit IC od DB 
+65687027
+Exception - nepovedlo se vlozit IC od DB 
+64864308
+Exception - nepovedlo se vlozit IC od DB 
+62726960
+Exception - nepovedlo se vlozit IC od DB 
+66984271
+Exception - nepovedlo se vlozit IC od DB 
+60886561
+Exception - nepovedlo se vlozit IC od DB 
+64201741
+Exception - nepovedlo se vlozit IC od DB 
+68380461
+Exception - nepovedlo se vlozit IC od DB 
+46770046
+Exception - nepovedlo se vlozit IC od DB 
+26522063
+Exception - nepovedlo se vlozit IC od DB 
+62673386
+Exception - nepovedlo se vlozit IC od DB 
+63556812
+Exception - nepovedlo se vlozit IC od DB 
+64783235
+Exception - nepovedlo se vlozit IC od DB 
+64811867
+Exception - nepovedlo se vlozit IC od DB 
+18609121
+Exception - nepovedlo se vlozit IC od DB 
+46998101
+Exception - nepovedlo se vlozit IC od DB 
+64243541
+Exception - nepovedlo se vlozit IC od DB 
+49747541
+Exception - nepovedlo se vlozit IC od DB 
+45374856
+Exception - nepovedlo se vlozit IC od DB 
+60885467
+Exception - nepovedlo se vlozit IC od DB 
+49855581
+Exception - nepovedlo se vlozit IC od DB 
+61345300
+Exception - nepovedlo se vlozit IC od DB 
+61660183
+Exception - nepovedlo se vlozit IC od DB 
+68421613
+Exception - nepovedlo se vlozit IC od DB 
+65684893
+Exception - nepovedlo se vlozit IC od DB 
+69456682
+Exception - nepovedlo se vlozit IC od DB 
+26522071
+Exception - nepovedlo se vlozit IC od DB 
+43763197
+Exception - nepovedlo se vlozit IC od DB 
+26520575
+Exception - nepovedlo se vlozit IC od DB 
+49182196
+Exception - nepovedlo se vlozit IC od DB 
+26522098
+Exception - nepovedlo se vlozit IC od DB 
+43750818
+Exception - nepovedlo se vlozit IC od DB 
+63124823
+Exception - nepovedlo se vlozit IC od DB 
+26520613
+Exception - nepovedlo se vlozit IC od DB 
+68996926
+Exception - nepovedlo se vlozit IC od DB 
+68996713
+Exception - nepovedlo se vlozit IC od DB 
+67443702
+Exception - nepovedlo se vlozit IC od DB 
+70541621
+Exception - nepovedlo se vlozit IC od DB 
+62444298
+Exception - nepovedlo se vlozit IC od DB 
+66362644
+Exception - nepovedlo se vlozit IC od DB 
+65715101
+Exception - nepovedlo se vlozit IC od DB 
+68381921
+Exception - nepovedlo se vlozit IC od DB 
+26520460
+Exception - nepovedlo se vlozit IC od DB 
+70541663
+Exception - nepovedlo se vlozit IC od DB 
+66984289
+Exception - nepovedlo se vlozit IC od DB 
+48927686
+Exception - nepovedlo se vlozit IC od DB 
+61882844
+Exception - nepovedlo se vlozit IC od DB 
+26522101
+Exception - nepovedlo se vlozit IC od DB 
+26522110
+Exception - nepovedlo se vlozit IC od DB 
+63124939
+Exception - nepovedlo se vlozit IC od DB 
+70875715
+Exception - nepovedlo se vlozit IC od DB 
+68999437
+Exception - nepovedlo se vlozit IC od DB 
+63609118
+Exception - nepovedlo se vlozit IC od DB 
+18609031
+Exception - nepovedlo se vlozit IC od DB 
+47009764
+Exception - nepovedlo se vlozit IC od DB 
+60458003
+Exception - nepovedlo se vlozit IC od DB 
+26522128
+Exception - nepovedlo se vlozit IC od DB 
+64844242
+Exception - nepovedlo se vlozit IC od DB 
+70862419
+Exception - nepovedlo se vlozit IC od DB 
+68381042
+Exception - nepovedlo se vlozit IC od DB 
+48931934
+Exception - nepovedlo se vlozit IC od DB 
+68402180
+Exception - nepovedlo se vlozit IC od DB 
+70541671
+Exception - nepovedlo se vlozit IC od DB 
+68999810
+Exception - nepovedlo se vlozit IC od DB 
+65079990
+Exception - nepovedlo se vlozit IC od DB 
+47732202
+Exception - nepovedlo se vlozit IC od DB 
+26522136
+Exception - nepovedlo se vlozit IC od DB 
+68381051
+Exception - nepovedlo se vlozit IC od DB 
+61660248
+Exception - nepovedlo se vlozit IC od DB 
+49747444
+Exception - nepovedlo se vlozit IC od DB 
+49747533
+Exception - nepovedlo se vlozit IC od DB 
+63531402
+Exception - nepovedlo se vlozit IC od DB 
+65571894
+Exception - nepovedlo se vlozit IC od DB 
+61345351
+Exception - nepovedlo se vlozit IC od DB 
+43763812
+Exception - nepovedlo se vlozit IC od DB 
+60127929
+Exception - nepovedlo se vlozit IC od DB 
+64844234
+Exception - nepovedlo se vlozit IC od DB 
+48898741
+Exception - nepovedlo se vlozit IC od DB 
+66984297
+Exception - nepovedlo se vlozit IC od DB 
+64843891
+Exception - nepovedlo se vlozit IC od DB 
+26521555
+Exception - nepovedlo se vlozit IC od DB 
+49747142
+Exception - nepovedlo se vlozit IC od DB 
+49746049
+Exception - nepovedlo se vlozit IC od DB 
+61345202
+Exception - nepovedlo se vlozit IC od DB 
+69000492
+Exception - nepovedlo se vlozit IC od DB 
+61884332
+Exception - nepovedlo se vlozit IC od DB 
+49747151
+Exception - nepovedlo se vlozit IC od DB 
+69000506
+Exception - nepovedlo se vlozit IC od DB 
+61345211
+Exception - nepovedlo se vlozit IC od DB 
+70541680
+Exception - nepovedlo se vlozit IC od DB 
+46425896
+Exception - nepovedlo se vlozit IC od DB 
+26522144
+Exception - nepovedlo se vlozit IC od DB 
+49747134
+Exception - nepovedlo se vlozit IC od DB 
+65079981
+Exception - nepovedlo se vlozit IC od DB 
+64243508
+Exception - nepovedlo se vlozit IC od DB 
+62951572
+Exception - nepovedlo se vlozit IC od DB 
+62673505
+Exception - nepovedlo se vlozit IC od DB 
+68997248
+Exception - nepovedlo se vlozit IC od DB 
+26522152
+Exception - nepovedlo se vlozit IC od DB 
+63531429
+Exception - nepovedlo se vlozit IC od DB 
+70541698
+Exception - nepovedlo se vlozit IC od DB 
+64242960
+Exception - nepovedlo se vlozit IC od DB 
+60154403
+Exception - nepovedlo se vlozit IC od DB 
+47723301
+Exception - nepovedlo se vlozit IC od DB 
+48329304
+Exception - nepovedlo se vlozit IC od DB 
+26522161
+Exception - nepovedlo se vlozit IC od DB 
+70879681
+Exception - nepovedlo se vlozit IC od DB 
+62014781
+Exception - nepovedlo se vlozit IC od DB 
+66341965
+Exception - nepovedlo se vlozit IC od DB 
+26522179
+Exception - nepovedlo se vlozit IC od DB 
+68379188
+Exception - nepovedlo se vlozit IC od DB 
+60886552
+Exception - nepovedlo se vlozit IC od DB 
+68381948
+Exception - nepovedlo se vlozit IC od DB 
+46483306
+Exception - nepovedlo se vlozit IC od DB 
+48380814
+Exception - nepovedlo se vlozit IC od DB 
+64844251
+Exception - nepovedlo se vlozit IC od DB 
+26520401
+Exception - nepovedlo se vlozit IC od DB 
+66112621
+Exception - nepovedlo se vlozit IC od DB 
+70541701
+Exception - nepovedlo se vlozit IC od DB 
+64811859
+Exception - nepovedlo se vlozit IC od DB 
+66341477
+Exception - nepovedlo se vlozit IC od DB 
+67798926
+Exception - nepovedlo se vlozit IC od DB 
+49748289
+Exception - nepovedlo se vlozit IC od DB 
+43762999
+Exception - nepovedlo se vlozit IC od DB 
+70862401
+Exception - nepovedlo se vlozit IC od DB 
+67774121
+Exception - nepovedlo se vlozit IC od DB 
+68999160
+Exception - nepovedlo se vlozit IC od DB 
+61345369
+Exception - nepovedlo se vlozit IC od DB 
+63531399
+Exception - nepovedlo se vlozit IC od DB 
+61884324
+Exception - nepovedlo se vlozit IC od DB 
+61345504
+Exception - nepovedlo se vlozit IC od DB 
+70902542
+Exception - nepovedlo se vlozit IC od DB 
+65079973
+Exception - nepovedlo se vlozit IC od DB 
+70862362
+Exception - nepovedlo se vlozit IC od DB 
+70902569
+Exception - nepovedlo se vlozit IC od DB 
+61882917
+Exception - nepovedlo se vlozit IC od DB 
+47720778
+Exception - nepovedlo se vlozit IC od DB 
+26522187
+Exception - nepovedlo se vlozit IC od DB 
+66362661
+Exception - nepovedlo se vlozit IC od DB 
+60886447
+Exception - nepovedlo se vlozit IC od DB 
+49747169
+Exception - nepovedlo se vlozit IC od DB 
+64813835
+Exception - nepovedlo se vlozit IC od DB 
+62695932
+Exception - nepovedlo se vlozit IC od DB 
+70825980
+Exception - nepovedlo se vlozit IC od DB 
+63124947
+Exception - nepovedlo se vlozit IC od DB 
+70541710
+Exception - nepovedlo se vlozit IC od DB 
+62726846
+Exception - nepovedlo se vlozit IC od DB 
+64201732
+Exception - nepovedlo se vlozit IC od DB 
+49747461
+Exception - nepovedlo se vlozit IC od DB 
+68997230
+Exception - nepovedlo se vlozit IC od DB 
+65108060
+Exception - nepovedlo se vlozit IC od DB 
+48665631
+Exception - nepovedlo se vlozit IC od DB 
+63124807
+Exception - nepovedlo se vlozit IC od DB 
+47721529
+Exception - nepovedlo se vlozit IC od DB 
+64202551
+Exception - nepovedlo se vlozit IC od DB 
+64201724
+Exception - nepovedlo se vlozit IC od DB 
+61660264
+Exception - nepovedlo se vlozit IC od DB 
+69173613
+Exception - nepovedlo se vlozit IC od DB 
+26522195
+Exception - nepovedlo se vlozit IC od DB 
+64389782
+Exception - nepovedlo se vlozit IC od DB 
+26522209
+Exception - nepovedlo se vlozit IC od DB 
+65079957
+Exception - nepovedlo se vlozit IC od DB 
+26522217
+Exception - nepovedlo se vlozit IC od DB 
+66341949
+Exception - nepovedlo se vlozit IC od DB 
+70541728
+Exception - nepovedlo se vlozit IC od DB 
+66184941
+Exception - nepovedlo se vlozit IC od DB 
+62695916
+Exception - nepovedlo se vlozit IC od DB 
+70862745
+Exception - nepovedlo se vlozit IC od DB 
+65687001
+Exception - nepovedlo se vlozit IC od DB 
+61345326
+Exception - nepovedlo se vlozit IC od DB 
+60118148
+Exception - nepovedlo se vlozit IC od DB 
+26522225
+Exception - nepovedlo se vlozit IC od DB 
+26522233
+Exception - nepovedlo se vlozit IC od DB 
+68381085
+Exception - nepovedlo se vlozit IC od DB 
+48380920
+Exception - nepovedlo se vlozit IC od DB 
+61345229
+Exception - nepovedlo se vlozit IC od DB 
+64202968
+Exception - nepovedlo se vlozit IC od DB 
+49314459
+Exception - nepovedlo se vlozit IC od DB 
+48428299
+Exception - nepovedlo se vlozit IC od DB 
+60118156
+Exception - nepovedlo se vlozit IC od DB 
+66341582
+Exception - nepovedlo se vlozit IC od DB 
+64806367
+Exception - nepovedlo se vlozit IC od DB 
+47721511
+Exception - nepovedlo se vlozit IC od DB 
+66362652
+Exception - nepovedlo se vlozit IC od DB 
+60127503
+Exception - nepovedlo se vlozit IC od DB 
+43498027
+Exception - nepovedlo se vlozit IC od DB 
+64243460
+Exception - nepovedlo se vlozit IC od DB 
+63124955
+Exception - nepovedlo se vlozit IC od DB 
+43764045
+Exception - nepovedlo se vlozit IC od DB 
+70541736
+Exception - nepovedlo se vlozit IC od DB 
+62931091
+Exception - nepovedlo se vlozit IC od DB 
+47018585
+Exception - nepovedlo se vlozit IC od DB 
+26522241
+Exception - nepovedlo se vlozit IC od DB 
+66341876
+Exception - nepovedlo se vlozit IC od DB 
+61660191
+Exception - nepovedlo se vlozit IC od DB 
+66362679
+Exception - nepovedlo se vlozit IC od DB 
+63531542
+Exception - nepovedlo se vlozit IC od DB 
+60884436
+Exception - nepovedlo se vlozit IC od DB 
+46382348
+Exception - nepovedlo se vlozit IC od DB 
+18608949
+Exception - nepovedlo se vlozit IC od DB 
+47732261
+Exception - nepovedlo se vlozit IC od DB 
+68380721
+Exception - nepovedlo se vlozit IC od DB 
+26520630
+Exception - nepovedlo se vlozit IC od DB 
+26522250
+Exception - nepovedlo se vlozit IC od DB 
+26522268
+Exception - nepovedlo se vlozit IC od DB 
+60117729
+Exception - nepovedlo se vlozit IC od DB 
+61660272
+Exception - nepovedlo se vlozit IC od DB 
+68999127
+Exception - nepovedlo se vlozit IC od DB 
+49181556
+Exception - nepovedlo se vlozit IC od DB 
+49528564
+Exception - nepovedlo se vlozit IC od DB 
+70541744
+Exception - nepovedlo se vlozit IC od DB 
+66389119
+Exception - nepovedlo se vlozit IC od DB 
+43315640
+Exception - nepovedlo se vlozit IC od DB 
+68999089
+Exception - nepovedlo se vlozit IC od DB 
+26520486
+Exception - nepovedlo se vlozit IC od DB 
+68378211
+Exception - nepovedlo se vlozit IC od DB 
+68318006
+Exception - nepovedlo se vlozit IC od DB 
+26522276
+Exception - nepovedlo se vlozit IC od DB 
+70862371
+Exception - nepovedlo se vlozit IC od DB 
+48664405
+Exception - nepovedlo se vlozit IC od DB 
+62209957
+Exception - nepovedlo se vlozit IC od DB 
+70861625
+Exception - nepovedlo se vlozit IC od DB 
+62951581
+Exception - nepovedlo se vlozit IC od DB 
+63556821
+Exception - nepovedlo se vlozit IC od DB 
+67341985
+Exception - nepovedlo se vlozit IC od DB 
+49181882
+Exception - nepovedlo se vlozit IC od DB 
+61345318
+Exception - nepovedlo se vlozit IC od DB 
+65079965
+Exception - nepovedlo se vlozit IC od DB 
+26522284
+Exception - nepovedlo se vlozit IC od DB 
+18608957
+Exception - nepovedlo se vlozit IC od DB 
+61905194
+Exception - nepovedlo se vlozit IC od DB 
+49747517
+Exception - nepovedlo se vlozit IC od DB 
+47009756
+Exception - nepovedlo se vlozit IC od DB 
+48326470
+Exception - nepovedlo se vlozit IC od DB 
+61660078
+Exception - nepovedlo se vlozit IC od DB 
+61882836
+Exception - nepovedlo se vlozit IC od DB 
+70541752
+Exception - nepovedlo se vlozit IC od DB 
+60886048
+Exception - nepovedlo se vlozit IC od DB 
+64844196
+Exception - nepovedlo se vlozit IC od DB 
+43753281
+Exception - nepovedlo se vlozit IC od DB 
+63804841
+Exception - nepovedlo se vlozit IC od DB 
+60885718
+Exception - nepovedlo se vlozit IC od DB 
+49316885
+Exception - nepovedlo se vlozit IC od DB 
+66341884
+Exception - nepovedlo se vlozit IC od DB 
+70822620
+Exception - nepovedlo se vlozit IC od DB 
+43764061
+Exception - nepovedlo se vlozit IC od DB 
+49317539
+Exception - nepovedlo se vlozit IC od DB 
+67341977
+Exception - nepovedlo se vlozit IC od DB 
+64813801
+Exception - nepovedlo se vlozit IC od DB 
+48344486
+Exception - nepovedlo se vlozit IC od DB 
+70862788
+Exception - nepovedlo se vlozit IC od DB 
+63557525
+Exception - nepovedlo se vlozit IC od DB 
+61660281
+Exception - nepovedlo se vlozit IC od DB 
+68421877
+Exception - nepovedlo se vlozit IC od DB 
+26521164
+Exception - nepovedlo se vlozit IC od DB 
+26522292
+Exception - nepovedlo se vlozit IC od DB 
+68435720
+Exception - nepovedlo se vlozit IC od DB 
+70541761
+Exception - nepovedlo se vlozit IC od DB 
+64243478
+Exception - nepovedlo se vlozit IC od DB 
+26522306
+Exception - nepovedlo se vlozit IC od DB 
+68382448
+Exception - nepovedlo se vlozit IC od DB 
+60885475
+Exception - nepovedlo se vlozit IC od DB 
+49747509
+Exception - nepovedlo se vlozit IC od DB 
+49755765
+Exception - nepovedlo se vlozit IC od DB 
+47786809
+Exception - nepovedlo se vlozit IC od DB 
+65108078
+Exception - nepovedlo se vlozit IC od DB 
+49855565
+Exception - nepovedlo se vlozit IC od DB 
+62695894
+Exception - nepovedlo se vlozit IC od DB 
+61903353
+Exception - nepovedlo se vlozit IC od DB 
+62052730
+Exception - nepovedlo se vlozit IC od DB 
+49317156
+Exception - nepovedlo se vlozit IC od DB 
+26522314
+Exception - nepovedlo se vlozit IC od DB 
+26520966
+Exception - nepovedlo se vlozit IC od DB 
+49747436
+Exception - nepovedlo se vlozit IC od DB 
+68421885
+Exception - nepovedlo se vlozit IC od DB 
+26522322
+Exception - nepovedlo se vlozit IC od DB 
+26521008
+Exception - nepovedlo se vlozit IC od DB 
+18609139
+Exception - nepovedlo se vlozit IC od DB 
+26522331
+Exception - nepovedlo se vlozit IC od DB 
+63804867
+Exception - nepovedlo se vlozit IC od DB 
+26521741
+Exception - nepovedlo se vlozit IC od DB 
+61345423
+Exception - nepovedlo se vlozit IC od DB 
+63515547
+Exception - nepovedlo se vlozit IC od DB 
+64601862
+Exception - nepovedlo se vlozit IC od DB 
+62673513
+Exception - nepovedlo se vlozit IC od DB 
+26522349
+Exception - nepovedlo se vlozit IC od DB 
+60117737
+Exception - nepovedlo se vlozit IC od DB 
+61664596
+Exception - nepovedlo se vlozit IC od DB 
+68380453
+Exception - nepovedlo se vlozit IC od DB 
+64884601
+Exception - nepovedlo se vlozit IC od DB 
+49539761
+Exception - nepovedlo se vlozit IC od DB 
+49828801
+Exception - nepovedlo se vlozit IC od DB 
+68999658
+Exception - nepovedlo se vlozit IC od DB 
+46457437
+Exception - nepovedlo se vlozit IC od DB 
+49747410
+Exception - nepovedlo se vlozit IC od DB 
+70541167
+Exception - nepovedlo se vlozit IC od DB 
+60103639
+Exception - nepovedlo se vlozit IC od DB 
+43764037
+Exception - nepovedlo se vlozit IC od DB 
+61660213
+Exception - nepovedlo se vlozit IC od DB 
+64844226
+Exception - nepovedlo se vlozit IC od DB 
+61632163
+Exception - nepovedlo se vlozit IC od DB 
+69346054
+Exception - nepovedlo se vlozit IC od DB 
+26522365
+Exception - nepovedlo se vlozit IC od DB 
+49539779
+Exception - nepovedlo se vlozit IC od DB 
+26522373
+Exception - nepovedlo se vlozit IC od DB 
+61882925
+Exception - nepovedlo se vlozit IC od DB 
+64520617
+Exception - nepovedlo se vlozit IC od DB 
+05693161
+Exception - nepovedlo se vlozit IC od DB 
+62695819
+Exception - nepovedlo se vlozit IC od DB 
+26522357
+Exception - nepovedlo se vlozit IC od DB 
+61345458
+Exception - nepovedlo se vlozit IC od DB 
+49184407
+Exception - nepovedlo se vlozit IC od DB 
+67341969
+Exception - nepovedlo se vlozit IC od DB 
+68380445
+Exception - nepovedlo se vlozit IC od DB 
+49747177
+Exception - nepovedlo se vlozit IC od DB 
+26520494
+Exception - nepovedlo se vlozit IC od DB 
+60117753
+Exception - nepovedlo se vlozit IC od DB 
+61345466
+Exception - nepovedlo se vlozit IC od DB 
+48380709
+Exception - nepovedlo se vlozit IC od DB 
+68435754
+Exception - nepovedlo se vlozit IC od DB 
+63557606
+Exception - nepovedlo se vlozit IC od DB 
+61664766
+Exception - nepovedlo se vlozit IC od DB 
+26521172
+Exception - nepovedlo se vlozit IC od DB 
+61345521
+Exception - nepovedlo se vlozit IC od DB 
+49543024
+Exception - nepovedlo se vlozit IC od DB 
+68422261
+Exception - nepovedlo se vlozit IC od DB 
+66492955
+Exception - nepovedlo se vlozit IC od DB 
+70626511
+Exception - nepovedlo se vlozit IC od DB 
+70879672
+Exception - nepovedlo se vlozit IC od DB 
+68210094
+Exception - nepovedlo se vlozit IC od DB 
+70541787
+Exception - nepovedlo se vlozit IC od DB 
+60885459
+Exception - nepovedlo se vlozit IC od DB 
+60117745
+Exception - nepovedlo se vlozit IC od DB 
+49327259
+Exception - nepovedlo se vlozit IC od DB 
+64844188
+Exception - nepovedlo se vlozit IC od DB 
+70541779
+Exception - nepovedlo se vlozit IC od DB 
+61729841
+Exception - nepovedlo se vlozit IC od DB 
+26522381
+Exception - nepovedlo se vlozit IC od DB 
+63556839
+Exception - nepovedlo se vlozit IC od DB 
+62052748
+Exception - nepovedlo se vlozit IC od DB 
+69173605
+Exception - nepovedlo se vlozit IC od DB 
+26521539
+Exception - nepovedlo se vlozit IC od DB 
+26522390
+Exception - nepovedlo se vlozit IC od DB 
+45831050
+Exception - nepovedlo se vlozit IC od DB 
+64813819
+Exception - nepovedlo se vlozit IC od DB 
+49184679
+Exception - nepovedlo se vlozit IC od DB 
+60886030
+Exception - nepovedlo se vlozit IC od DB 
+49314980
+Exception - nepovedlo se vlozit IC od DB 
+26522411
+Exception - nepovedlo se vlozit IC od DB 
+64809854
+Exception - nepovedlo se vlozit IC od DB 
+70541795
+Exception - nepovedlo se vlozit IC od DB 
+49747550
+Exception - nepovedlo se vlozit IC od DB 
+68833628
+Exception - nepovedlo se vlozit IC od DB 
+69458308
+Exception - nepovedlo se vlozit IC od DB 
+68780486
+Exception - nepovedlo se vlozit IC od DB 
+67443125
+Exception - nepovedlo se vlozit IC od DB 
+66341931
+Exception - nepovedlo se vlozit IC od DB 
+62450689
+Exception - nepovedlo se vlozit IC od DB 
+61882852
+Exception - nepovedlo se vlozit IC od DB 
+70541809
+Exception - nepovedlo se vlozit IC od DB 
+60886455
+Exception - nepovedlo se vlozit IC od DB 
+70541817
+Exception - nepovedlo se vlozit IC od DB 
+49855557
+Exception - nepovedlo se vlozit IC od DB 
+67984169
+Exception - nepovedlo se vlozit IC od DB 
+63124980
+Exception - nepovedlo se vlozit IC od DB 
+64812928
+Exception - nepovedlo se vlozit IC od DB 
+68435746
+Exception - nepovedlo se vlozit IC od DB 
+26522632
+Exception - nepovedlo se vlozit IC od DB 
+68381069
+Exception - nepovedlo se vlozit IC od DB 
+68381484
+Exception - nepovedlo se vlozit IC od DB 
+68435738
+Exception - nepovedlo se vlozit IC od DB 
+70862711
+Exception - nepovedlo se vlozit IC od DB 
+69345481
+Exception - nepovedlo se vlozit IC od DB 
+60118172
+Exception - nepovedlo se vlozit IC od DB 
+69000590
+Exception - nepovedlo se vlozit IC od DB 
+69173591
+Exception - nepovedlo se vlozit IC od DB 
+49855573
+Exception - nepovedlo se vlozit IC od DB 
+62048368
+Exception - nepovedlo se vlozit IC od DB 
+70541825
+Exception - nepovedlo se vlozit IC od DB 
+26522420
+Exception - nepovedlo se vlozit IC od DB 
+48333069
+Exception - nepovedlo se vlozit IC od DB 
+68782730
+Exception - nepovedlo se vlozit IC od DB 
+64816346
+Exception - nepovedlo se vlozit IC od DB 
+64202950
+Exception - nepovedlo se vlozit IC od DB 
+68781431
+Exception - nepovedlo se vlozit IC od DB 
+64843882
+Exception - nepovedlo se vlozit IC od DB 
+26522403
+Exception - nepovedlo se vlozit IC od DB 
+60160268
+Exception - nepovedlo se vlozit IC od DB 
+62727401
+Exception - nepovedlo se vlozit IC od DB 
+62695860
+Exception - nepovedlo se vlozit IC od DB 
+26522438
+Exception - nepovedlo se vlozit IC od DB 
+48664391
+Exception - nepovedlo se vlozit IC od DB 
+64202569
+Exception - nepovedlo se vlozit IC od DB 
+69860963
+Exception - nepovedlo se vlozit IC od DB 
+65108051
+Exception - nepovedlo se vlozit IC od DB 
+66362687
+Exception - nepovedlo se vlozit IC od DB 
+49182358
+Exception - nepovedlo se vlozit IC od DB 
+62691210
+Exception - nepovedlo se vlozit IC od DB 
+47920971
+Exception - nepovedlo se vlozit IC od DB 
+65571983
+Exception - nepovedlo se vlozit IC od DB 
+70541183
+Exception - nepovedlo se vlozit IC od DB 
+64806413
+Exception - nepovedlo se vlozit IC od DB 
+61345237
+Exception - nepovedlo se vlozit IC od DB 
+66341922
+Exception - nepovedlo se vlozit IC od DB 
+63557622
+Exception - nepovedlo se vlozit IC od DB 
+26522446
+Exception - nepovedlo se vlozit IC od DB 
+47733721
+Exception - nepovedlo se vlozit IC od DB 
+64864294
+Exception - nepovedlo se vlozit IC od DB 
+26520583
+Exception - nepovedlo se vlozit IC od DB 
+64844200
+Exception - nepovedlo se vlozit IC od DB 
+67984533
+Exception - nepovedlo se vlozit IC od DB 
+46257870
+Exception - nepovedlo se vlozit IC od DB 
+66341914
+Exception - nepovedlo se vlozit IC od DB 
+46403540
+Exception - nepovedlo se vlozit IC od DB 
+46406697
+Exception - nepovedlo se vlozit IC od DB 
+47500310
+Exception - nepovedlo se vlozit IC od DB 
+61345245
+Exception - nepovedlo se vlozit IC od DB 
+16977378
+Exception - nepovedlo se vlozit IC od DB 
+26522454
+Exception - nepovedlo se vlozit IC od DB 
+26522926
+Exception - nepovedlo se vlozit IC od DB 
+66389011
+Exception - nepovedlo se vlozit IC od DB 
+26522462
+Exception - nepovedlo se vlozit IC od DB 
+63531381
+Exception - nepovedlo se vlozit IC od DB 
+64752658
+Exception - nepovedlo se vlozit IC od DB 
+18608931
+Exception - nepovedlo se vlozit IC od DB 
+49317938
+Exception - nepovedlo se vlozit IC od DB 
+26522471
+Exception - nepovedlo se vlozit IC od DB 
+62237748
+Exception - nepovedlo se vlozit IC od DB 
+63109794
+Exception - nepovedlo se vlozit IC od DB 
+64243532
+Exception - nepovedlo se vlozit IC od DB 
+68999801
+Exception - nepovedlo se vlozit IC od DB 
+64884996
+Exception - nepovedlo se vlozit IC od DB 
+64843874
+Exception - nepovedlo se vlozit IC od DB 
+64771288
+Exception - nepovedlo se vlozit IC od DB 
+67440053
+Exception - nepovedlo se vlozit IC od DB 
+49182668
+Exception - nepovedlo se vlozit IC od DB 
+43764606
+Exception - nepovedlo se vlozit IC od DB 
+49747592
+Exception - nepovedlo se vlozit IC od DB 
+69000182
+Exception - nepovedlo se vlozit IC od DB 
+26522489
+Exception - nepovedlo se vlozit IC od DB 
+68999151
+Exception - nepovedlo se vlozit IC od DB 
+49182331
+Exception - nepovedlo se vlozit IC od DB 
+26522519
+Exception - nepovedlo se vlozit IC od DB 
+70132216
+Exception - nepovedlo se vlozit IC od DB 
+26522527
+Exception - nepovedlo se vlozit IC od DB 
+49314971
+Exception - nepovedlo se vlozit IC od DB 
+26522497
+Exception - nepovedlo se vlozit IC od DB 
+60103671
+Exception - nepovedlo se vlozit IC od DB 
+48927848
+Exception - nepovedlo se vlozit IC od DB 
+26522535
+Exception - nepovedlo se vlozit IC od DB 
+67798934
+Exception - nepovedlo se vlozit IC od DB 
+26522501
+Exception - nepovedlo se vlozit IC od DB 
+70541175
+Exception - nepovedlo se vlozit IC od DB 
+68381468
+Exception - nepovedlo se vlozit IC od DB 
+68997213
+Exception - nepovedlo se vlozit IC od DB 
+61345385
+Exception - nepovedlo se vlozit IC od DB 
+68407041
+Exception - nepovedlo se vlozit IC od DB 
+61345393
+Exception - nepovedlo se vlozit IC od DB 
+64864316
+Exception - nepovedlo se vlozit IC od DB 
+26521989
+Exception - nepovedlo se vlozit IC od DB 
+67981178
+Exception - nepovedlo se vlozit IC od DB 
+49280678
+Exception - nepovedlo se vlozit IC od DB 
+26521997
+Exception - nepovedlo se vlozit IC od DB 
+26520737
+Exception - nepovedlo se vlozit IC od DB 
+26521971
+Exception - nepovedlo se vlozit IC od DB 
+68405804
+Exception - nepovedlo se vlozit IC od DB 
+62932454
+Exception - nepovedlo se vlozit IC od DB 
+65993837
+Exception - nepovedlo se vlozit IC od DB 
+26520672
+Exception - nepovedlo se vlozit IC od DB 
+45246131
+Exception - nepovedlo se vlozit IC od DB 
+61382205
+Exception - nepovedlo se vlozit IC od DB 
+49367196
+Exception - nepovedlo se vlozit IC od DB 
+64813886
+Exception - nepovedlo se vlozit IC od DB 
+65571932
+Exception - nepovedlo se vlozit IC od DB 
+47792485
+Exception - nepovedlo se vlozit IC od DB 
+66984301
+Exception - nepovedlo se vlozit IC od DB 
+49747452
