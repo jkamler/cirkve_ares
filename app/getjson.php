@@ -3,18 +3,8 @@ include "app_class/geoJSONClass.php";
 
 $myJSON = new geoJSONClass;
 
-$cond = $_GET["query"];
-/*
-$data = '
-{
-  "type": "FeatureCollection",
-  "features": [
-    { "type": "Feature", "properties": { "title": "Dolni dira na morave" }, "geometry": { "type": "Point", "coordinates": [ -510501.05, -1164540.03 ] } },
-    { "type": "Feature", "properties": { "title": "Horni dira v cechach" }, "geometry": { "type": "Point", "coordinates": [ -750000.00, -1100000.00 ] } }
-  ]
-}
-';
-*/
+$cond = htmlspecialchars($_GET["query"]);
+
 $query = 'Nazev_CPO LIKE ' . '"%' . $cond . '%"';
 //echo $query;
 $data = $myJSON->getData("cirkve_aktivni_spatial", $query);

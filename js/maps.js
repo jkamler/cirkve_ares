@@ -4,6 +4,11 @@ $('#hide_info_wrapper').click(function(){
   $("#info_wrapper").hide();
 });
 
+$("#display").val("Název církve nebo města");
+
+$("#display").click(function() {
+    $("#display").val("");
+});
 
 var projection = new ol.proj.Projection({
   code: 'EPSG:5514',
@@ -43,7 +48,7 @@ var layers = [
     title: 'Body',
     source: new ol.source.Vector({
 //      url: urlJSON,
-      url: 'http://localhost/cirkve_ares/app/getjson.php?query=olomouc',
+      url: 'http://localhost/cirkve_ares/app/getjson.php?query=',
       format: new ol.format.GeoJSON()
 //    }),
     }),
@@ -76,18 +81,23 @@ map.on('singleclick', function(e) {
   if (feature) { // if feature returned, show info
     $("#info_wrapper").show();
     var infoElement = document.getElementById('info');
-    infoElement.innerHTML = feature.get('Nazev_CPO') + '<br>' + feature.get('Nazev_ulice') + ' ' + feature.get('Cislo_do_adresy') + '<br>' + feature.get('PSC') + '<br>' + feature.get('Zrizovatel_text') + '<br>' + feature.get('Zvlastni_prava');
+    infoElement.innerHTML = 'Název: ' + feature.get('Nazev_CPO') + '<br>Ulice: ' + feature.get('Nazev_ulice') + ' ' + feature.get('Cislo_do_adresy') + '<br>Obec: ' + feature.get('Nazev_obce') + '<br>PSČ: ' + feature.get('PSC') + '<br>Zřizovatel:<br>' + feature.get('Zrizovatel_text') + '<br>Zvláštní práva:<br>' + feature.get('Zvlastni_prava');
   }
 });
 
 $("#display").keyup(function() {
-//  var myUrl = 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val();
   var s = new ol.source.Vector({
-//    url: myUrl,
     url: 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val(),
     format: new ol.format.GeoJSON()
   });
 
+/*
+OSM je problem, zkus tam hodit
+http://geoportal.cuzk.cz/(S(t4ycgo0kcztcimrqfvbpqkvd))/Default.aspx?menu=3150&mode=TextMeta&side=wmts.uvod&metadataID=CZ-CUZK-WMTS-ZM-P&metadataXSL=metadata.sluzba
+  var osm = new ol.source.OSM();
+  losm = map.getLayers().getArray()[0];
+  losm.setSource(osm);
+*/
   l = map.getLayers().getArray()[1];
   l.setSource(s);
 });

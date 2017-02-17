@@ -383,7 +383,7 @@ every subject
 			echo "Nepovedlo se pripojit k DB";
 			return 0;
 		}
-
+/*
 		$sql = "CREATE INDEX index_obec_cast_obce_ulice_cp_psc ON RUIAN_data (Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, PSC)";
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se vytvorit klic index_obec_ulice_cp_psc v tabulce RUIAN_data";
@@ -399,7 +399,7 @@ every subject
 			mysqli_close($conn);
 			exit;
 		}
-
+*/
 		$sql = 'CREATE TABLE ' . $tableNameCirkveSpatial . ' AS
 		SELECT ' . $tableNameCirkve . '.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X
 		FROM ' . $tableNameCirkve . '
