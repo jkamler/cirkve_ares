@@ -29,13 +29,6 @@ var mousePositionControl = new ol.control.MousePosition({
 
 var text = new ol.style.Text ({text: 'text'});
 
-//$(document).ready(function() {
-//  var urlJSON = $("#display").keyup(function() {
-//    var myurl = 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val();
-//    return myurl;
-//  });
-//});
-
 var layers = [
   new ol.layer.Tile({
     source: new ol.source.TileWMS({
@@ -58,6 +51,7 @@ var layers = [
         fill: new ol.style.Fill({color: 'red'})
       }),
       text: text
+
     })
   })
 ];

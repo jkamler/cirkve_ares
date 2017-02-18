@@ -163,6 +163,7 @@ class dataClass {
 		`Nazev_casti_obce` varchar(200) COLLATE utf8_czech_ci,
 	  `Nazev_ulice` varchar(200) COLLATE utf8_czech_ci,
 	  `Cislo_do_adresy` varchar(200) COLLATE utf8_czech_ci,
+	  `Cislo_do_adresy_RES` varchar(200) COLLATE utf8_czech_ci,
 	  `PSC` int(11) DEFAULT NULL,
 	  `PSC_RES` int(11) DEFAULT NULL,
 	  `Zrizovatel` varchar(200) COLLATE utf8_czech_ci,
@@ -227,6 +228,11 @@ class dataClass {
 			}
 			//looping through array
 			foreach ($XMLnodes as $nodeName) {
+				 //there is not given element, continue to next
+				 if ($domOb->getElementsByTagName($nodeName)->length == 0 ) {
+					 $res_arr[$nodeName] = ''; //or NULL?
+					 continue;
+				 }
 				 $value = $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
 				 //adding node name and node value to associative array
 				 $res_arr[$nodeName] = $value;
@@ -236,7 +242,8 @@ class dataClass {
 			//we are interested in this node ... in previous register is not Nazev_casti_obce
 			// - without this info I am unable connect cirkevni table with data from RUIAN.
 			//In RES is different PSC
-			$XMLnodes = array("Nazev_casti_obce", "PSC");
+			$XMLnodes = array("Cislo_domovni", "Nazev_ulice", "Nazev_casti_obce", "PSC");
+			//	  Cislo_do_adresy_RES
 
 			$str = "http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_res.cgi?ico=" . $myIC . "&ver=1.0.0";
 
@@ -245,17 +252,60 @@ class dataClass {
 			if (!$domOb->load($str)) {
 				throw new ExDataClassLoadXML;
 			}
-			//looping through array ... with only one item ... so far
+			//looping through array
 			foreach ($XMLnodes as $nodeName) {
-				 $value = $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
-				 if ($nodeName == "PSC") {
-				 	 $res_arr["PSC_RES"] = $value;
-					 continue;
-				 }
-				 //adding node name and node value to associative array
-				 $res_arr[$nodeName] = $value;
-			}
+				//if i have node Cislo_domovni
+				if (($domOb->getElementsByTagName("Cislo_domovni")->length != 0) && ($nodeName == "Cislo_domovni")) {
+					//and there is also node Cislo_orientacni
+					if ($domOb->getElementsByTagName("Cislo_orientacni")->length != 0) {
+						$res_arr["Cislo_do_adresy_RES"] = $domOb->getElementsByTagName("Cislo_domovni")->item(0)->nodeValue . '/' . $domOb->getElementsByTagName("Cislo_orientacni")->item(0)->nodeValue;
+						continue;
+					} else {
+						$res_arr["Cislo_do_adresy_RES"] = $domOb->getElementsByTagName("Cislo_domovni")->item(0)->nodeValue;
+						continue;
+					}
+				}
+				if ($domOb->getElementsByTagName("$nodeName")->length == 0 && $nodeName == "Cislo_domovni") {
+					$res_arr["Cislo_do_adresy_RES"] = $res_arr["Cislo_do_adresy"];
+					continue;
+				}
 
+				//if in previous XML do not contain Nazev_ulice and if this info is in RES ...
+				if (($res_arr["Nazev_ulice"] == "") && ($domOb->getElementsByTagName("Nazev_ulice")->length != 0) && ($nodeName == "Nazev_ulice")) {
+					echo $nodeName . "<br>";
+					echo $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
+					$res_arr["Nazev_ulice"] = $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
+					continue;
+				}
+
+				//in RES is not present node Nazev_casti_obce
+				if (($domOb->getElementsByTagName("Nazev_casti_obce")->length == 0) && ($nodeName == "Nazev_casti_obce")) {
+					$res_arr[$nodeName] = $res_arr["Nazev_obce"];
+					continue;
+				}
+				if (($domOb->getElementsByTagName("Nazev_casti_obce")->length != 0) && ($nodeName == "Nazev_casti_obce")) {
+					$res_arr[$nodeName] = $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
+					continue;
+				}
+
+
+				if ($domOb->getElementsByTagName($nodeName)->length != 0) {
+					$value = $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
+				}
+
+				if ($nodeName == 'PSC' && $domOb->getElementsByTagName($nodeName)->length == 0 /*$value == ''*/) { //if in RES is not set PSC, just copy PSC from previous source. PSC from RES is used for connection tables
+					$value = $res_arr["PSC"];
+				}
+				if ($nodeName == "PSC") {
+				 	$res_arr["PSC_RES"] = $value;
+					continue;
+				}
+	//			echo $nodeName . "<br>";
+	//			echo $domOb->getElementsByTagName($nodeName)->item(0)->nodeValue;
+
+				 //adding node name and node value to associative array
+//				 $res_arr[$nodeName] = $value;
+			}
 			return $res_arr;
 		}
 		catch (ExDataClassLoadXML $e) {
@@ -296,10 +346,10 @@ class dataClass {
 
 			mysqli_set_charset($conn, 'utf8');
 
-			$sql = "INSERT INTO cirkve(ICO, Stav_subjektu_RCNS, Nazev_CPO, Typ_CNS, Zkr_statu, Nazev_PF, ID_adresy, Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, PSC, PSC_RES, Zrizovatel, Zvlastni_prava, Datum_vzniku)
+			$sql = "INSERT INTO cirkve(ICO, Stav_subjektu_RCNS, Nazev_CPO, Typ_CNS, Zkr_statu, Nazev_PF, ID_adresy, Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, Cislo_do_adresy_RES, PSC, PSC_RES, Zrizovatel, Zvlastni_prava, Datum_vzniku)
 			VALUES ('" . $data["ICO"] . "', '" . $data["Stav_subjektu_RCNS"] . "', '" . $data["Nazev_CPO"] . "', '" . $data["Typ_CNS"] . "', '" . $data["Zkr_statu"] . "', '" . $data["Nazev_PF"] . "', "
-			. $data["ID_adresy"] . ", '" . $data["Nazev_obce"] . "' , '" . $data["Nazev_casti_obce"] . "', '" . $data["Nazev_ulice"] . "', '" . $data["Cislo_do_adresy"] . "', " . $data["PSC"] . ", "
-			. $data["PSC_RES"] . ", '" . $data["Zrizovatel"] . "', '" . $data["Zvlastni_prava"] . "', '" . $data["Datum_vzniku"] . "')";
+			. $data["ID_adresy"] . ", '" . $data["Nazev_obce"] . "' , '" . $data["Nazev_casti_obce"] . "', '" . $data["Nazev_ulice"] . "', '" . $data["Cislo_do_adresy"] . "', '" . $data["Cislo_do_adresy_RES"] . "', "
+			. $data["PSC"] . ", " . $data["PSC_RES"] . ", '" . $data["Zrizovatel"] . "', '" . $data["Zvlastni_prava"] . "', '" . $data["Datum_vzniku"] . "')";
 			if (!mysqli_query($conn, $sql)) {
 				throw new ExDataClassInsertDataDBInsert;
 			}
@@ -312,10 +362,10 @@ class dataClass {
 		}
 		catch(ExDataClassInsertDataDBInsert $e) {
 			mysqli_close($conn);
-			//tady potrebujes jeste udelat log - zapsat do chyboveho souboru, ktere IC se nepovedlo nacist
 			$file = '../err.txt';
 			$current = file_get_contents($file);
 			$current .= "Exception - nepovedlo se vlozit IC od DB \n" . $data["ICO"] . "\n";
+			$current .= $sql;
 			file_put_contents($file, $current);
 
 			echo "Chyba: nepovedlo se provest dotaz: " . $sql . "<br>" . mysqli_error($conn) . ". File: " . $e->getFile() . ", line: " . $e->getLine();
@@ -373,16 +423,18 @@ every subject
 
 @param: string $tableNameCirkve, name of table imported from ARES or created by createTableCirkveAktivni()
 @param: string $tableNameCirkveSpatial, name of new table containing coordinates
+@param: string $Stav_subjektu_RCNS, state of subject - active, canceled, ...
 @return boolean, 1 - OK | 0 - error
 */
 
-	function connectCirkveWithRUIAN ($tableNameCirkve, $tableNameCirkveSpatial) {
+	function connectCirkveWithRUIAN ($tableNameCirkve, $tableNameCirkveSpatial, $Stav_subjektu_RCNS) {
 		require_once "configClass.php";
 		$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
 		if (!$conn) {
 			echo "Nepovedlo se pripojit k DB";
 			return 0;
 		}
+		mysqli_set_charset($conn, 'utf8');
 /*
 		$sql = "CREATE INDEX index_obec_cast_obce_ulice_cp_psc ON RUIAN_data (Nazev_obce, Nazev_casti_obce, Nazev_ulice, Cislo_do_adresy, PSC)";
 		if (!mysqli_query($conn, $sql)) {
@@ -401,14 +453,15 @@ every subject
 		}
 */
 		$sql = 'CREATE TABLE ' . $tableNameCirkveSpatial . ' AS
-		SELECT ' . $tableNameCirkve . '.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X
+		(SELECT ' . $tableNameCirkve . '.*, RUIAN_data.Souradnice_Y, RUIAN_data.Souradnice_X
 		FROM ' . $tableNameCirkve . '
 		LEFT JOIN RUIAN_data
 		ON ' . $tableNameCirkve . '.Nazev_obce = RUIAN_data.Nazev_obce
 		AND ' . $tableNameCirkve . '.Nazev_casti_obce = RUIAN_data.Nazev_casti_obce
 		AND ' . $tableNameCirkve . '.Nazev_ulice = RUIAN_data.Nazev_ulice
-		AND ' . $tableNameCirkve . '.Cislo_do_adresy LIKE RUIAN_data.Cislo_do_adresy
-		AND ' . $tableNameCirkve . '.PSC_RES = RUIAN_data.PSC;';
+		AND ' . $tableNameCirkve . '.Cislo_do_adresy_RES LIKE RUIAN_data.Cislo_do_adresy
+		AND ' . $tableNameCirkve . '.PSC_RES = RUIAN_data.PSC
+		WHERE ' . $tableNameCirkve . '.Stav_subjektu_RCNS LIKE"' . $Stav_subjektu_RCNS . '");';
 
 		if (!mysqli_query($conn, $sql)) {
 			echo "nepovedlo se spojeni cirkevni a RUIAN tabulky";
@@ -437,49 +490,6 @@ every subject
 
 		return 1;
 	}
-
-
-	/*
-	Creates new table as select only active objects from ARES table
-	@param: string $createTableCirkveAktivni, name of table imported from ARES or created by createTableCirkveAktivni()
-	@return boolean, 1 - OK | 0 - error
-	*/
-
-	function createTableCirkveAktivni($createTableCirkveAktivni){
-		try {
-			require_once "configClass.php";
-			$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
-			if (!$conn) {
-				throw new ExDataClassInsertDataDBConnection;
-			}
-
-			mysqli_set_charset($conn, 'utf8');
-
-			$sql = 'CREATE TABLE ' . $createTableCirkveAktivni . ' AS (SELECT * FROM cirkve WHERE Stav_subjektu_RCNS="Aktivní");';
-			if (!mysqli_query($conn, $sql)) {
-				throw new ExDataClassInsertDataDBCreateTableWithActive;
-			}
-			mysqli_close($conn);
-			return 1;
-		}
-		catch(ExDataClassInsertDataDBCreateTableWithActive $e) {
-			echo "Nepovedlo se vytvorit tabulky s aktivnimi cirkvemi " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
-		}
-		catch(ExDataClassInsertDataDBConnection $e) {
-			echo "Chyba: nepovedlo se pripojit k DB: " . mysqli_connect_error() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
-			return 0;
-		}
-		catch(Exception $e) {
-			echo "Chyba: " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
-			return 0;
-		}
-		catch(Error $e) {
-			echo "Chyba: " . $e->getMessage() . ". File: " . $e->getFile() . ", line: " . $e->getLine();
-			return 0;
-		}
-
-	}
-
 
 /******************************** END ARES ***********************************************/
 
