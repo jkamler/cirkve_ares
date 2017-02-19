@@ -27,7 +27,30 @@ var mousePositionControl = new ol.control.MousePosition({
   undefinedHTML: '&nbsp;'
 });
 
-var text = new ol.style.Text ({text: 'text'});
+var style = new ol.style.Style({
+  image: new ol.style.Circle({
+    radius: 5,
+    fill: new ol.style.Fill({color: 'red'})
+  }),
+  fill: new ol.style.Fill({
+    color: 'rgba(255, 255, 255, 0.6)'
+  }),
+  stroke: new ol.style.Stroke({
+    color: '#319FD3',
+    width: 1
+  }),
+  text: new ol.style.Text({
+    font: '12px Calibri,sans-serif',
+    offsetY: -15,
+    fill: new ol.style.Fill({
+      color: '#000'
+    }),
+    stroke: new ol.style.Stroke({
+      color: '#fff',
+      width: 3
+    })
+  })
+});
 
 var layers = [
   new ol.layer.Tile({
@@ -40,19 +63,13 @@ var layers = [
   new ol.layer.Vector({
     title: 'Body',
     source: new ol.source.Vector({
-//      url: urlJSON,
       url: 'http://localhost/cirkve_ares/app/getjson.php?query=',
       format: new ol.format.GeoJSON()
-//    }),
     }),
-    style: new ol.style.Style({
-      image: new ol.style.Circle({
-        radius: 5,
-        fill: new ol.style.Fill({color: 'red'})
-      }),
-      text: text
-
-    })
+    style: function(feature, resolution) {
+      style.getText().setText(resolution < 7 ? feature.get('Nazev_CPO') : '');
+      return style;
+    }
   })
 ];
 
