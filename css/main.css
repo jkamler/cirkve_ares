@@ -28,7 +28,7 @@ html, body, .map {
   overflow-y: scroll;
   width:300px;
 /*  max-height: 500px;*/
-  max-height: auto;
+  max-height: 90%;
 
 }
 
@@ -76,4 +76,14 @@ html, body, .map {
   top: 10px;
   left: 50px;
   width: 200px;
+}
+
+.cirkevNameContainer {
+  background-color: #eee;
+}
+
+#controlWrapper {
+  position: absolute;
+  top: 70px;
+  left: 50px;
 }

@@ -32,6 +32,7 @@ class geoJSONClass {
                   'PSC' => $row['PSC'],
                   'Zrizovatel_text' => $row['Zrizovatel_text'],
                   'Zvlastni_prava' => $row['Zvlastni_prava'],
+                  'ICO' => $row['ICO'],                  
                   'Datum_vzniku' => $row['Datum_vzniku']
                   )
               );

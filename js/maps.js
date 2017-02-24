@@ -10,6 +10,8 @@ $("#display").click(function() {
     $("#display").val("");
 });
 
+
+//projection S-JTSK
 var projection = new ol.proj.Projection({
   code: 'EPSG:5514',
   units: 'm'
@@ -17,6 +19,7 @@ var projection = new ol.proj.Projection({
 
 ol.proj.addProjection(projection);
 
+//coordinates
 var mousePositionControl = new ol.control.MousePosition({
   coordinateFormat: ol.coordinate.createStringXY(),
   projection: 'EPSG:5514',
@@ -27,6 +30,7 @@ var mousePositionControl = new ol.control.MousePosition({
   undefinedHTML: '&nbsp;'
 });
 
+//styles
 var style = new ol.style.Style({
   image: new ol.style.Circle({
     radius: 5,
@@ -52,48 +56,107 @@ var style = new ol.style.Style({
   })
 });
 
-var layers = [
-  new ol.layer.Tile({
-    source: new ol.source.TileWMS({
-      url: 'http://geoportal.cuzk.cz/WMS_ORTOFOTO_PUB/WMService.aspx',
-      params: {'LAYERS': 'GR_ORTFOTORGB', 'TILED': true},
-      serverType: 'geoserver'
-    })
+var styleSelectedFeature = new ol.style.Style({
+  image: new ol.style.Circle({
+    radius: 7,
+    fill: new ol.style.Fill({color: 'blue'})
   }),
-  new ol.layer.Vector({
-    title: 'Body',
-    source: new ol.source.Vector({
-      url: 'http://localhost/cirkve_ares/app/getjson.php?query=',
-      format: new ol.format.GeoJSON()
+  fill: new ol.style.Fill({
+    color: 'rgba(255, 255, 255, 0.6)'
+  }),
+  stroke: new ol.style.Stroke({
+    color: '#319FD3',
+    width: 1
+  }),
+  text: new ol.style.Text({
+    font: '12px Calibri,sans-serif',
+    offsetY: -15,
+    fill: new ol.style.Fill({
+      color: '#000'
     }),
-    style: function(feature, resolution) {
-      style.getText().setText(resolution < 7 ? feature.get('Nazev_CPO') : '');
-      return style;
-    }
+    stroke: new ol.style.Stroke({
+      color: '#fff',
+      width: 3
+    })
   })
-];
+});
+
+// map layers
+var vectorCirkve = new ol.layer.Vector({
+  id: 'cirkevniBody',
+  title: 'Body',
+  source: new ol.source.Vector({
+    url: 'http://localhost/cirkve_ares/app/getjson.php?query=',
+    format: new ol.format.GeoJSON()
+  }),
+  style: function(feature, resolution) {
+    style.getText().setText(resolution < 7 ? feature.get('Nazev_CPO') : '');
+    return style;
+  }
+});
+
+var ortofotoWMS = new ol.layer.Tile({
+  source: new ol.source.TileWMS({
+    url: 'http://geoportal.cuzk.cz/WMS_ORTOFOTO_PUB/WMService.aspx',
+    params: {'LAYERS': 'GR_ORTFOTORGB', 'TILED': true},
+    serverType: 'geoserver'
+  })
+});
 
 
+//seting up interaction
+var selectInteraction = new ol.interaction.Select({
+  layers: function(layer) {
+    return layer.get('selectable') == true;
+  },
+  style: function(feature, resolution) {
+    styleSelectedFeature.getText().setText(feature.get('Nazev_CPO'));
+    return styleSelectedFeature;
+  }
+});
+
+
+//basic declarations of map
 var map = new ol.Map({
 controls: ol.control.defaults().extend([mousePositionControl]),
-  layers: layers,
   target: 'map',
   view: new ol.View({
-    center: [0,0],
-    zoom: 4,
+    center: [-670000, -1080000],
+    zoom: 9,
     projection: projection
   })
 });
 
-map.on('singleclick', function(e) {
-  var feature = map.forEachFeatureAtPixel(e.pixel, function(feature) {
-    return feature;
+map.addLayer(ortofotoWMS);
+map.addLayer(vectorCirkve);
+map.getInteractions().extend([selectInteraction]);
+
+vectorCirkve.set('selectable', true);
+
+//searching in map
+var displayFeatureInfo = function(pixel) {
+  var features = [];
+  map.forEachFeatureAtPixel(pixel, function(feature, layer) {
+    features.push(feature);
   });
-  if (feature) { // if feature returned, show info
+  var container = document.getElementById('info');
+  if (features.length > 0) {
     $("#info_wrapper").show();
-    var infoElement = document.getElementById('info');
-    infoElement.innerHTML = 'Název: ' + feature.get('Nazev_CPO') + '<br>Ulice: ' + feature.get('Nazev_ulice') + ' ' + feature.get('Cislo_do_adresy') + '<br>Obec: ' + feature.get('Nazev_obce') + '<br>PSČ: ' + feature.get('PSC') + '<br>Zřizovatel:<br>' + feature.get('Zrizovatel_text') + '<br>Zvláštní práva:<br>' + feature.get('Zvlastni_prava');
+    var info = [];
+    for (var i = 0, ii = features.length; i < ii; ++i) {
+
+      info.push('<div class="cirkevniContainer"><div class="cirkevNameContainer">' + features[i].get('Nazev_CPO') + '</div><br><div class="cirkevPropertiesContainer">IČ: ' + features[i].get('ICO') + '<br>Ulice: ' + features[i].get('Nazev_ulice') + ' ' + features[i].get('Cislo_do_adresy') + '<br>Obec: ' + features[i].get('Nazev_obce') + '<br>PSČ: ' + features[i].get('PSC') + '<br>Zřizovatel:<br>' + features[i].get('Zrizovatel_text') + '<br>Zvláštní práva:<br>' + features[i].get('Zvlastni_prava') + '</div></div>');
+    }
+    container.innerHTML = info.join('<hr>') || '(unknown)';
+  } else {
+    container.innerHTML = '&nbsp;';
   }
+};
+
+map.on('click', function(evt) {
+/**/vectorCirkve.setVisible(false);
+  var pixel = evt.pixel;
+  displayFeatureInfo(pixel);
 });
 
 $("#display").keyup(function() {
@@ -101,14 +164,9 @@ $("#display").keyup(function() {
     url: 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val(),
     format: new ol.format.GeoJSON()
   });
-
-/*
-OSM je problem, zkus tam hodit
-http://geoportal.cuzk.cz/(S(t4ycgo0kcztcimrqfvbpqkvd))/Default.aspx?menu=3150&mode=TextMeta&side=wmts.uvod&metadataID=CZ-CUZK-WMTS-ZM-P&metadataXSL=metadata.sluzba
-  var osm = new ol.source.OSM();
-  losm = map.getLayers().getArray()[0];
-  losm.setSource(osm);
-*/
   l = map.getLayers().getArray()[1];
   l.setSource(s);
 });
+
+//map.removeInteraction(interaction)
+//map.removeLayer(layer)
