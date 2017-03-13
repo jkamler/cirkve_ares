@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-  $('#orto').prop( "checked", true );
-  $('#basic').prop( "checked", false );
+  $('#orto').prop( "checked", false );
+  $('#basic').prop( "checked", true );
 
   $("#info_wrapper").hide();
 
@@ -15,42 +15,9 @@ $( document ).ready(function() {
   });
 });
 
-//projection S-JTSK
-var projectionSJTSK = new ol.proj.Projection({
-  code: 'EPSG:5514',
-//  code: 'EPSG:4326',
-  units: 'm'
-});
-
-//projection WGS84
-var projectionWGS84 = new ol.proj.Projection({
-    code: 'EPSG:4326',
-    units: 'm',
-    extent: [-180.0000, -90.0000, 180.0000, 90.0000]
-});
-
-//projection Mercator EPSG:900913
-var projectionMercator = new ol.proj.Projection({
-//    code: 'EPSG:3857',
-    code: 'EPSG:900913',
-    units: 'm',
-    extent: [-7501981,-1304807, 9178903, 7369995]
-//    extent: [-180.0000, -90.0000, 180.0000, 90.0000] //WGS84
-});
-
-
-//register projection at OL
-ol.proj.addProjection(projectionSJTSK);
-ol.proj.addProjection(projectionWGS84);
-ol.proj.addProjection(projectionMercator);
-
-
 //coordinates
 var mousePositionControl = new ol.control.MousePosition({
   coordinateFormat: ol.coordinate.createStringXY(),
-//  projection: 'EPSG:4326',
-//  projection: 'EPSG:3857', //mercator
-//  projection: projectionSJTSK,
   // comment the following two lines to have the mouse position
   // be placed within the map.
   className: 'custom-mouse-position',
@@ -59,17 +26,73 @@ var mousePositionControl = new ol.control.MousePosition({
 });
 
 //styles
+
+var style = new ol.style.Style({
+  image: new ol.style.RegularShape({
+    fill: new ol.style.Fill({
+      color: 'red'
+    }),
+    stroke: new ol.style.Stroke({
+      color: 'black',
+      width: 2
+    }),
+    points: 4,
+    radius: 5,
+    angle: 0
+  }),
+  text: new ol.style.Text({
+    font: '12px Calibri,sans-serif',
+    offsetY: -15,
+    fill: new ol.style.Fill({
+      color: '#000'
+    }),
+    stroke: new ol.style.Stroke({
+      color: '#fff',
+      width: 3
+    })
+  })
+});
+
+var styleSelectedFeature = new ol.style.Style({
+  image: new ol.style.RegularShape({
+    fill: new ol.style.Fill({
+      color: '#33ff33'
+    }),
+    stroke: new ol.style.Stroke({
+      color: 'black',
+      width: 2
+    }),
+    points: 4,
+    radius: 7,
+    angle: 0
+  }),
+  text: new ol.style.Text({
+    font: '12px Calibri,sans-serif',
+    offsetY: -15,
+    fill: new ol.style.Fill({
+      color: '#000'
+    }),
+    stroke: new ol.style.Stroke({
+      color: '#fff',
+      width: 3
+    })
+  })
+});
+
+/* puvodni styl
 var style = new ol.style.Style({
   image: new ol.style.Circle({
-    radius: 5,
+    radius: 4,
     fill: new ol.style.Fill({color: 'red'})
   }),
   fill: new ol.style.Fill({
     color: 'rgba(255, 255, 255, 0.6)'
   }),
+
   stroke: new ol.style.Stroke({
-    color: '#319FD3',
-    width: 1
+    color: 'green',
+    width: 11,
+    lineCap: 'square'
   }),
   text: new ol.style.Text({
     font: '12px Calibri,sans-serif',
@@ -108,16 +131,14 @@ var styleSelectedFeature = new ol.style.Style({
     })
   })
 });
-
+*/
 // map layers
 var vectorCirkve = new ol.layer.Vector({
   id: 'cirkevniBody',
   title: 'Body',
   source: new ol.source.Vector({
     url: 'http://localhost/cirkve_ares/app/getjson.php?query=',
-//    projection: projectionSJTSK,
-    projection: projectionMercator,
-    format: new ol.format.GeoJSON()
+    format: new ol.format.GeoJSON({"defaultDataProjection": "EPSG:3857"})
   }),
   style: function(feature, resolution) {
     style.getText().setText(resolution < 7 ? feature.get('Nazev_CPO') : '');
@@ -125,29 +146,20 @@ var vectorCirkve = new ol.layer.Vector({
   }
 });
 
-vectorCirkve.transform
-
 var ortofotoWMS = new ol.layer.Tile({
+  visible: false,
   source: new ol.source.TileWMS({
     url: 'http://geoportal.cuzk.cz/WMS_ORTOFOTO_PUB/WMService.aspx',
     params: {'LAYERS': 'GR_ORTFOTORGB', 'TILED': true},
     serverType: 'geoserver',
-    projection: projectionMercator //
   })
 });
-/*
+
 var basicWMS = new ol.layer.Tile({
-  visible: false,
-  source: new ol.source.TileWMS({
-    url: 'http://geoportal.cuzk.cz/WMS_ZM10_PUB/WMService.aspx',
-    params: {'LAYERS': 'GR_ZM10', 'TILED': true},
-    serverType: 'geoserver'
-  })
-});
-*/
-var basicWMS = new ol.layer.Tile({
+  visible: true,
+//  visible: false,
+//  opacity: 0.5,
   source: new ol.source.OSM({
-    projection: projectionMercator
   })
 });
 
@@ -162,17 +174,27 @@ var selectInteraction = new ol.interaction.Select({
   }
 });
 
+//interaction on hover
+var selectPointerMove = new ol.interaction.Select({
+  condition: ol.events.condition.pointerMove,
+  layers: function(layer) {
+    return layer.get('selectable') == true;
+  },
+  style: function(feature, resolution) {
+    styleSelectedFeature.getText().setText(feature.get('Nazev_CPO'));
+    return styleSelectedFeature;
+  }
+});
+
+
 //basic declarations of map
 var map = new ol.Map({
 controls: ol.control.defaults().extend([mousePositionControl]),
   target: 'map',
   view: new ol.View({
-//    center: [-670000, -1080000], // S-JTSK
-    center: [17, 50], //WGS84
-//    zoom: 9,
-    zoom: 5,
-//    projection: projectionSJTSK
-    projection: projectionMercator
+    center: [1740211, 6382652],
+    projection: 'EPSG:3857', //mercator
+    zoom: 8
   })
 });
 
@@ -180,6 +202,7 @@ map.addLayer(ortofotoWMS);
 map.addLayer(basicWMS);
 map.addLayer(vectorCirkve);
 map.getInteractions().extend([selectInteraction]);
+map.addInteraction(selectPointerMove);
 
 vectorCirkve.set('selectable', true);
 
@@ -204,9 +227,6 @@ var displayFeatureInfo = function(pixel) {
 };
 
 map.on('click', function(evt) {
-//  ortofotoWMS.setVisible(false);
-//  basicWMS.setVisible(true);
-//  WMSlayerGroup.setVisible(false);
   var pixel = evt.pixel;
   displayFeatureInfo(pixel);
 });
@@ -221,7 +241,6 @@ $('#controlWrapper').click(function() {
    if($('#basic').is(':checked')) {
     ortofotoWMS.setVisible(false);
     basicWMS.setVisible(true);
-    alert(basicWMS.getProjection());
    }
 
 });
@@ -230,11 +249,8 @@ $('#controlWrapper').click(function() {
 $("#display").keyup(function() {
   var s = new ol.source.Vector({
     url: 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val(),
-    format: new ol.format.GeoJSON()
+    format: new ol.format.GeoJSON({"defaultDataProjection": "EPSG:3857"})
   });
   l = map.getLayers().getArray()[2];
   l.setSource(s);
 });
-
-//map.removeInteraction(interaction)
-//map.removeLayer(layer)

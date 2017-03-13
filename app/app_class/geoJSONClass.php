@@ -1,4 +1,9 @@
 <?php
+include("proj4php-master/vendor/autoload.php");
+
+use proj4php\Proj4php;
+use proj4php\Proj;
+use proj4php\Point;
 
 class ExGeoJSONClassGetDataDBConnection extends Exception {}
 class ExGeoJSONClassGetDataDBInsert extends Exception {}
@@ -12,15 +17,35 @@ class geoJSONClass {
          'type'      => 'FeatureCollection',
          'features'  => array()
       );
+      // Initialise Proj4
+      $proj4 = new Proj4php();
+      // Create two different projections.
+      $projSJTSK     = new Proj('EPSG:5514', $proj4);
+      $projMercator  = new Proj('EPSG:3857', $proj4);
+
       # Loop through rows to build feature arrays
       while($row = mysqli_fetch_assoc($data)) {
+
+        /*proj4php*/
+        // Create a point - proj4php
+        $pointSrc = new Point($row['Souradnice_Y'] * -1, $row['Souradnice_X'] * -1, $projSJTSK);
+        // Transform the point between datums - transormation from S-JTSK to Google Mercator.
+        $pointDest = $proj4->transform($projMercator, $pointSrc);
+        /*proj4php*/
+
+        //assign transformed coordinates - comment this two line for getting result in S-JTSK
+        $row['Souradnice_Y'] = $pointDest->y;
+        $row['Souradnice_X'] = $pointDest->x;
+
+        //echo " " . $pointDest->x . " ";
           $feature = array(
   //            'id' => $row['partnership_id'],
               'type' => 'Feature',
               'geometry' => array(
                   'type' => 'Point',
-                  # Pass Longitude and Latitude Columns here
-                  'coordinates' => array($row['Souradnice_Y'] * -1, $row['Souradnice_X'] * -1)
+                  //this line is for S-JTSK coordinates
+//                  'coordinates' => array($row['Souradnice_Y'] * -1, $row['Souradnice_X'] * -1)
+                  'coordinates' => array($row['Souradnice_X'], $row['Souradnice_Y'])
               ),
               # Pass other attribute columns here
               'properties' => array(
@@ -32,7 +57,7 @@ class geoJSONClass {
                   'PSC' => $row['PSC'],
                   'Zrizovatel_text' => $row['Zrizovatel_text'],
                   'Zvlastni_prava' => $row['Zvlastni_prava'],
-                  'ICO' => $row['ICO'],                  
+                  'ICO' => $row['ICO'],
                   'Datum_vzniku' => $row['Datum_vzniku']
                   )
               );
