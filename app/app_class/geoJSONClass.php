@@ -58,7 +58,8 @@ class geoJSONClass {
                   'Zrizovatel_text' => $row['Zrizovatel_text'],
                   'Zvlastni_prava' => $row['Zvlastni_prava'],
                   'ICO' => $row['ICO'],
-                  'Datum_vzniku' => $row['Datum_vzniku']
+                  'Datum_vzniku' => $row['Datum_vzniku'],
+                  'web' => $row['web']
                   )
               );
           # Add feature arrays to feature collection array

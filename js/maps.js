@@ -4,6 +4,8 @@ $( document ).ready(function() {
 
   $("#info_wrapper").hide();
 
+  $("#infocontent").hide();
+
   $('#hide_info_wrapper').click(function(){
     $("#info_wrapper").hide();
   });
@@ -79,59 +81,7 @@ var styleSelectedFeature = new ol.style.Style({
   })
 });
 
-/* puvodni styl
-var style = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 4,
-    fill: new ol.style.Fill({color: 'red'})
-  }),
-  fill: new ol.style.Fill({
-    color: 'rgba(255, 255, 255, 0.6)'
-  }),
 
-  stroke: new ol.style.Stroke({
-    color: 'green',
-    width: 11,
-    lineCap: 'square'
-  }),
-  text: new ol.style.Text({
-    font: '12px Calibri,sans-serif',
-    offsetY: -15,
-    fill: new ol.style.Fill({
-      color: '#000'
-    }),
-    stroke: new ol.style.Stroke({
-      color: '#fff',
-      width: 3
-    })
-  })
-});
-
-var styleSelectedFeature = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 7,
-    fill: new ol.style.Fill({color: 'blue'})
-  }),
-  fill: new ol.style.Fill({
-    color: 'rgba(255, 255, 255, 0.6)'
-  }),
-  stroke: new ol.style.Stroke({
-    color: '#319FD3',
-    width: 1
-  }),
-  text: new ol.style.Text({
-    font: '12px Calibri,sans-serif',
-    offsetY: -15,
-    fill: new ol.style.Fill({
-      color: '#000'
-    }),
-    stroke: new ol.style.Stroke({
-      color: '#fff',
-      width: 3
-    })
-  })
-});
-*/
 // map layers
 var vectorCirkve = new ol.layer.Vector({
   id: 'cirkevniBody',
@@ -217,7 +167,7 @@ var displayFeatureInfo = function(pixel) {
     $("#info_wrapper").show();
     var info = [];
     for (var i = 0, ii = features.length; i < ii; ++i) {
-      info.push('<div class="cirkevniContainer"><div class="cirkevNameContainer">' + features[i].get('Nazev_CPO') + '</div><br><div class="cirkevPropertiesContainer">IČ: ' + features[i].get('ICO') + '<br>Ulice: ' + features[i].get('Nazev_ulice') + ' ' + features[i].get('Cislo_do_adresy') + '<br>Obec: ' + features[i].get('Nazev_obce') + '<br>PSČ: ' + features[i].get('PSC') + '<br>Zřizovatel:<br>' + features[i].get('Zrizovatel_text') + '<br>Zvláštní práva:<br>' + features[i].get('Zvlastni_prava') + '</div></div>');
+      info.push('<div class="cirkevniContainer"><div class="cirkevNameContainer">' + features[i].get('Nazev_CPO') + '</div><br><div class="cirkevPropertiesContainer">IČ: ' + features[i].get('ICO') + '<br>Ulice: ' + features[i].get('Nazev_ulice') + ' ' + features[i].get('Cislo_do_adresy') + '<br>Obec: ' + features[i].get('Nazev_obce') + '<br>PSČ: ' + features[i].get('PSC') + '<br>Zřizovatel:<br>' + features[i].get('Zrizovatel_text') + '<br>Zvláštní práva:<br>' + features[i].get('Zvlastni_prava') + '<br>www: <a href="http://' + features[i].get('web') + '">' + features[i].get('web') + '</a>' + '</div></div>');
     }
     container.innerHTML = info.join('<hr>') || '(unknown)';
   } else {
@@ -229,6 +179,9 @@ var displayFeatureInfo = function(pixel) {
 map.on('click', function(evt) {
   var pixel = evt.pixel;
   displayFeatureInfo(pixel);
+  if ($("#display").val() == "") {
+    $("#display").val("Název církve nebo města");
+  }
 });
 
 
@@ -253,4 +206,9 @@ $("#display").keyup(function() {
   });
   l = map.getLayers().getArray()[2];
   l.setSource(s);
+});
+
+$("#aboutapp").click(function() {
+//  alert("sem tu");
+  $("#infocontent").toggle();
 });

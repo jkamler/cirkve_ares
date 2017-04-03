@@ -106,3 +106,41 @@ html, body, .map {
 #controlWrapper input {
 
 }
+
+#aboutapp {
+  position: absolute;
+  top: 112px;
+  left: 50px;
+  background-color: white;
+  opacity: 0.6;
+  border: 2px solid grey;
+  padding: 5px;
+  //box-sizing: border-box;
+  text-align: center;
+}
+
+#aboutapp:hover {
+  opacity: 1;
+}
+
+#aboutapp img {
+  width: 20px;
+  height: 20px;
+  display: block;
+//  border: 1px solid black;
+}
+
+#infocontent {
+  width: 306px;
+  height: auto;
+//  overflow-y: scroll;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+my-email::after {
+  content: attr(data-domain);
+}
+my-email::before {
+  content: attr(data-user);
+}

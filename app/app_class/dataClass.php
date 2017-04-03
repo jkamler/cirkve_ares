@@ -169,6 +169,7 @@ class dataClass {
 	  `Zrizovatel` varchar(200) COLLATE utf8_czech_ci,
 	  `Zrizovatel_text` varchar(200) COLLATE utf8_czech_ci,
 	  `Zvlastni_prava` varchar(1000) COLLATE utf8_czech_ci,
+	  `web` varchar(50) COLLATE utf8_czech_ci DEFAULT NULL,		/* column web added and not tested */
 	  `Datum_vzniku` varchar(50) COLLATE utf8_czech_ci NOT NULL
 		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;";
 
