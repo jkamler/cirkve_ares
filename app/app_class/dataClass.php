@@ -516,6 +516,26 @@ every subject
 	    );
 	    return strtr($retezec, $convertTable);
 	}
+	
+	/* Testing if DB connection parameters are OK
+         *
+         * @return 0
+         */
+	
+	public function testDBConnection() {
+		require_once "configClass.php";
+		$conn = mysqli_connect(configClass::SERVERNAME, configClass::USERNAME, configClass::PASSWORD, configClass::DBNAMEARES);
+		if (!$conn) {
+                    echo "Nepovedlo se pripojit k DB";
+                    return 0;
+		} else {
+                    echo "Pripojeno k DB";
+                    return 0;
+		}
+
+	
+	
+	}
 }
 
 ?>

@@ -14,6 +14,16 @@ $( document ).ready(function() {
 
   $("#display").click(function() {
       $("#display").val("");
+//pridano
+  var s = new ol.source.Vector({
+//    url: 'http://www.mapacirkvi.cz/app/getjson.php'  + '?query=' + $("#display").val(),
+    url: 'http://www.mapacirkvi.cz/app/getjson.php'  + '?query=',      
+    format: new ol.format.GeoJSON({"defaultDataProjection": "EPSG:3857"})
+  });
+  l = map.getLayers().getArray()[2];
+  l.setSource(s);
+//
+      
   });
 });
 
@@ -87,7 +97,8 @@ var vectorCirkve = new ol.layer.Vector({
   id: 'cirkevniBody',
   title: 'Body',
   source: new ol.source.Vector({
-    url: 'http://localhost/cirkve_ares/app/getjson.php?query=',
+//    url: 'http://www.mapacirkvi.cz/app/getjson.php?query=',
+    url: 'http://www.mapacirkvi.cz/app/getjson.php',      
     format: new ol.format.GeoJSON({"defaultDataProjection": "EPSG:3857"})
   }),
   style: function(feature, resolution) {
@@ -201,7 +212,7 @@ $('#controlWrapper').click(function() {
 //dynamic search
 $("#display").keyup(function() {
   var s = new ol.source.Vector({
-    url: 'http://localhost/cirkve_ares/app/getjson.php'  + '?query=' + $("#display").val(),
+    url: 'http://www.mapacirkvi.cz/app/getjson.php'  + '?query=' + $("#display").val(),
     format: new ol.format.GeoJSON({"defaultDataProjection": "EPSG:3857"})
   });
   l = map.getLayers().getArray()[2];
