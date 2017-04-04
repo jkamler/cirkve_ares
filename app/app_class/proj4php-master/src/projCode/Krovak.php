@@ -34,7 +34,7 @@ class Krovak
      */
     public function init() {
     
-        error_reporting(0);
+        error_reporting(0); //added
         
         /* we want Bessel as fixed ellipsoid */
         $this->a = 6377397.155;
@@ -83,7 +83,7 @@ class Krovak
      */
     public function forward( $p ) {
     
-        error_reporting(0);
+        error_reporting(0); //added
         
         $lon = $p->x;
         $lat = $p->y;
@@ -119,7 +119,7 @@ class Krovak
      */
     public function inverse( $p ) {
         
-        error_reporting(0);
+        error_reporting(0); //added because warning at line 131/138 
         
         /* Transformation */
         /* revert y, x */
